@@ -65,6 +65,19 @@ fun HomeShowcase(
     var tab by rememberSaveable { mutableStateOf(0) }
     var starred by rememberSaveable { mutableStateOf(false) }
 
+    // tr() is composable, so every string used inside click handlers or lazy-list builders
+    // is resolved here, in the composable body.
+    val templatesSoon = tr("टेम्पलेट अगले चरण में जुड़ेंगे", "Templates arrive in the next step")
+    val detailsSoon = tr("टेम्पलेट विवरण अगले चरण में", "Template details arrive in the next step")
+    val deleteSoon = tr("हटाने से पहले पुष्टि पूछी जाएगी", "Delete will ask for confirmation")
+    val editorSoon = tr("संपादक अगले चरण में", "The editor arrives in the next step")
+    val categories = listOf(
+        Triple(Icons.Rounded.AccountBalance, tr("सरकारी आवेदन", "Government"), Accents.Blue),
+        Triple(Icons.Rounded.School, tr("शिक्षा", "Education"), Accents.Green),
+        Triple(Icons.Rounded.Work, tr("नौकरी / करियर", "Jobs / Career"), Accents.Purple),
+        Triple(Icons.Rounded.Bolt, tr("बिजली / पानी", "Electricity / Water"), Accents.Orange),
+    )
+
     LazyColumn(
         contentPadding = PaddingValues(
             start = Spacing.screen,
@@ -123,7 +136,7 @@ fun HomeShowcase(
                 )
                 GlassButton(
                     text = tr("शुरू करें", "Get started"),
-                    onClick = { onMessage(tr("टेम्पलेट अगले चरण में जुड़ेंगे", "Templates arrive in the next step")) },
+                    onClick = { onMessage(templatesSoon) },
                     trailingIcon = Icons.Rounded.ArrowForward,
                 )
             }
@@ -151,14 +164,7 @@ fun HomeShowcase(
             Column(verticalArrangement = Arrangement.spacedBy(Spacing.x1)) {
                 GlassText(tr("श्रेणियाँ", "Categories"), style = WriterType.headline)
                 LazyRow(horizontalArrangement = Arrangement.spacedBy(Spacing.x1_5)) {
-                    items(
-                        listOf(
-                            Triple(Icons.Rounded.AccountBalance, tr("सरकारी आवेदन", "Government"), Accents.Blue),
-                            Triple(Icons.Rounded.School, tr("शिक्षा", "Education"), Accents.Green),
-                            Triple(Icons.Rounded.Work, tr("नौकरी / करियर", "Jobs / Career"), Accents.Purple),
-                            Triple(Icons.Rounded.Bolt, tr("बिजली / पानी", "Electricity / Water"), Accents.Orange),
-                        ),
-                    ) { (icon, label, accent) ->
+                    items(categories) { (icon, label, accent) ->
                         GlassCategoryCard(icon = icon, label = label, accent = accent, onClick = { onMessage(label) })
                     }
                 }
@@ -181,7 +187,7 @@ fun HomeShowcase(
                 isFavorite = starred,
                 favoriteLabel = tr("पसंदीदा", "Favorite"),
                 onToggleFavorite = { starred = !starred },
-                onClick = { onMessage(tr("टेम्पलेट विवरण अगले चरण में", "Template details arrive in the next step")) },
+                onClick = { onMessage(detailsSoon) },
             )
         }
         item {
@@ -194,9 +200,9 @@ fun HomeShowcase(
                 isFavorite = false,
                 menuLabel = tr("और विकल्प", "More options"),
                 menuActions = listOf(
-                    GlassMenuAction(tr("हटाएं", "Delete"), Icons.Rounded.Delete, onClick = { onMessage(tr("हटाने से पहले पुष्टि पूछी जाएगी", "Delete will ask for confirmation")) }, destructive = true),
+                    GlassMenuAction(tr("हटाएं", "Delete"), Icons.Rounded.Delete, onClick = { onMessage(deleteSoon) }, destructive = true),
                 ),
-                onClick = { onMessage(tr("संपादक अगले चरण में", "The editor arrives in the next step")) },
+                onClick = { onMessage(editorSoon) },
             )
         }
     }
