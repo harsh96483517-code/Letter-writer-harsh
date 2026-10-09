@@ -27,10 +27,30 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
 
       - name: Build debug APK
-        run: ./gradlew assembleDebug --stacktrace
+        run: |
+          set -o pipefail
+          ./gradlew assembleDebug --stacktrace 2>&1 | tee build.log
 
       - name: Run unit tests
-        run: ./gradlew testDebugUnitTest --stacktrace
+        run: |
+          set -o pipefail
+          ./gradlew testDebugUnitTest --stacktrace 2>&1 | tee test.log
+
+      # The raw job log is hard to fetch from outside GitHub, so surface the useful part
+      # of a failed build as readable annotations on the run.
+      - name: Surface build errors
+        if: failure()
+        run: |
+          {
+            grep -hE "^e: |error:|Unresolved|AAPT|Manifest merger|Could not (resolve|find|get)|Execution failed|FAILED" build.log test.log 2>/dev/null | sed -E 's#file:///home/runner/work/[^/]+/[^/]+/android/app/src/(main|test)/java/app/writer/##' | head -80
+            echo "-----"
+            grep -hA10 "What went wrong" build.log test.log 2>/dev/null | head -40
+          } > errors.txt || true
+          head -c 24000 errors.txt | split -b 3500 -d - chunk_ || true
+          for f in chunk_*; do
+            msg=$(sed -e 's/%/%25/g' -e 's/\r/%0D/g' "$f" | sed ':a;N;$!ba;s/\n/%0A/g')
+            echo "::error title=Gradle output ${f}::${msg}"
+          done
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
