@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patra – Letter writer</title>
+  <meta name="description" content="Write a leave application, resignation, job application, complaint or thank-you letter in English or Hindi. Print it, save it as PDF, or copy the text.">
+  <meta name="color-scheme" content="light">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Noto+Sans+Devanagari:wght@400;500;600&family=Noto+Serif+Devanagari:wght@400;600;700&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app" id="app" data-view="write">
+
+    <header class="top">
+      <div class="brand">
+        <span class="brand-mark" lang="hi">पत्र</span>
+        <span class="brand-name">Letter writer</span>
+      </div>
+      <div class="lang" role="radiogroup" aria-label="Letter language" id="lang">
+        <label><input type="radio" name="lang" value="en" checked><span>English</span></label>
+        <label><input type="radio" name="lang" value="hi"><span lang="hi">हिन्दी</span></label>
+      </div>
+    </header>
+
+    <form class="panel" id="form" autocomplete="off">
+      <section>
+        <h2 id="types-h">Letter type</h2>
+        <div class="types" id="types" role="radiogroup" aria-labelledby="types-h"></div>
+      </section>
+
+      <section id="details-section">
+        <h2>Details</h2>
+        <div id="tfields"></div>
+      </section>
+
+      <section>
+        <h2>Your details</h2>
+        <div class="field">
+          <label for="f-name">Your name</label>
+          <input id="f-name" type="text" autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="f-address">Your address</label>
+          <textarea id="f-address" rows="3" autocomplete="street-address"></textarea>
+        </div>
+        <div class="field">
+          <label for="f-contact">Phone or email (optional)</label>
+          <input id="f-contact" type="text">
+        </div>
+      </section>
+
+      <section>
+        <h2>Recipient</h2>
+        <div class="field">
+          <label for="f-toName">Name or designation</label>
+          <input id="f-toName" type="text">
+        </div>
+        <div class="field">
+          <label for="f-toOrg">Organisation and place</label>
+          <textarea id="f-toOrg" rows="2"></textarea>
+        </div>
+      </section>
+
+      <details class="more">
+        <summary>Date, subject and wording</summary>
+        <div class="field">
+          <label for="f-date">Date</label>
+          <input id="f-date" type="date">
+          <p class="help">Today’s date is used until you pick another.</p>
+        </div>
+        <div class="field">
+          <label for="o-subject">Subject</label>
+          <input id="o-subject" type="text">
+        </div>
+        <div class="field">
+          <label for="o-salutation">Greeting</label>
+          <input id="o-salutation" type="text">
+        </div>
+        <div class="field">
+          <label for="o-closing">Closing</label>
+          <input id="o-closing" type="text">
+        </div>
+      </details>
+
+      <section>
+        <h2>Letter text</h2>
+        <div class="field">
+          <label for="f-body" class="sr-only">Letter text</label>
+          <textarea id="f-body" rows="11"></textarea>
+          <p class="help" id="body-help">Edit the text any way you like.</p>
+          <button type="button" class="btn quiet" id="rewrite" hidden>Rewrite from details</button>
+        </div>
+      </section>
+
+      <footer class="panel-foot">
+        <p>Saved on this device. Nothing is sent anywhere.</p>
+        <button type="button" class="btn quiet" id="reset">Start over</button>
+      </footer>
+    </form>
+
+    <section class="preview" aria-label="Letter preview">
+      <div class="actionbar">
+        <p class="blanks" id="blanks"></p>
+        <div class="actions">
+          <button type="button" class="btn" id="copy">Copy text</button>
+          <button type="button" class="btn" id="download">Download .txt</button>
+          <button type="button" class="btn primary" id="print">Print or save as PDF</button>
+        </div>
+      </div>
+      <article class="paper" id="paper"></article>
+    </section>
+
+    <nav class="tabs" aria-label="Switch view">
+      <button type="button" data-go="write" aria-pressed="true">Write</button>
+      <button type="button" data-go="preview" aria-pressed="false">Preview</button>
+    </nav>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="templates.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
