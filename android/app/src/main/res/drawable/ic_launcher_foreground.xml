@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Document: glass sheet with folded corner -->
+    <path
+        android:pathData="M38,28h22l12,12v34a4,4 0 0,1 -4,4h-30a4,4 0 0,1 -4,-4v-42a4,4 0 0,1 4,-4z"
+        android:strokeWidth="1.6"
+        android:strokeColor="#B8FFFFFF">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="38"
+                android:startY="28"
+                android:endX="72"
+                android:endY="78"
+                android:type="linear">
+                <item android:color="#40FFFFFF" android:offset="0.0" />
+                <item android:color="#12FFFFFF" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:pathData="M60,28v12h12"
+        android:strokeWidth="1.6"
+        android:strokeColor="#99FFFFFF"
+        android:strokeLineJoin="round" />
+
+    <!-- Text lines -->
+    <path
+        android:pathData="M43,50h16M43,57h12M43,64h8"
+        android:strokeWidth="2.2"
+        android:strokeColor="#99FFFFFF"
+        android:strokeLineCap="round" />
+
+    <!-- Pen nib -->
+    <path
+        android:pathData="M75,46l9,9l-15,21l-10,4l3,-10z"
+        android:fillColor="#FFFFFFFF" />
+    <path
+        android:pathData="M65,73l9,-13"
+        android:strokeWidth="1.6"
+        android:strokeColor="#FF5B6CF6"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M63,71.5a1.8,1.8 0 1,0 3.6,0a1.8,1.8 0 1,0 -3.6,0z"
+        android:fillColor="#FF5B6CF6" />
+</vector>
