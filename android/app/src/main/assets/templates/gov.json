@@ -1,0 +1,690 @@
+[
+  {
+    "id": "gov_dm",
+    "category": "gov",
+    "style": "application",
+    "titleHi": "जिला अधिकारी को आवेदन",
+    "titleEn": "Application to District Magistrate",
+    "descHi": "जिला अधिकारी महोदय को सामान्य आवेदन पत्र",
+    "descEn": "General application to the District Magistrate",
+    "keywords": [
+      "DM",
+      "जिला अधिकारी",
+      "जिलाधिकारी",
+      "collector",
+      "district magistrate",
+      "dm ko avedan",
+      "जिलाधीश",
+      "zila adhikari"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "जिला अधिकारी महोदय",
+        "office": "जिला अधिकारी कार्यालय"
+      },
+      "en": {
+        "designation": "The District Magistrate",
+        "office": "Office of the District Magistrate"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "आवश्यक कार्यवाही हेतु प्रार्थना पत्र",
+      "en": "Application requesting necessary action"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ।\nनिवेदन है कि {{matter}}\nइस कारण मुझे और मेरे परिवार को कठिनाई का सामना करना पड़ रहा है। इस संबंध में आवश्यक कागज़ात मेरे पास उपलब्ध हैं और माँगे जाने पर प्रस्तुत किए जा सकते हैं।\nअतः आपसे विनम्र निवेदन है कि कृपया {{request}} की कृपा करें। संपर्क हेतु मेरा मोबाइल नंबर {{mobile}} है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I reside at {{address}}.\nI would like to bring the following matter to your kind attention: {{matter}}\nThis has been causing difficulty to me and my family. I have the necessary papers related to this matter and will be glad to produce them whenever required.\nI therefore request you to kindly {{request}}. My mobile number for contact is {{mobile}}.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "matter",
+        "labelHi": "समस्या / विषय का विवरण",
+        "labelEn": "Details of the matter",
+        "hintHi": "जैसे: हमारे गाँव की मुख्य सड़क कई महीनों से टूटी हुई है।",
+        "hintEn": "e.g. the main road in our village has been in disrepair for several months.",
+        "multiline": true,
+        "required": false
+      },
+      {
+        "key": "request",
+        "labelHi": "आपसे क्या अनुरोध है",
+        "labelEn": "What you are requesting",
+        "hintHi": "जैसे: मामले की जाँच कराकर उचित समाधान कराने",
+        "hintEn": "e.g. look into the matter and arrange a suitable solution",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "gov_sdm",
+    "category": "gov",
+    "style": "application",
+    "titleHi": "उप जिलाधिकारी को आवेदन",
+    "titleEn": "Application to Sub-Divisional Magistrate",
+    "descHi": "उप जिलाधिकारी (SDM) महोदय को आवेदन पत्र",
+    "descEn": "Application to the Sub-Divisional Magistrate (SDM)",
+    "keywords": [
+      "SDM",
+      "उप जिलाधिकारी",
+      "एसडीएम",
+      "sub divisional magistrate",
+      "sdm ko avedan",
+      "उपजिलाधिकारी",
+      "up zila adhikari",
+      "sub-divisional"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "उप जिलाधिकारी महोदय",
+        "office": "उप जिलाधिकारी कार्यालय"
+      },
+      "en": {
+        "designation": "The Sub-Divisional Magistrate",
+        "office": "Office of the Sub-Divisional Magistrate"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "उप जिलाधिकारी महोदय से कार्यवाही हेतु प्रार्थना पत्र",
+      "en": "Application to the SDM requesting action"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ।\nविनम्र निवेदन है कि {{matter}}\nइस विषय में आपका मार्गदर्शन और हस्तक्षेप आवश्यक प्रतीत होता है, इसलिए यह प्रार्थना पत्र आपके समक्ष प्रस्तुत है। संबंधित कागज़ात आवश्यकता होने पर उपलब्ध कराए जा सकते हैं।\nअतः आपसे अनुरोध है कि कृपया नियमानुसार {{request}} की कृपा करें। संपर्क हेतु मेरा मोबाइल नंबर {{mobile}} है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I reside at {{address}}.\nI respectfully submit that {{matter}}\nI believe your guidance and intervention are necessary in this matter, and I am therefore submitting this application before you. The related papers can be provided whenever required.\nI request you to kindly {{request}}, as per the applicable rules. My mobile number for contact is {{mobile}}.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "matter",
+        "labelHi": "समस्या / विषय का विवरण",
+        "labelEn": "Details of the matter",
+        "hintHi": "जैसे: हमारे गाँव की मुख्य सड़क कई महीनों से टूटी हुई है।",
+        "hintEn": "e.g. the main road in our village has been in disrepair for several months.",
+        "multiline": true,
+        "required": false
+      },
+      {
+        "key": "request",
+        "labelHi": "आपसे क्या अनुरोध है",
+        "labelEn": "What you are requesting",
+        "hintHi": "जैसे: मामले की जाँच कराकर उचित समाधान कराने",
+        "hintEn": "e.g. look into the matter and arrange a suitable solution",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "gov_tehsildar",
+    "category": "gov",
+    "style": "application",
+    "titleHi": "तहसीलदार को आवेदन",
+    "titleEn": "Application to Tehsildar",
+    "descHi": "भूमि अभिलेख आदि के लिए तहसीलदार को आवेदन",
+    "descEn": "Application to the Tehsildar on land or record matters",
+    "keywords": [
+      "तहसीलदार",
+      "tehsildar",
+      "तहसील",
+      "tehsil",
+      "khatauni",
+      "खतौनी",
+      "khasra",
+      "खसरा",
+      "land record",
+      "भूमि अभिलेख"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "तहसीलदार महोदय",
+        "office": "तहसील कार्यालय"
+      },
+      "en": {
+        "designation": "The Tehsildar",
+        "office": "Tehsil Office"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "तहसील से संबंधित कार्यवाही हेतु प्रार्थना पत्र",
+      "en": "Application regarding a matter before the Tehsil"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ।\nनिवेदन है कि {{matter}}\nसंबंधित भूमि या अभिलेख का विवरण इस प्रकार है: {{plot_details}}\nअतः आपसे विनम्र निवेदन है कि कृपया रिकॉर्ड की जाँच कराकर नियमानुसार {{request}} की कृपा करें। संपर्क हेतु मेरा मोबाइल नंबर {{mobile}} है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I reside at {{address}}.\nI respectfully submit that {{matter}}\nThe details of the land or record concerned are as follows: {{plot_details}}\nI therefore request you to kindly have the records examined and, as per the applicable rules and procedure, {{request}}. My mobile number for contact is {{mobile}}.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "matter",
+        "labelHi": "समस्या / विषय का विवरण",
+        "labelEn": "Details of the matter",
+        "hintHi": "जैसे: हमारे गाँव की मुख्य सड़क कई महीनों से टूटी हुई है।",
+        "hintEn": "e.g. the main road in our village has been in disrepair for several months.",
+        "multiline": true,
+        "required": false
+      },
+      {
+        "key": "plot_details",
+        "labelHi": "भूमि / अभिलेख का विवरण",
+        "labelEn": "Land or record details",
+        "hintHi": "जैसे: खसरा / गाटा संख्या 123, क्षेत्रफल 0.5 हेक्टेयर",
+        "hintEn": "e.g. plot (khasra) no. 123, area 0.5 hectare",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "request",
+        "labelHi": "आपसे क्या अनुरोध है",
+        "labelEn": "What you are requesting",
+        "hintHi": "जैसे: मामले की जाँच कराकर उचित समाधान कराने",
+        "hintEn": "e.g. look into the matter and arrange a suitable solution",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "gov_bdo",
+    "category": "gov",
+    "style": "application",
+    "titleHi": "खंड विकास अधिकारी को आवेदन",
+    "titleEn": "Application to Block Development Officer",
+    "descHi": "खंड विकास अधिकारी (BDO) को आवेदन पत्र",
+    "descEn": "Application to the Block Development Officer (BDO)",
+    "keywords": [
+      "BDO",
+      "खंड विकास अधिकारी",
+      "बीडीओ",
+      "block development officer",
+      "विकास खंड",
+      "block office",
+      "bdo ko avedan",
+      "khand vikas adhikari"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "खंड विकास अधिकारी महोदय",
+        "office": "विकास खंड कार्यालय"
+      },
+      "en": {
+        "designation": "The Block Development Officer",
+        "office": "Block Development Office"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "विकास कार्य से संबंधित प्रार्थना पत्र",
+      "en": "Application regarding a development matter"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ।\nविनम्र निवेदन है कि {{matter}}\nयह विषय गाँव और क्षेत्र के लोगों की सुविधा से जुड़ा है, इसलिए इस पर आपके स्तर से ध्यान दिया जाना उपयोगी होगा।\nअतः आपसे अनुरोध है कि कृपया स्थल की जाँच कराकर {{request}} की कृपा करें। संपर्क हेतु मेरा मोबाइल नंबर {{mobile}} है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I reside at {{address}}.\nI respectfully submit that {{matter}}\nThis matter concerns the convenience of the people of the village and the area, and your attention to it would be very helpful.\nI therefore request you to kindly have the site inspected and {{request}}. My mobile number for contact is {{mobile}}.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "matter",
+        "labelHi": "समस्या / विषय का विवरण",
+        "labelEn": "Details of the matter",
+        "hintHi": "जैसे: हमारे गाँव की मुख्य सड़क कई महीनों से टूटी हुई है।",
+        "hintEn": "e.g. the main road in our village has been in disrepair for several months.",
+        "multiline": true,
+        "required": false
+      },
+      {
+        "key": "request",
+        "labelHi": "आपसे क्या अनुरोध है",
+        "labelEn": "What you are requesting",
+        "hintHi": "जैसे: मामले की जाँच कराकर उचित समाधान कराने",
+        "hintEn": "e.g. look into the matter and arrange a suitable solution",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "gov_gram_panchayat",
+    "category": "gov",
+    "style": "application",
+    "titleHi": "ग्राम पंचायत अधिकारी को आवेदन",
+    "titleEn": "Application to Gram Panchayat Officer",
+    "descHi": "ग्राम पंचायत अधिकारी को सामान्य आवेदन पत्र",
+    "descEn": "General application to the Gram Panchayat Officer",
+    "keywords": [
+      "ग्राम पंचायत",
+      "gram panchayat",
+      "पंचायत अधिकारी",
+      "panchayat adhikari",
+      "pradhan",
+      "प्रधान",
+      "sarpanch",
+      "सरपंच",
+      "panchayat"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "ग्राम पंचायत अधिकारी महोदय",
+        "office": "ग्राम पंचायत कार्यालय"
+      },
+      "en": {
+        "designation": "The Gram Panchayat Officer",
+        "office": "Gram Panchayat Office"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "ग्राम पंचायत से संबंधित प्रार्थना पत्र",
+      "en": "Application regarding a Gram Panchayat matter"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ।\nनिवेदन है कि {{matter}}\nयह विषय ग्राम पंचायत के कार्यक्षेत्र से संबंधित है। इसके समाधान से मेरे परिवार तथा गाँव के अन्य लोगों को भी लाभ मिल सकेगा।\nअतः आपसे विनम्र निवेदन है कि कृपया {{request}} की कृपा करें। संपर्क हेतु मेरा मोबाइल नंबर {{mobile}} है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I reside at {{address}}.\nI respectfully submit that {{matter}}\nThis matter falls within the area of work of the Gram Panchayat, and its resolution would benefit my family as well as other residents of the village.\nI therefore request you to kindly {{request}}. My mobile number for contact is {{mobile}}.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "matter",
+        "labelHi": "समस्या / विषय का विवरण",
+        "labelEn": "Details of the matter",
+        "hintHi": "जैसे: हमारे गाँव की मुख्य सड़क कई महीनों से टूटी हुई है।",
+        "hintEn": "e.g. the main road in our village has been in disrepair for several months.",
+        "multiline": true,
+        "required": false
+      },
+      {
+        "key": "request",
+        "labelHi": "आपसे क्या अनुरोध है",
+        "labelEn": "What you are requesting",
+        "hintHi": "जैसे: मामले की जाँच कराकर उचित समाधान कराने",
+        "hintEn": "e.g. look into the matter and arrange a suitable solution",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "gov_vdo",
+    "category": "gov",
+    "style": "application",
+    "titleHi": "ग्राम विकास अधिकारी को आवेदन",
+    "titleEn": "Application to the VDO",
+    "descHi": "ग्राम विकास अधिकारी (VDO) को योजना संबंधी आवेदन",
+    "descEn": "Scheme-related application to the Village Development Officer",
+    "keywords": [
+      "VDO",
+      "ग्राम विकास अधिकारी",
+      "वीडीओ",
+      "village development officer",
+      "gram vikas adhikari",
+      "मनरेगा",
+      "mgnrega",
+      "job card",
+      "जॉब कार्ड",
+      "yojana",
+      "योजना"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "ग्राम विकास अधिकारी महोदय",
+        "office": "ग्राम विकास कार्यालय"
+      },
+      "en": {
+        "designation": "The Village Development Officer",
+        "office": "Village Development Office"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "ग्राम विकास योजना से संबंधित प्रार्थना पत्र",
+      "en": "Application regarding a village development scheme"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ।\nनिवेदन है कि {{scheme}} से संबंधित मेरा एक विषय आपके ध्यान में लाना आवश्यक है: {{matter}}\nमेरे पास इस संबंध में उपलब्ध कागज़ात आवश्यकता होने पर प्रस्तुत किए जा सकते हैं।\nअतः आपसे विनम्र निवेदन है कि कृपया नियमानुसार {{request}} की कृपा करें। संपर्क हेतु मेरा मोबाइल नंबर {{mobile}} है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I reside at {{address}}.\nI need to bring to your attention a matter relating to {{scheme}}: {{matter}}\nThe papers I hold in this connection can be produced whenever required, and I will gladly cooperate in any verification.\nI therefore request you to kindly {{request}}, as per the applicable rules. My mobile number for contact is {{mobile}}.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "scheme",
+        "labelHi": "योजना / कार्य का नाम",
+        "labelEn": "Scheme or work",
+        "hintHi": "जैसे: मनरेगा जॉब कार्ड / आवास योजना",
+        "hintEn": "e.g. MGNREGA job card / housing scheme",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "matter",
+        "labelHi": "समस्या / विषय का विवरण",
+        "labelEn": "Details of the matter",
+        "hintHi": "जैसे: हमारे गाँव की मुख्य सड़क कई महीनों से टूटी हुई है।",
+        "hintEn": "e.g. the main road in our village has been in disrepair for several months.",
+        "multiline": true,
+        "required": false
+      },
+      {
+        "key": "request",
+        "labelHi": "आपसे क्या अनुरोध है",
+        "labelEn": "What you are requesting",
+        "hintHi": "जैसे: मामले की जाँच कराकर उचित समाधान कराने",
+        "hintEn": "e.g. look into the matter and arrange a suitable solution",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "gov_lekhpal",
+    "category": "gov",
+    "style": "application",
+    "titleHi": "लेखपाल को आवेदन",
+    "titleEn": "Application to Lekhpal",
+    "descHi": "भूमि अभिलेख हेतु लेखपाल को आवेदन पत्र",
+    "descEn": "Application to the Lekhpal for land record work",
+    "keywords": [
+      "लेखपाल",
+      "lekhpal",
+      "patwari",
+      "पटवारी",
+      "खसरा",
+      "khasra",
+      "खतौनी",
+      "khatauni",
+      "land record",
+      "नक्शा"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "लेखपाल महोदय",
+        "office": "लेखपाल कार्यालय / तहसील"
+      },
+      "en": {
+        "designation": "The Lekhpal",
+        "office": "Lekhpal Office / Tehsil"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "भूमि अभिलेख से संबंधित प्रार्थना पत्र",
+      "en": "Application regarding a land record matter"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ।\nनिवेदन है कि {{matter}}\nसंबंधित भूमि या अभिलेख का विवरण इस प्रकार है: {{plot_details}}\nअतः आपसे विनम्र निवेदन है कि कृपया स्थल और अभिलेख का निरीक्षण कर नियमानुसार आवश्यक कार्यवाही करने की कृपा करें। संपर्क हेतु मेरा मोबाइल नंबर {{mobile}} है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I reside at {{address}}.\nI respectfully submit that {{matter}}\nThe details of the land or record concerned are as follows: {{plot_details}}\nI therefore request you to kindly inspect the site and the records and take the necessary action as per the applicable rules. My mobile number for contact is {{mobile}}.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "matter",
+        "labelHi": "समस्या / विषय का विवरण",
+        "labelEn": "Details of the matter",
+        "hintHi": "जैसे: हमारे गाँव की मुख्य सड़क कई महीनों से टूटी हुई है।",
+        "hintEn": "e.g. the main road in our village has been in disrepair for several months.",
+        "multiline": true,
+        "required": false
+      },
+      {
+        "key": "plot_details",
+        "labelHi": "भूमि / अभिलेख का विवरण",
+        "labelEn": "Land or record details",
+        "hintHi": "जैसे: खसरा / गाटा संख्या 123, क्षेत्रफल 0.5 हेक्टेयर",
+        "hintEn": "e.g. plot (khasra) no. 123, area 0.5 hectare",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "gov_police_station",
+    "category": "gov",
+    "style": "application",
+    "titleHi": "थाना प्रभारी को आवेदन",
+    "titleEn": "Application to Police Station",
+    "descHi": "थाना प्रभारी को घटना की सूचना / प्रार्थना पत्र",
+    "descEn": "Application or report of an incident to the Station House Officer",
+    "keywords": [
+      "थाना",
+      "police",
+      "पुलिस",
+      "thana",
+      "थानाध्यक्ष",
+      "SHO",
+      "station house officer",
+      "complaint",
+      "शिकायत",
+      "police station",
+      "thane ko avedan"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "थाना प्रभारी महोदय",
+        "office": "थाना"
+      },
+      "en": {
+        "designation": "The Station House Officer",
+        "office": "Police Station"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "घटना की जाँच हेतु प्रार्थना पत्र",
+      "en": "Application requesting inquiry into an incident"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ।\nआपको सूचित करना है कि {{incident_when}} को निम्नलिखित घटना हुई: {{incident}}\nउपर्युक्त जानकारी मेरी जानकारी के अनुसार सत्य है। इस संबंध में उपलब्ध साक्ष्य या कागज़ात आवश्यकता होने पर प्रस्तुत किए जा सकते हैं।\nअतः आपसे विनम्र निवेदन है कि कृपया नियमानुसार {{request}} की कृपा करें। संपर्क हेतु मेरा मोबाइल नंबर {{mobile}} है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I reside at {{address}}.\nI wish to inform you that the following incident took place on {{incident_when}}: {{incident}}\nThe above information is true to the best of my knowledge. Any evidence or papers available in this matter can be produced whenever required.\nI therefore request you to kindly {{request}}, as per the applicable rules. My mobile number for contact is {{mobile}}.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "incident_when",
+        "labelHi": "घटना की तिथि और स्थान",
+        "labelEn": "Date and place of the incident",
+        "hintHi": "जैसे: 5 अक्टूबर 2026 को बाज़ार चौराहे पर",
+        "hintEn": "e.g. 5 October 2026 at the market crossing",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "incident",
+        "labelHi": "घटना का विवरण",
+        "labelEn": "What happened",
+        "hintHi": "जैसे: मेरा मोबाइल फोन खो गया।",
+        "hintEn": "e.g. my mobile phone was lost.",
+        "multiline": true,
+        "required": false
+      },
+      {
+        "key": "request",
+        "labelHi": "आपसे क्या अनुरोध है",
+        "labelEn": "What you are requesting",
+        "hintHi": "जैसे: मामले की जाँच करने",
+        "hintEn": "e.g. look into the matter",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "gov_character_cert",
+    "category": "gov",
+    "style": "application",
+    "titleHi": "चरित्र प्रमाण पत्र आवेदन",
+    "titleEn": "Character certificate request",
+    "descHi": "चरित्र प्रमाण पत्र जारी करने हेतु प्रार्थना पत्र",
+    "descEn": "Application for issue of a character certificate",
+    "keywords": [
+      "चरित्र प्रमाण पत्र",
+      "character certificate",
+      "charitra praman patra",
+      "character",
+      "चरित्र",
+      "praman patra",
+      "प्रमाण पत्र",
+      "good conduct"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "संबंधित अधिकारी महोदय",
+        "office": "कार्यालय का नाम"
+      },
+      "en": {
+        "designation": "The Concerned Officer",
+        "office": "Name of the office"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "चरित्र प्रमाण पत्र जारी करने हेतु प्रार्थना पत्र",
+      "en": "Request for issue of a character certificate"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ। मेरे पिता का नाम {{father}} है।\nमेरा निवास पिछले {{years}} से इसी स्थान पर है। मुझे {{purpose}} के लिए चरित्र प्रमाण पत्र की आवश्यकता है।\nइस आवेदन के साथ आवश्यक पहचान और निवास संबंधी कागज़ात संलग्न हैं।\nअतः आपसे विनम्र निवेदन है कि कृपया जाँच के उपरांत नियमानुसार मेरा चरित्र प्रमाण पत्र जारी करने की कृपा करें। संपर्क हेतु मेरा मोबाइल नंबर {{mobile}} है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I reside at {{address}}. My father's name is {{father}}.\nI have been residing at this place for {{years}}. I require a character certificate for {{purpose}}.\nThe necessary identity and residence documents are enclosed with this application.\nI therefore request you to kindly issue my character certificate after verification, as per the applicable procedure. My mobile number for contact is {{mobile}}.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "years",
+        "labelHi": "इस स्थान पर कितने समय से निवास",
+        "labelEn": "How long you have lived here",
+        "hintHi": "जैसे: 10 वर्षों",
+        "hintEn": "e.g. 10 years",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "purpose",
+        "labelHi": "प्रमाण पत्र किस काम के लिए चाहिए",
+        "labelEn": "Purpose of the certificate",
+        "hintHi": "जैसे: नौकरी आवेदन / कॉलेज प्रवेश",
+        "hintEn": "e.g. job application / college admission",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "gov_residence_cert",
+    "category": "gov",
+    "style": "application",
+    "titleHi": "निवास प्रमाण पत्र आवेदन",
+    "titleEn": "Residence certificate request",
+    "descHi": "निवास प्रमाण पत्र जारी करने हेतु प्रार्थना पत्र",
+    "descEn": "Application for issue of a residence certificate",
+    "keywords": [
+      "निवास प्रमाण पत्र",
+      "residence certificate",
+      "nivas praman patra",
+      "residential proof",
+      "निवास",
+      "address proof",
+      "पते का प्रमाण",
+      "tehsil"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "तहसीलदार महोदय",
+        "office": "तहसील कार्यालय"
+      },
+      "en": {
+        "designation": "The Tehsildar",
+        "office": "Tehsil Office"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "निवास प्रमाण पत्र बनवाने हेतु प्रार्थना पत्र",
+      "en": "Request for issue of a residence certificate"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ। मेरे पिता का नाम {{father}} है।\nमेरा निवास पिछले {{years}} से इसी पते पर है। मुझे {{purpose}} के लिए निवास प्रमाण पत्र की आवश्यकता है।\nपहचान और निवास से संबंधित आवश्यक कागज़ात इस आवेदन के साथ संलग्न हैं।\nअतः आपसे विनम्र निवेदन है कि कृपया जाँच के उपरांत नियमानुसार मेरा निवास प्रमाण पत्र जारी करने की कृपा करें। संपर्क हेतु मेरा मोबाइल नंबर {{mobile}} है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I reside at {{address}}. My father's name is {{father}}.\nI have been residing at this address for {{years}}. I require a residence certificate for {{purpose}}.\nThe necessary documents relating to my identity and residence are enclosed with this application.\nI therefore request you to kindly issue my residence certificate after verification, as per the applicable procedure. My mobile number for contact is {{mobile}}.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "years",
+        "labelHi": "इस पते पर कितने समय से निवास",
+        "labelEn": "How long you have lived here",
+        "hintHi": "जैसे: 10 वर्षों",
+        "hintEn": "e.g. 10 years",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "purpose",
+        "labelHi": "प्रमाण पत्र किस काम के लिए चाहिए",
+        "labelEn": "Purpose of the certificate",
+        "hintHi": "जैसे: स्कूल प्रवेश / बैंक खाता",
+        "hintEn": "e.g. school admission / bank account",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,520 @@
+[
+  {
+    "id": "bank_account_correction",
+    "category": "banking",
+    "style": "application",
+    "titleHi": "खाता विवरण सुधार आवेदन",
+    "titleEn": "Bank account correction request",
+    "descHi": "बैंक खाते में गलत विवरण सुधारने का आवेदन",
+    "descEn": "Request to correct wrong details in a bank account",
+    "keywords": [
+      "bank",
+      "बैंक",
+      "account correction",
+      "खाता सुधार",
+      "name correction",
+      "नाम सुधार",
+      "kyc",
+      "केवाईसी",
+      "खाते में सुधार",
+      "bank khata"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "शाखा प्रबंधक महोदय",
+        "office": "बैंक का नाम और शाखा"
+      },
+      "en": {
+        "designation": "The Branch Manager",
+        "office": "Bank name and branch"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "बैंक खाते में विवरण सुधारने हेतु प्रार्थना पत्र",
+      "en": "Request to correct details in my bank account"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मेरा बचत खाता आपकी शाखा में है, जिसकी खाता संख्या {{account_no}} है।\nखाते के रिकॉर्ड में मेरा विवरण इस प्रकार दर्ज है: {{wrong_detail}} जबकि सही विवरण इस प्रकार है: {{correct_detail}}\nसुधार के समर्थन में आवश्यक पहचान संबंधी कागज़ात इस आवेदन के साथ संलग्न हैं।\nअतः आपसे विनम्र निवेदन है कि कृपया खाते के रिकॉर्ड में आवश्यक सुधार करने की कृपा करें। संपर्क हेतु मेरा मोबाइल नंबर {{mobile}} है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I hold a savings account in your branch, with account number {{account_no}}.\nIn the account records my details are entered as: {{wrong_detail}} whereas the correct details are: {{correct_detail}}\nThe necessary identity documents in support of the correction are enclosed with this application.\nI therefore request you to kindly make the required correction in the account records. My mobile number for contact is {{mobile}}.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "account_no",
+        "labelHi": "खाता संख्या (अंतिम 4 अंक पर्याप्त)",
+        "labelEn": "Account number (last 4 digits are enough)",
+        "hintHi": "जैसे: XXXXXX1234",
+        "hintEn": "e.g. XXXXXX1234",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "wrong_detail",
+        "labelHi": "खाते में दर्ज गलत विवरण",
+        "labelEn": "Wrong detail currently on record",
+        "hintHi": "जैसे: नाम Ram Kumar के स्थान पर Raam Kumar दर्ज है।",
+        "hintEn": "e.g. name is recorded as Raam Kumar.",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "correct_detail",
+        "labelHi": "सही विवरण",
+        "labelEn": "Correct detail",
+        "hintHi": "जैसे: Ram Kumar",
+        "hintEn": "e.g. Ram Kumar",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "bank_address_update",
+    "category": "banking",
+    "style": "application",
+    "titleHi": "बैंक में पता बदलने का आवेदन",
+    "titleEn": "Bank address update request",
+    "descHi": "बैंक खाते में नया पता दर्ज कराने का आवेदन",
+    "descEn": "Request to update the address on a bank account",
+    "keywords": [
+      "address change",
+      "पता बदलना",
+      "पता परिवर्तन",
+      "address update",
+      "bank address",
+      "bank",
+      "बैंक",
+      "नया पता",
+      "pata badlna",
+      "kyc"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "शाखा प्रबंधक महोदय",
+        "office": "बैंक का नाम और शाखा"
+      },
+      "en": {
+        "designation": "The Branch Manager",
+        "office": "Bank name and branch"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "खाते में पता परिवर्तन हेतु प्रार्थना पत्र",
+      "en": "Request to change the address in my bank account"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मेरा खाता आपकी शाखा में है, जिसकी खाता संख्या {{account_no}} है।\nमेरा निवास बदल गया है। बैंक के रिकॉर्ड में मेरा नया पता इस प्रकार दर्ज किया जाए: {{new_address}}\nनए पते के प्रमाण के रूप में आवश्यक दस्तावेज़ इस आवेदन के साथ संलग्न हैं।\nअतः आपसे विनम्र निवेदन है कि कृपया मेरे खाते में पता अद्यतन करने की कृपा करें। संपर्क हेतु मेरा मोबाइल नंबर {{mobile}} है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I hold an account in your branch with account number {{account_no}}.\nMy residence has changed. Please record my new address in the bank's records as follows: {{new_address}}\nThe necessary documents as proof of the new address are enclosed with this application.\nI therefore request you to kindly update the address in my account. My mobile number for contact is {{mobile}}.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "account_no",
+        "labelHi": "खाता संख्या (अंतिम 4 अंक पर्याप्त)",
+        "labelEn": "Account number (last 4 digits are enough)",
+        "hintHi": "जैसे: XXXXXX1234",
+        "hintEn": "e.g. XXXXXX1234",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "new_address",
+        "labelHi": "नया पता",
+        "labelEn": "New address",
+        "hintHi": "जैसे: मकान संख्या 12, गाँधी नगर, लखनऊ - 226001",
+        "hintEn": "e.g. House No. 12, Gandhi Nagar, Lucknow - 226001",
+        "multiline": true,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "bank_passbook",
+    "category": "banking",
+    "style": "application",
+    "titleHi": "पासबुक संबंधी आवेदन",
+    "titleEn": "Passbook request",
+    "descHi": "नई पासबुक या पासबुक अपडेट के लिए आवेदन",
+    "descEn": "Request for a new or updated passbook",
+    "keywords": [
+      "passbook",
+      "पासबुक",
+      "bank passbook",
+      "passbook entry",
+      "पासबुक एंट्री",
+      "duplicate passbook",
+      "नई पासबुक",
+      "खोई पासबुक",
+      "bank",
+      "बैंक"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "शाखा प्रबंधक महोदय",
+        "office": "बैंक का नाम और शाखा"
+      },
+      "en": {
+        "designation": "The Branch Manager",
+        "office": "Bank name and branch"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "पासबुक जारी / अद्यतन करने हेतु प्रार्थना पत्र",
+      "en": "Request to issue or update my passbook"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मेरा बचत खाता आपकी शाखा में है, जिसकी खाता संख्या {{account_no}} है।\nमेरा अनुरोध इस प्रकार है: {{passbook_request}}\nआवश्यकता होने पर पहचान संबंधी कागज़ात और अन्य औपचारिकताएँ पूरी की जा सकती हैं।\nअतः आपसे विनम्र निवेदन है कि कृपया मेरे अनुरोध पर आवश्यक कार्यवाही करने की कृपा करें। संपर्क हेतु मेरा मोबाइल नंबर {{mobile}} है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I hold a savings account in your branch with account number {{account_no}}.\nMy request is as follows: {{passbook_request}}\nI can provide identity documents and complete any other formalities whenever required.\nI therefore request you to kindly take the necessary action on my request. My mobile number for contact is {{mobile}}.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "account_no",
+        "labelHi": "खाता संख्या (अंतिम 4 अंक पर्याप्त)",
+        "labelEn": "Account number (last 4 digits are enough)",
+        "hintHi": "जैसे: XXXXXX1234",
+        "hintEn": "e.g. XXXXXX1234",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "passbook_request",
+        "labelHi": "पासबुक संबंधी अनुरोध",
+        "labelEn": "Your passbook request",
+        "hintHi": "जैसे: पासबुक खो गई है, नई पासबुक जारी की जाए।",
+        "hintEn": "e.g. my passbook is lost; please issue a new one.",
+        "multiline": true,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "bank_atm_card",
+    "category": "banking",
+    "style": "application",
+    "titleHi": "ATM कार्ड आवेदन",
+    "titleEn": "ATM card request",
+    "descHi": "नया ATM / डेबिट कार्ड या कार्ड ब्लॉक करने का आवेदन",
+    "descEn": "Request for a new ATM or debit card, or to block one",
+    "keywords": [
+      "ATM",
+      "एटीएम",
+      "debit card",
+      "डेबिट कार्ड",
+      "atm card",
+      "card block",
+      "कार्ड ब्लॉक",
+      "lost card",
+      "खोया कार्ड",
+      "bank",
+      "नया कार्ड"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "शाखा प्रबंधक महोदय",
+        "office": "बैंक का नाम और शाखा"
+      },
+      "en": {
+        "designation": "The Branch Manager",
+        "office": "Bank name and branch"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "ATM / डेबिट कार्ड हेतु प्रार्थना पत्र",
+      "en": "Request regarding my ATM or debit card"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मेरा बचत खाता आपकी शाखा में है, जिसकी खाता संख्या {{account_no}} है।\nमेरा अनुरोध इस प्रकार है: {{card_request}}\n{{reason}}\nअतः आपसे विनम्र निवेदन है कि कृपया मेरे अनुरोध पर शीघ्र आवश्यक कार्यवाही करने की कृपा करें। संपर्क हेतु मेरा मोबाइल नंबर {{mobile}} है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I hold a savings account in your branch with account number {{account_no}}.\nMy request is as follows: {{card_request}}\n{{reason}}\nI therefore request you to kindly take the necessary action on my request at the earliest, so that I am not put to inconvenience in operating my account. My mobile number for contact is {{mobile}}.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "account_no",
+        "labelHi": "खाता संख्या (अंतिम 4 अंक पर्याप्त)",
+        "labelEn": "Account number (last 4 digits are enough)",
+        "hintHi": "जैसे: XXXXXX1234",
+        "hintEn": "e.g. XXXXXX1234",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "card_request",
+        "labelHi": "कार्ड संबंधी अनुरोध",
+        "labelEn": "Your card request",
+        "hintHi": "जैसे: नया ATM कार्ड जारी किया जाए / खोया हुआ कार्ड ब्लॉक किया जाए।",
+        "hintEn": "e.g. please issue a new ATM card / block my lost card.",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "reason",
+        "labelHi": "कारण (वैकल्पिक)",
+        "labelEn": "Reason (optional)",
+        "hintHi": "जैसे: कार्ड 5 अक्टूबर को खो गया।",
+        "hintEn": "e.g. the card was lost on 5 October.",
+        "multiline": true,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "bank_transaction_complaint",
+    "category": "banking",
+    "style": "application",
+    "titleHi": "लेनदेन शिकायत पत्र",
+    "titleEn": "Transaction complaint",
+    "descHi": "गलत या विफल लेनदेन की शिकायत का पत्र",
+    "descEn": "Complaint about a wrong or failed transaction",
+    "keywords": [
+      "transaction",
+      "लेनदेन",
+      "wrong transaction",
+      "failed transaction",
+      "upi",
+      "यूपीआई",
+      "refund",
+      "रिफंड",
+      "पैसे कट गए",
+      "bank complaint",
+      "बैंक शिकायत"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "शाखा प्रबंधक महोदय",
+        "office": "बैंक का नाम और शाखा"
+      },
+      "en": {
+        "designation": "The Branch Manager",
+        "office": "Bank name and branch"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "लेनदेन की शिकायत के संबंध में प्रार्थना पत्र",
+      "en": "Complaint regarding a transaction on my account"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मेरा बचत खाता आपकी शाखा में है, जिसकी खाता संख्या {{account_no}} है।\nमेरे खाते में निम्नलिखित लेनदेन के संबंध में समस्या है: {{txn_details}}\nसमस्या इस प्रकार है: {{problem}}\nअतः आपसे विनम्र निवेदन है कि कृपया मामले की जाँच कराकर नियमानुसार शीघ्र समाधान कराने की कृपा करें। संपर्क हेतु मेरा मोबाइल नंबर {{mobile}} है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I hold a savings account in your branch with account number {{account_no}}.\nI have a problem with the following transaction in my account: {{txn_details}}\nThe problem is as follows: {{problem}}\nI therefore request you to kindly look into the matter and arrange a prompt resolution as per the applicable rules. My mobile number for contact is {{mobile}}.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "account_no",
+        "labelHi": "खाता संख्या (अंतिम 4 अंक पर्याप्त)",
+        "labelEn": "Account number (last 4 digits are enough)",
+        "hintHi": "जैसे: XXXXXX1234",
+        "hintEn": "e.g. XXXXXX1234",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "txn_details",
+        "labelHi": "लेनदेन का विवरण",
+        "labelEn": "Transaction details",
+        "hintHi": "जैसे: दिनांक 5 अक्टूबर, राशि 2,000 रुपये, संदर्भ संख्या ...",
+        "hintEn": "e.g. date 5 October, amount Rs. 2,000, reference no. ...",
+        "multiline": true,
+        "required": false
+      },
+      {
+        "key": "problem",
+        "labelHi": "समस्या क्या है",
+        "labelEn": "What went wrong",
+        "hintHi": "जैसे: राशि कट गई, परंतु सामने वाले को नहीं मिली।",
+        "hintEn": "e.g. the amount was debited but not received by the other party.",
+        "multiline": true,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "bank_statement",
+    "category": "banking",
+    "style": "application",
+    "titleHi": "खाता विवरण (स्टेटमेंट) आवेदन",
+    "titleEn": "Account statement request",
+    "descHi": "बैंक खाते का स्टेटमेंट प्राप्त करने का आवेदन",
+    "descEn": "Request for a statement of a bank account",
+    "keywords": [
+      "statement",
+      "स्टेटमेंट",
+      "account statement",
+      "खाता विवरण",
+      "bank statement",
+      "passbook print",
+      "बैंक स्टेटमेंट",
+      "transactions",
+      "लेनदेन विवरण",
+      "bank"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "शाखा प्रबंधक महोदय",
+        "office": "बैंक का नाम और शाखा"
+      },
+      "en": {
+        "designation": "The Branch Manager",
+        "office": "Bank name and branch"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "खाते का स्टेटमेंट उपलब्ध कराने हेतु प्रार्थना पत्र",
+      "en": "Request for a statement of my bank account"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मेरा बचत खाता आपकी शाखा में है, जिसकी खाता संख्या {{account_no}} है।\nमुझे {{purpose}} के लिए अपने खाते का स्टेटमेंट {{period}} की अवधि के लिए चाहिए।\nआवश्यक शुल्क और औपचारिकताएँ नियमानुसार पूरी की जा सकती हैं।\nअतः आपसे विनम्र निवेदन है कि कृपया उक्त अवधि का स्टेटमेंट बैंक की मुहर सहित उपलब्ध कराने की कृपा करें। संपर्क हेतु मेरा मोबाइल नंबर {{mobile}} है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I hold a savings account in your branch with account number {{account_no}}.\nI require a statement of my account for the period {{period}}, for {{purpose}}.\nI can pay the required charges and complete the formalities as per the rules.\nI therefore request you to kindly provide the statement for the above period, duly stamped by the bank. My mobile number for contact is {{mobile}}.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "account_no",
+        "labelHi": "खाता संख्या (अंतिम 4 अंक पर्याप्त)",
+        "labelEn": "Account number (last 4 digits are enough)",
+        "hintHi": "जैसे: XXXXXX1234",
+        "hintEn": "e.g. XXXXXX1234",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "period",
+        "labelHi": "किस अवधि का स्टेटमेंट",
+        "labelEn": "Statement period",
+        "hintHi": "जैसे: 1 अप्रैल 2026 से 30 सितंबर 2026",
+        "hintEn": "e.g. 1 April 2026 to 30 September 2026",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "purpose",
+        "labelHi": "स्टेटमेंट किस काम के लिए चाहिए",
+        "labelEn": "Purpose of the statement",
+        "hintHi": "जैसे: वीज़ा आवेदन / आय का प्रमाण",
+        "hintEn": "e.g. visa application / proof of income",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "bank_loan",
+    "category": "banking",
+    "style": "application",
+    "titleHi": "ऋण संबंधी आवेदन",
+    "titleEn": "Loan request",
+    "descHi": "ऋण (लोन) के लिए बैंक को आवेदन पत्र",
+    "descEn": "Application to the bank for a loan",
+    "keywords": [
+      "loan",
+      "लोन",
+      "ऋण",
+      "bank loan",
+      "कर्ज",
+      "karj",
+      "education loan",
+      "शिक्षा ऋण",
+      "kisan credit",
+      "किसान क्रेडिट",
+      "mudra",
+      "मुद्रा"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "शाखा प्रबंधक महोदय",
+        "office": "बैंक का नाम और शाखा"
+      },
+      "en": {
+        "designation": "The Branch Manager",
+        "office": "Bank name and branch"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "ऋण स्वीकृत करने हेतु प्रार्थना पत्र",
+      "en": "Application requesting sanction of a loan"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ। मेरा खाता आपकी शाखा में है।\nमुझे {{purpose}} के लिए {{loan_type}} के अंतर्गत लगभग {{amount}} के ऋण की आवश्यकता है।\nमैं बैंक द्वारा माँगे गए सभी दस्तावेज़ और जानकारी उपलब्ध कराने तथा ऋण की शर्तों का पालन करने के लिए तैयार हूँ।\nअतः आपसे विनम्र निवेदन है कि कृपया मेरे आवेदन पर नियमानुसार विचार करने की कृपा करें। संपर्क हेतु मेरा मोबाइल नंबर {{mobile}} है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I reside at {{address}}. I have an account in your branch.\nI require a loan of approximately {{amount}} under {{loan_type}} for {{purpose}}.\nI am ready to provide all the documents and information the bank may ask for, and to follow the terms of the loan.\nI therefore request you to kindly consider my application as per the applicable rules. My mobile number for contact is {{mobile}}.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "loan_type",
+        "labelHi": "ऋण का प्रकार",
+        "labelEn": "Type of loan",
+        "hintHi": "जैसे: शिक्षा ऋण / किसान क्रेडिट कार्ड / मुद्रा ऋण",
+        "hintEn": "e.g. education loan / Kisan Credit Card / Mudra loan",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "amount",
+        "labelHi": "ऋण की राशि (लगभग)",
+        "labelEn": "Loan amount (approx.)",
+        "hintHi": "जैसे: 2,00,000 रुपये",
+        "hintEn": "e.g. Rs. 2,00,000",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "purpose",
+        "labelHi": "ऋण का उद्देश्य",
+        "labelEn": "Purpose of the loan",
+        "hintHi": "जैसे: कॉलेज की फीस / खेती के लिए बीज और खाद",
+        "hintEn": "e.g. college fees / seeds and fertiliser for farming",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  }
+]

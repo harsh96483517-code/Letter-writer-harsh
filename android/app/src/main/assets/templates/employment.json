@@ -38,12 +38,12 @@
       "en": "Respected Sir/Madam,"
     },
     "subject": {
-      "hi": "{{post}} के पद हेतु आवेदन",
-      "en": "Application for the post of {{post}}"
+      "hi": "{{job_post}} के पद हेतु आवेदन",
+      "en": "Application for the post of {{job_post}}"
     },
     "body": {
-      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ। {{source}} के माध्यम से मुझे आपके संस्थान में {{post}} के पद की रिक्ति की जानकारी मिली है।\nमेरी शैक्षणिक योग्यता इस प्रकार है: {{qualification}}। मेरे कार्य का अनुभव इस प्रकार है: {{experience}}।\nमैं पूर्ण निष्ठा और लगन से कार्य करने के लिए तत्पर हूँ। मेरा बायोडाटा तथा आवश्यक प्रमाण पत्रों की प्रतियाँ आवेदन के साथ संलग्न हैं।\nअतः आपसे विनम्र निवेदन है कि कृपया मुझे चयन प्रक्रिया में सम्मिलित होने का अवसर प्रदान करने की कृपा करें।\nधन्यवाद।",
-      "en": "My name is {{name}} and I live at {{address}}. I came to know through {{source}} that there is a vacancy for the post of {{post}} in your organisation.\nMy educational qualification is as follows: {{qualification}}. My work experience is as follows: {{experience}}.\nI am ready to work with full sincerity and dedication. My resume and copies of the required certificates are enclosed with this application.\nI therefore request you to kindly give me an opportunity to take part in the selection process.\nThank you."
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ। {{source}} के माध्यम से मुझे आपके संस्थान में {{job_post}} के पद की रिक्ति की जानकारी मिली है।\nमेरी शैक्षणिक योग्यता इस प्रकार है: {{qualification}}। मेरे कार्य का अनुभव इस प्रकार है: {{experience}}।\nमैं पूर्ण निष्ठा और लगन से कार्य करने के लिए तत्पर हूँ। मेरा बायोडाटा तथा आवश्यक प्रमाण पत्रों की प्रतियाँ आवेदन के साथ संलग्न हैं।\nअतः आपसे विनम्र निवेदन है कि कृपया मुझे चयन प्रक्रिया में सम्मिलित होने का अवसर प्रदान करने की कृपा करें।\nधन्यवाद।",
+      "en": "My name is {{name}} and I live at {{address}}. I came to know through {{source}} that there is a vacancy for the post of {{job_post}} in your organisation.\nMy educational qualification is as follows: {{qualification}}. My work experience is as follows: {{experience}}.\nI am ready to work with full sincerity and dedication. My resume and copies of the required certificates are enclosed with this application.\nI therefore request you to kindly give me an opportunity to take part in the selection process.\nThank you."
     },
     "closing": {
       "hi": "भवदीय,",
@@ -51,7 +51,7 @@
     },
     "fields": [
       {
-        "key": "post",
+        "key": "job_post",
         "labelHi": "पद का नाम",
         "labelEn": "Post applied for",
         "hintHi": "जैसे: कार्यालय सहायक",
@@ -126,12 +126,12 @@
       "en": "Respected Sir/Madam,"
     },
     "subject": {
-      "hi": "{{post}} पद हेतु बायोडाटा सहित आवेदन",
-      "en": "Application with resume for the post of {{post}}"
+      "hi": "{{job_post}} पद हेतु बायोडाटा सहित आवेदन",
+      "en": "Application with resume for the post of {{job_post}}"
     },
     "body": {
-      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ। इस पत्र के साथ आपके संस्थान में {{post}} के पद हेतु मेरा बायोडाटा (रिज़्यूमे) संलग्न है।\nमेरी शैक्षणिक एवं कार्य संबंधी पृष्ठभूमि इस प्रकार है: {{background}}। मेरे प्रमुख कौशल इस प्रकार हैं: {{skills}}\nमेरा विश्वास है कि ये कौशल इस पद के लिए उपयोगी सिद्ध हो सकते हैं। मैं अपने कार्य के प्रति समर्पित तथा संस्थान के लक्ष्यों में योगदान देने के लिए उत्सुक हूँ। मुझसे मोबाइल नंबर {{mobile}} पर संपर्क किया जा सकता है।\nअतः आपसे विनम्र निवेदन है कि कृपया मेरे बायोडाटा पर विचार करने तथा साक्षात्कार का अवसर प्रदान करने की कृपा करें।\nधन्यवाद।",
-      "en": "My name is {{name}} and I live at {{address}}. Please find enclosed my resume for the post of {{post}} in your organisation.\nMy academic and work background is as follows: {{background}}. My key skills are as follows: {{skills}}\nI believe that these skills would be useful for the post. I am dedicated to my work and eager to contribute to the goals of your organisation. I can be contacted on mobile number {{mobile}}.\nI therefore request you to kindly consider my resume and give me an opportunity for an interview.\nThank you."
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ। इस पत्र के साथ आपके संस्थान में {{job_post}} के पद हेतु मेरा बायोडाटा (रिज़्यूमे) संलग्न है।\nमेरी शैक्षणिक एवं कार्य संबंधी पृष्ठभूमि इस प्रकार है: {{background}}। मेरे प्रमुख कौशल इस प्रकार हैं: {{skills}}\nमेरा विश्वास है कि ये कौशल इस पद के लिए उपयोगी सिद्ध हो सकते हैं। मैं अपने कार्य के प्रति समर्पित तथा संस्थान के लक्ष्यों में योगदान देने के लिए उत्सुक हूँ। मुझसे मोबाइल नंबर {{mobile}} पर संपर्क किया जा सकता है।\nअतः आपसे विनम्र निवेदन है कि कृपया मेरे बायोडाटा पर विचार करने तथा साक्षात्कार का अवसर प्रदान करने की कृपा करें।\nधन्यवाद।",
+      "en": "My name is {{name}} and I live at {{address}}. Please find enclosed my resume for the post of {{job_post}} in your organisation.\nMy academic and work background is as follows: {{background}}. My key skills are as follows: {{skills}}\nI believe that these skills would be useful for the post. I am dedicated to my work and eager to contribute to the goals of your organisation. I can be contacted on mobile number {{mobile}}.\nI therefore request you to kindly consider my resume and give me an opportunity for an interview.\nThank you."
     },
     "closing": {
       "hi": "भवदीय,",
@@ -139,7 +139,7 @@
     },
     "fields": [
       {
-        "key": "post",
+        "key": "job_post",
         "labelHi": "पद का नाम",
         "labelEn": "Post applied for",
         "hintHi": "जैसे: लेखा सहायक",
