@@ -19,7 +19,7 @@ data class FieldDef(
     val required: Boolean,
 )
 
-/** A built-in letter template loaded from `assets/templates/*.json`. */
+/** A built-in letter template, loaded from the JSON files in the assets templates folder. */
 data class TemplateDef(
     val id: String,
     val category: String,
