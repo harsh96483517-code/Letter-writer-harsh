@@ -170,5 +170,9 @@ class CommonLogicTest {
         val withBlank = DocumentChecks.issues(TestData.doc(body = "Dear [name], hello"))
         assertEquals(listOf<ExportIssue>(ExportIssue.Blanks(1)), withBlank)
         assertTrue(DocumentChecks.issues(TestData.doc(body = "All done.")).isEmpty())
+        assertEquals(
+            listOf<ExportIssue>(ExportIssue.MissingSubject),
+            DocumentChecks.issues(TestData.doc(templateId = "gov_dm", body = "Body text.").copy(applicant = Applicant(name = "A"))),
+        )
     }
 }

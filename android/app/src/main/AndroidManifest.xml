@@ -23,5 +23,16 @@
             </intent-filter>
         </activity>
 
+        <!-- Lets the app hand exported PDFs to the share sheet and PDF viewers without any storage permission. -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.files"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
     </application>
 </manifest>

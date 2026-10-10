@@ -74,7 +74,7 @@ class LetterTextTest {
 
     @Test
     fun blanksInTheRecipientAreCountedBeforeExport() {
-        val doc = TestData.doc(templateId = "gov_dm", body = "All filled in.").copy(
+        val doc = TestData.doc(templateId = "gov_dm", body = "All filled in.", subject = "Leave").copy(
             recipient = Recipient(designation = "जिला अधिकारी महोदय"),
             applicant = Applicant(name = "Harsh"),
         )

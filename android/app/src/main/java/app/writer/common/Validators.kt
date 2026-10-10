@@ -1,5 +1,6 @@
 package app.writer.common
 
+import app.writer.model.LetterStyle
 import app.writer.model.WriterDocument
 
 enum class FieldError { REQUIRED, PIN, MOBILE }
@@ -35,10 +36,13 @@ object Validators {
     }
 }
 
-/** Problems worth telling the user about before a PDF is made. */
+/** Problems worth telling the user about before a PDF is made. None of them is a hard stop except an empty letter. */
 sealed interface ExportIssue {
     /** Nothing meaningful to print. */
     data object EmptyDocument : ExportIssue
+
+    /** A formal letter written from a template has no subject line. */
+    data object MissingSubject : ExportIssue
 
     /** The letter still contains [blank] markers. */
     data class Blanks(val count: Int) : ExportIssue
@@ -47,7 +51,12 @@ sealed interface ExportIssue {
 object DocumentChecks {
     fun issues(doc: WriterDocument): List<ExportIssue> {
         if (doc.body.isBlank() && doc.subject.isBlank()) return listOf(ExportIssue.EmptyDocument)
+        val found = mutableListOf<ExportIssue>()
+        if (doc.style == LetterStyle.APPLICATION && doc.templateId != null && doc.subject.isBlank()) {
+            found += ExportIssue.MissingSubject
+        }
         val blanks = TemplateFiller.countBlanks(LetterText.printedText(doc))
-        return if (blanks > 0) listOf(ExportIssue.Blanks(blanks)) else emptyList()
+        if (blanks > 0) found += ExportIssue.Blanks(blanks)
+        return found
     }
 }

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- Kept copies of exported PDFs -->
+    <files-path name="exports" path="exports/" />
+    <!-- Temporary files made for sharing and printing -->
+    <cache-path name="shared" path="shared/" />
+</paths>
