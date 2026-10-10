@@ -26,11 +26,11 @@
     "recipient": {
       "hi": {
         "designation": "प्रधानाचार्य महोदय",
-        "office": "विद्यालय"
+        "office": "[विद्यालय का नाम]"
       },
       "en": {
         "designation": "The Principal",
-        "office": "School"
+        "office": "[School name]"
       }
     },
     "salutation": {
@@ -108,11 +108,11 @@
     "recipient": {
       "hi": {
         "designation": "प्राचार्य महोदय",
-        "office": "महाविद्यालय"
+        "office": "[महाविद्यालय का नाम]"
       },
       "en": {
         "designation": "The Principal",
-        "office": "College"
+        "office": "[College name]"
       }
     },
     "salutation": {
@@ -177,11 +177,11 @@
     "recipient": {
       "hi": {
         "designation": "प्रधानाचार्य महोदय",
-        "office": "विद्यालय / महाविद्यालय"
+        "office": "[विद्यालय / महाविद्यालय का नाम]"
       },
       "en": {
         "designation": "The Principal",
-        "office": "School / College"
+        "office": "[School / college name]"
       }
     },
     "salutation": {
@@ -253,11 +253,11 @@
     "recipient": {
       "hi": {
         "designation": "प्रधानाचार्य महोदय",
-        "office": "विद्यालय / महाविद्यालय"
+        "office": "[विद्यालय / महाविद्यालय का नाम]"
       },
       "en": {
         "designation": "The Principal",
-        "office": "School / College"
+        "office": "[School / college name]"
       }
     },
     "salutation": {
@@ -330,11 +330,11 @@
     "recipient": {
       "hi": {
         "designation": "प्रधानाचार्य महोदय",
-        "office": "विद्यालय"
+        "office": "[विद्यालय का नाम]"
       },
       "en": {
         "designation": "The Principal",
-        "office": "School"
+        "office": "[School name]"
       }
     },
     "salutation": {
@@ -410,11 +410,11 @@
     "recipient": {
       "hi": {
         "designation": "प्रधानाचार्य महोदय",
-        "office": "विद्यालय"
+        "office": "[विद्यालय का नाम]"
       },
       "en": {
         "designation": "The Principal",
-        "office": "School"
+        "office": "[School name]"
       }
     },
     "salutation": {
@@ -589,11 +589,11 @@
     "recipient": {
       "hi": {
         "designation": "प्रधानाचार्य महोदय",
-        "office": "विद्यालय"
+        "office": "[विद्यालय का नाम]"
       },
       "en": {
         "designation": "The Principal",
-        "office": "School"
+        "office": "[School name]"
       }
     },
     "salutation": {
@@ -669,11 +669,11 @@
     "recipient": {
       "hi": {
         "designation": "प्रधानाचार्य महोदय",
-        "office": "विद्यालय / महाविद्यालय"
+        "office": "[विद्यालय / महाविद्यालय का नाम]"
       },
       "en": {
         "designation": "The Principal",
-        "office": "School / College"
+        "office": "[School / college name]"
       }
     },
     "salutation": {
@@ -748,11 +748,11 @@
     "recipient": {
       "hi": {
         "designation": "प्राचार्य महोदय",
-        "office": "महाविद्यालय"
+        "office": "[महाविद्यालय का नाम]"
       },
       "en": {
         "designation": "The Principal",
-        "office": "College"
+        "office": "[College name]"
       }
     },
     "salutation": {

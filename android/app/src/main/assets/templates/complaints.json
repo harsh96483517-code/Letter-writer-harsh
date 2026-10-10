@@ -336,8 +336,8 @@
     "descEn": "Complaint about a government office or service",
     "keywords": ["sarkari", "government", "सरकारी", "विभाग", "office", "complaint", "शिकायत", "department", "public service", "sarkari office", "karyalay", "कार्यालय", "kaam nahi ho raha", "grievance"],
     "recipient": {
-      "hi": { "designation": "प्रभारी अधिकारी महोदय", "office": "संबंधित विभाग / कार्यालय" },
-      "en": { "designation": "The Officer-in-Charge", "office": "Concerned Department / Office" }
+      "hi": { "designation": "प्रभारी अधिकारी महोदय", "office": "[विभाग / कार्यालय का नाम]" },
+      "en": { "designation": "The Officer-in-Charge", "office": "[Department / office name]" }
     },
     "salutation": { "hi": "महोदय / महोदया,", "en": "Respected Sir/Madam," },
     "subject": {
@@ -460,8 +460,8 @@
     "descEn": "Complaint about poor service at a bank branch",
     "keywords": ["bank", "बैंक", "branch", "शाखा", "service", "bank complaint", "बैंक शिकायत", "branch manager", "शाखा प्रबंधक", "account", "खाता", "bank ka kaam nahi ho raha", "grievance", "customer service"],
     "recipient": {
-      "hi": { "designation": "शाखा प्रबंधक महोदय", "office": "बैंक शाखा" },
-      "en": { "designation": "The Branch Manager", "office": "Bank Branch" }
+      "hi": { "designation": "शाखा प्रबंधक महोदय", "office": "[बैंक का नाम और शाखा]" },
+      "en": { "designation": "The Branch Manager", "office": "[Bank name and branch]" }
     },
     "salutation": { "hi": "महोदय / महोदया,", "en": "Respected Sir/Madam," },
     "subject": {
@@ -522,8 +522,8 @@
     "descEn": "Complaint about lost or delayed post or parcel",
     "keywords": ["dak", "डाक", "post office", "डाकघर", "speed post", "स्पीड पोस्ट", "parcel", "पार्सल", "postmaster", "पोस्टमास्टर", "tracking", "registered post", "dak nahi mili", "courier"],
     "recipient": {
-      "hi": { "designation": "पोस्टमास्टर महोदय", "office": "डाकघर" },
-      "en": { "designation": "The Postmaster", "office": "Post Office" }
+      "hi": { "designation": "पोस्टमास्टर महोदय", "office": "[डाकघर का नाम]" },
+      "en": { "designation": "The Postmaster", "office": "[Post office name]" }
     },
     "salutation": { "hi": "महोदय / महोदया,", "en": "Respected Sir/Madam," },
     "subject": {

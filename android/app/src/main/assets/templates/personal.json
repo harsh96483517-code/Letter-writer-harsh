@@ -23,11 +23,11 @@
     "recipient": {
       "hi": {
         "designation": "संबंधित अधिकारी महोदय",
-        "office": "कार्यालय"
+        "office": "[कंपनी / कार्यालय का नाम]"
       },
       "en": {
         "designation": "The Concerned Authority",
-        "office": "Office"
+        "office": "[Company / office name]"
       }
     },
     "salutation": {
@@ -100,11 +100,11 @@
     "recipient": {
       "hi": {
         "designation": "संबंधित अधिकारी महोदय",
-        "office": "कार्यालय"
+        "office": "[कंपनी / कार्यालय का नाम]"
       },
       "en": {
         "designation": "The Concerned Authority",
-        "office": "Office"
+        "office": "[Company / office name]"
       }
     },
     "salutation": {

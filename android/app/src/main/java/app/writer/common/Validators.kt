@@ -47,9 +47,7 @@ sealed interface ExportIssue {
 object DocumentChecks {
     fun issues(doc: WriterDocument): List<ExportIssue> {
         if (doc.body.isBlank() && doc.subject.isBlank()) return listOf(ExportIssue.EmptyDocument)
-        val blanks = TemplateFiller.countBlanks(
-            listOf(doc.subject, doc.body, doc.salutation, doc.closing).joinToString("\n"),
-        )
+        val blanks = TemplateFiller.countBlanks(LetterText.printedText(doc))
         return if (blanks > 0) listOf(ExportIssue.Blanks(blanks)) else emptyList()
     }
 }

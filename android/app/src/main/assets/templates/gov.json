@@ -504,11 +504,11 @@
     "recipient": {
       "hi": {
         "designation": "थाना प्रभारी महोदय",
-        "office": "थाना"
+        "office": "[थाने का नाम]"
       },
       "en": {
         "designation": "The Station House Officer",
-        "office": "Police Station"
+        "office": "[Police station name]"
       }
     },
     "salutation": {
@@ -578,11 +578,11 @@
     "recipient": {
       "hi": {
         "designation": "संबंधित अधिकारी महोदय",
-        "office": "कार्यालय का नाम"
+        "office": "[कार्यालय का नाम]"
       },
       "en": {
         "designation": "The Concerned Officer",
-        "office": "Name of the office"
+        "office": "[Name of the office]"
       }
     },
     "salutation": {

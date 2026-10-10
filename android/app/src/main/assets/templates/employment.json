@@ -26,11 +26,11 @@
     "recipient": {
       "hi": {
         "designation": "प्रबंधक महोदय",
-        "office": "कार्यालय"
+        "office": "[कंपनी / कार्यालय का नाम]"
       },
       "en": {
         "designation": "The Manager",
-        "office": "Office"
+        "office": "[Company / office name]"
       }
     },
     "salutation": {
@@ -114,11 +114,11 @@
     "recipient": {
       "hi": {
         "designation": "मानव संसाधन अधिकारी",
-        "office": "कार्यालय"
+        "office": "[कंपनी / कार्यालय का नाम]"
       },
       "en": {
         "designation": "The HR Manager",
-        "office": "Office"
+        "office": "[Company / office name]"
       }
     },
     "salutation": {
@@ -192,11 +192,11 @@
     "recipient": {
       "hi": {
         "designation": "प्रबंधक महोदय",
-        "office": "कार्यालय"
+        "office": "[कंपनी / कार्यालय का नाम]"
       },
       "en": {
         "designation": "The Manager",
-        "office": "Office"
+        "office": "[Company / office name]"
       }
     },
     "salutation": {
@@ -269,11 +269,11 @@
     "recipient": {
       "hi": {
         "designation": "मानव संसाधन अधिकारी",
-        "office": "कार्यालय"
+        "office": "[कंपनी / कार्यालय का नाम]"
       },
       "en": {
         "designation": "The HR Manager",
-        "office": "Office"
+        "office": "[Company / office name]"
       }
     },
     "salutation": {
@@ -356,11 +356,11 @@
     "recipient": {
       "hi": {
         "designation": "मानव संसाधन / लेखा अधिकारी",
-        "office": "कार्यालय"
+        "office": "[कंपनी / कार्यालय का नाम]"
       },
       "en": {
         "designation": "The HR / Accounts Officer",
-        "office": "Office"
+        "office": "[Company / office name]"
       }
     },
     "salutation": {
@@ -435,11 +435,11 @@
     "recipient": {
       "hi": {
         "designation": "प्रबंधक महोदय",
-        "office": "कार्यालय"
+        "office": "[कंपनी / कार्यालय का नाम]"
       },
       "en": {
         "designation": "The Manager",
-        "office": "Office"
+        "office": "[Company / office name]"
       }
     },
     "salutation": {
@@ -524,11 +524,11 @@
     "recipient": {
       "hi": {
         "designation": "प्रबंधक महोदय",
-        "office": "कार्यालय"
+        "office": "[कंपनी / कार्यालय का नाम]"
       },
       "en": {
         "designation": "The Manager",
-        "office": "Office"
+        "office": "[Company / office name]"
       }
     },
     "salutation": {

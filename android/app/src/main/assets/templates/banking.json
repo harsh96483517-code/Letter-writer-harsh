@@ -22,11 +22,11 @@
     "recipient": {
       "hi": {
         "designation": "शाखा प्रबंधक महोदय",
-        "office": "बैंक का नाम और शाखा"
+        "office": "[बैंक का नाम और शाखा]"
       },
       "en": {
         "designation": "The Branch Manager",
-        "office": "Bank name and branch"
+        "office": "[Bank name and branch]"
       }
     },
     "salutation": {
@@ -98,11 +98,11 @@
     "recipient": {
       "hi": {
         "designation": "शाखा प्रबंधक महोदय",
-        "office": "बैंक का नाम और शाखा"
+        "office": "[बैंक का नाम और शाखा]"
       },
       "en": {
         "designation": "The Branch Manager",
-        "office": "Bank name and branch"
+        "office": "[Bank name and branch]"
       }
     },
     "salutation": {
@@ -165,11 +165,11 @@
     "recipient": {
       "hi": {
         "designation": "शाखा प्रबंधक महोदय",
-        "office": "बैंक का नाम और शाखा"
+        "office": "[बैंक का नाम और शाखा]"
       },
       "en": {
         "designation": "The Branch Manager",
-        "office": "Bank name and branch"
+        "office": "[Bank name and branch]"
       }
     },
     "salutation": {
@@ -233,11 +233,11 @@
     "recipient": {
       "hi": {
         "designation": "शाखा प्रबंधक महोदय",
-        "office": "बैंक का नाम और शाखा"
+        "office": "[बैंक का नाम और शाखा]"
       },
       "en": {
         "designation": "The Branch Manager",
-        "office": "Bank name and branch"
+        "office": "[Bank name and branch]"
       }
     },
     "salutation": {
@@ -310,11 +310,11 @@
     "recipient": {
       "hi": {
         "designation": "शाखा प्रबंधक महोदय",
-        "office": "बैंक का नाम और शाखा"
+        "office": "[बैंक का नाम और शाखा]"
       },
       "en": {
         "designation": "The Branch Manager",
-        "office": "Bank name and branch"
+        "office": "[Bank name and branch]"
       }
     },
     "salutation": {
@@ -386,11 +386,11 @@
     "recipient": {
       "hi": {
         "designation": "शाखा प्रबंधक महोदय",
-        "office": "बैंक का नाम और शाखा"
+        "office": "[बैंक का नाम और शाखा]"
       },
       "en": {
         "designation": "The Branch Manager",
-        "office": "Bank name and branch"
+        "office": "[Bank name and branch]"
       }
     },
     "salutation": {
@@ -464,11 +464,11 @@
     "recipient": {
       "hi": {
         "designation": "शाखा प्रबंधक महोदय",
-        "office": "बैंक का नाम और शाखा"
+        "office": "[बैंक का नाम और शाखा]"
       },
       "en": {
         "designation": "The Branch Manager",
-        "office": "Bank name and branch"
+        "office": "[Bank name and branch]"
       }
     },
     "salutation": {
