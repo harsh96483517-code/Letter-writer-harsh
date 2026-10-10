@@ -1,0 +1,804 @@
+[
+  {
+    "id": "edu_school_admission",
+    "category": "education",
+    "style": "application",
+    "titleHi": "विद्यालय में प्रवेश हेतु आवेदन",
+    "titleEn": "School admission application",
+    "descHi": "बच्चे के विद्यालय में प्रवेश के लिए आवेदन",
+    "descEn": "Request for admission of a child to a school",
+    "keywords": [
+      "school admission",
+      "admission",
+      "pravesh",
+      "dakhila",
+      "daakhila",
+      "prawesh",
+      "school mein admission",
+      "child admission",
+      "ward admission",
+      "प्रवेश",
+      "दाखिला",
+      "एडमिशन",
+      "विद्यालय",
+      "स्कूल"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "प्रधानाचार्य महोदय",
+        "office": "विद्यालय"
+      },
+      "en": {
+        "designation": "The Principal",
+        "office": "School"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "विद्यालय में प्रवेश दिलाने हेतु आवेदन",
+      "en": "Application for admission of my child to the school"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ।\nनिवेदन है कि मेरे पुत्र/पुत्री {{child_name}} को आपके विद्यालय की {{class}} में प्रवेश दिलाना है। बच्चे ने इससे पूर्व {{previous_school}} में अध्ययन किया है।\nआवश्यक अभिलेख, जैसे जन्म प्रमाण पत्र, पिछली कक्षा की अंकतालिका, स्थानांतरण प्रमाण पत्र तथा पहचान संबंधी दस्तावेज़, माँगे जाने पर प्रस्तुत कर दिए जाएँगे। विद्यालय के नियमों का पालन सुनिश्चित किया जाएगा।\nअतः आपसे विनम्र निवेदन है कि कृपया उपलब्ध स्थान एवं विद्यालय के नियमों के अनुसार मेरे पुत्र/पुत्री को प्रवेश प्रदान करने की कृपा करें।\nधन्यवाद।",
+      "en": "My name is {{name}} and I live at {{address}}.\nI request admission for my child/ward {{child_name}} in {{class}} of your school. My child has earlier studied at {{previous_school}}.\nThe required documents, such as the birth certificate, the marksheet of the previous class, the transfer certificate and identity documents, will be submitted whenever they are asked for. The rules of the school will be followed.\nI therefore request you to kindly grant admission to my child, subject to the availability of seats and the rules of the school.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "child_name",
+        "labelHi": "बच्चे का नाम",
+        "labelEn": "Child's name",
+        "hintHi": "जैसे: आरव कुमार",
+        "hintEn": "e.g. Aarav Kumar",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "class",
+        "labelHi": "प्रवेश की कक्षा",
+        "labelEn": "Class for admission",
+        "hintHi": "जैसे: कक्षा 6",
+        "hintEn": "e.g. Class 6",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "previous_school",
+        "labelHi": "पिछला विद्यालय",
+        "labelEn": "Previous school",
+        "hintHi": "जैसे: राजकीय प्राथमिक विद्यालय, रामपुर",
+        "hintEn": "e.g. Government Primary School, Rampur",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "edu_college_admission",
+    "category": "education",
+    "style": "application",
+    "titleHi": "महाविद्यालय में प्रवेश हेतु आवेदन",
+    "titleEn": "College admission application",
+    "descHi": "महाविद्यालय में प्रवेश के लिए आवेदन",
+    "descEn": "Request for admission to a college course",
+    "keywords": [
+      "college admission",
+      "admission",
+      "pravesh",
+      "dakhila",
+      "prawesh",
+      "college mein admission",
+      "course admission",
+      "प्रवेश",
+      "दाखिला",
+      "एडमिशन",
+      "महाविद्यालय",
+      "कॉलेज",
+      "बी.ए.",
+      "ba",
+      "bsc",
+      "bcom"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "प्राचार्य महोदय",
+        "office": "महाविद्यालय"
+      },
+      "en": {
+        "designation": "The Principal",
+        "office": "College"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "महाविद्यालय में प्रवेश हेतु आवेदन",
+      "en": "Application for admission to the college"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ। मेरे पिता का नाम {{father}} है।\nमेरी प्रार्थना है कि मुझे आपके महाविद्यालय में {{course}} में प्रवेश प्रदान किया जाए। मेरी पिछली शैक्षणिक योग्यता का विवरण इस प्रकार है: {{last_exam}}।\nआवश्यक प्रमाण पत्रों एवं अंकतालिकाओं की प्रतियाँ आवेदन के साथ संलग्न हैं। मूल अभिलेख सत्यापन हेतु माँगे जाने पर प्रस्तुत किए जाएँगे।\nअतः आपसे विनम्र निवेदन है कि कृपया महाविद्यालय के नियमों के अनुसार मेरे आवेदन पर विचार कर प्रवेश प्रदान करने की कृपा करें।\nधन्यवाद।",
+      "en": "My name is {{name}} and I live at {{address}}. My father's name is {{father}}.\nI request that I be granted admission to {{course}} in your college. My previous academic qualification is as follows: {{last_exam}}.\nCopies of the required certificates and marksheets are enclosed with this application. The original documents will be produced for verification whenever required.\nI therefore request you to kindly consider my application and grant me admission as per the rules of the college.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "course",
+        "labelHi": "पाठ्यक्रम / कक्षा",
+        "labelEn": "Course / class",
+        "hintHi": "जैसे: बी.ए. प्रथम वर्ष",
+        "hintEn": "e.g. B.A. first year",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "last_exam",
+        "labelHi": "पिछली परीक्षा एवं अंक",
+        "labelEn": "Last exam and marks",
+        "hintHi": "जैसे: इंटरमीडिएट, 2026, 78 प्रतिशत",
+        "hintEn": "e.g. Class 12, 2026, 78 per cent",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "edu_scholarship",
+    "category": "education",
+    "style": "application",
+    "titleHi": "छात्रवृत्ति हेतु आवेदन",
+    "titleEn": "Scholarship application",
+    "descHi": "छात्रवृत्ति प्राप्त करने के लिए आवेदन",
+    "descEn": "Request to consider a scholarship application",
+    "keywords": [
+      "scholarship",
+      "chhatravritti",
+      "chatravriti",
+      "shishyavritti",
+      "stipend",
+      "financial aid",
+      "fellowship",
+      "छात्रवृत्ति",
+      "शिष्यवृत्ति",
+      "वजीफा",
+      "स्कॉलरशिप",
+      "आर्थिक सहायता"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "प्रधानाचार्य महोदय",
+        "office": "विद्यालय / महाविद्यालय"
+      },
+      "en": {
+        "designation": "The Principal",
+        "office": "School / College"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "छात्रवृत्ति के लिए आवेदन",
+      "en": "Application for a scholarship"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ। मैं आपके संस्थान में {{class_course}} में अध्ययनरत विद्यार्थी हूँ। मेरे पिता का नाम {{father}} है।\nनिवेदन है कि {{scholarship_name}} के अंतर्गत छात्रवृत्ति हेतु मेरा आवेदन स्वीकार किया जाए तथा नियमानुसार पात्र पाए जाने पर इसे आगे की कार्यवाही के लिए प्रेषित किया जाए।\nछात्रवृत्ति मिलने से मुझे अपनी पढ़ाई जारी रखने में सहायता मिलेगी। मेरे परिवार की आर्थिक स्थिति इस प्रकार है: {{reason}}\nआवश्यक अभिलेख, जैसे आय प्रमाण पत्र, अंकतालिका तथा बैंक खाते का विवरण, माँगे जाने पर उपलब्ध कराए जाएँगे। अतः आपसे विनम्र निवेदन है कि कृपया मेरे आवेदन पर विचार करने तथा आवश्यक औपचारिकताओं के संबंध में मार्गदर्शन देने की कृपा करें।\nधन्यवाद।",
+      "en": "My name is {{name}} and I live at {{address}}. I am a student of {{class_course}} at your institution. My father's name is {{father}}.\nI request you to kindly accept my application for the scholarship under {{scholarship_name}} and forward it for further action, if I am found eligible as per the rules.\nA scholarship would help me to continue my studies. The financial position of my family is as follows: {{reason}}\nThe required documents, such as an income certificate, marksheet and bank account details, will be provided whenever they are asked for. I therefore request you to kindly consider my application and guide me about the necessary formalities.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "class_course",
+        "labelHi": "कक्षा / पाठ्यक्रम",
+        "labelEn": "Class / course",
+        "hintHi": "जैसे: कक्षा 11 (विज्ञान)",
+        "hintEn": "e.g. Class 11 (Science)",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "scholarship_name",
+        "labelHi": "छात्रवृत्ति / योजना का नाम",
+        "labelEn": "Scholarship / scheme name",
+        "hintHi": "जैसे: राज्य सरकार की छात्रवृत्ति योजना",
+        "hintEn": "e.g. State Government scholarship scheme",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "reason",
+        "labelHi": "परिवार की आर्थिक स्थिति",
+        "labelEn": "Family's financial position",
+        "hintHi": "जैसे: पिता की आय सीमित है और परिवार में चार सदस्य हैं",
+        "hintEn": "e.g. my father's income is limited and there are four members in the family",
+        "multiline": true,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "edu_bonafide",
+    "category": "education",
+    "style": "application",
+    "titleHi": "बोनाफाइड प्रमाण पत्र हेतु आवेदन",
+    "titleEn": "Bonafide certificate request",
+    "descHi": "विद्यार्थी होने का बोनाफाइड प्रमाण पत्र माँगना",
+    "descEn": "Request for a bonafide (student status) certificate",
+    "keywords": [
+      "bonafide",
+      "bonafide certificate",
+      "bonafied",
+      "student certificate",
+      "study certificate",
+      "studying certificate",
+      "बोनाफाइड",
+      "अध्ययनरत प्रमाण पत्र",
+      "विद्यार्थी प्रमाण पत्र",
+      "बोनाफाइड सर्टिफिकेट"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "प्रधानाचार्य महोदय",
+        "office": "विद्यालय / महाविद्यालय"
+      },
+      "en": {
+        "designation": "The Principal",
+        "office": "School / College"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "बोनाफाइड प्रमाण पत्र जारी करने हेतु आवेदन",
+      "en": "Request for issue of a bonafide certificate"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ। मेरे पिता का नाम {{father}} है। मैं आपके संस्थान में {{class_session}} में अध्ययनरत विद्यार्थी हूँ तथा मेरा रोल नंबर {{roll_no}} है।\nनिवेदन है कि मुझे अध्ययनरत होने का बोनाफाइड प्रमाण पत्र प्रदान किया जाए। इस प्रमाण पत्र का प्रयोजन है: {{purpose}}।\nप्रमाण पत्र में विवरण संस्थान के अभिलेखों के अनुसार दर्ज किया जाए। यदि इसके लिए कोई औपचारिकता या शुल्क निर्धारित हो, तो उसका पालन किया जाएगा।\nअतः आपसे विनम्र निवेदन है कि कृपया बोनाफाइड प्रमाण पत्र शीघ्र जारी करने की कृपा करें।\nधन्यवाद।",
+      "en": "My name is {{name}} and I live at {{address}}. My father's name is {{father}}. I am a student of {{class_session}} at your institution, and my roll number is {{roll_no}}.\nI request you to kindly issue a bonafide certificate stating that I am studying at your institution. The purpose of this certificate is: {{purpose}}.\nThe details in the certificate may please be entered as per the records of the institution. If any formality or fee is prescribed for this, it will be followed.\nI therefore request you to kindly issue the bonafide certificate at the earliest.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "class_session",
+        "labelHi": "कक्षा / पाठ्यक्रम एवं सत्र",
+        "labelEn": "Class / course and session",
+        "hintHi": "जैसे: कक्षा 10, सत्र 2026-27",
+        "hintEn": "e.g. Class 10, session 2026-27",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "roll_no",
+        "labelHi": "रोल नंबर",
+        "labelEn": "Roll number",
+        "hintHi": "जैसे: 24",
+        "hintEn": "e.g. 24",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "purpose",
+        "labelHi": "प्रमाण पत्र का उद्देश्य",
+        "labelEn": "Purpose of the certificate",
+        "hintHi": "जैसे: बैंक खाता खुलवाने के लिए",
+        "hintEn": "e.g. for opening a bank account",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "edu_transfer_cert",
+    "category": "education",
+    "style": "application",
+    "titleHi": "स्थानांतरण प्रमाण पत्र (टी.सी.) हेतु",
+    "titleEn": "Transfer certificate (TC) request",
+    "descHi": "विद्यालय छोड़ने पर टी.सी. प्राप्त करने के लिए आवेदन",
+    "descEn": "Request for a transfer certificate on leaving school",
+    "keywords": [
+      "tc",
+      "transfer certificate",
+      "t.c.",
+      "school leaving certificate",
+      "slc",
+      "sthanantaran",
+      "sthanantaran praman patra",
+      "स्थानांतरण प्रमाण पत्र",
+      "टी.सी.",
+      "टीसी",
+      "विद्यालय छोड़ने का प्रमाण पत्र"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "प्रधानाचार्य महोदय",
+        "office": "विद्यालय"
+      },
+      "en": {
+        "designation": "The Principal",
+        "office": "School"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "स्थानांतरण प्रमाण पत्र (टी.सी.) जारी करने हेतु आवेदन",
+      "en": "Request for issue of a transfer certificate (TC)"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ। मैं आपके विद्यालय की {{class}} में अध्ययनरत विद्यार्थी हूँ। मेरे पिता का नाम {{father}} है तथा मेरा प्रवेश क्रमांक {{admission_no}} है।\nनिवेदन है कि अब मेरे लिए इस विद्यालय में अध्ययन जारी रखना संभव नहीं है, इसलिए मुझे स्थानांतरण प्रमाण पत्र (टी.सी.) प्रदान किया जाए। इसका कारण यह है: {{reason}}\nयदि मेरे नाम पर कोई शुल्क, पुस्तकालय की पुस्तकें या अन्य सामग्री शेष हो, तो उसे नियमानुसार जमा कर दिया जाएगा।\nअतः आपसे विनम्र निवेदन है कि कृपया नियमानुसार स्थानांतरण प्रमाण पत्र शीघ्र जारी करने की कृपा करें।\nधन्यवाद।",
+      "en": "My name is {{name}} and I live at {{address}}. I am a student of {{class}} in your school. My father's name is {{father}} and my admission number is {{admission_no}}.\nI request you to kindly issue a transfer certificate (TC) to me, as it is no longer possible for me to continue my studies in this school. The reason is as follows: {{reason}}\nIf any fee, library books or other items are pending in my name, they will be cleared as per the rules.\nI therefore request you to kindly issue the transfer certificate at the earliest as per the rules.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "class",
+        "labelHi": "वर्तमान कक्षा",
+        "labelEn": "Current class",
+        "hintHi": "जैसे: कक्षा 8",
+        "hintEn": "e.g. Class 8",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "admission_no",
+        "labelHi": "प्रवेश क्रमांक",
+        "labelEn": "Admission number",
+        "hintHi": "जैसे: 1045",
+        "hintEn": "e.g. 1045",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "reason",
+        "labelHi": "टी.सी. लेने का कारण",
+        "labelEn": "Reason for the TC",
+        "hintHi": "जैसे: परिवार का दूसरे शहर में स्थानांतरण हो गया है",
+        "hintEn": "e.g. my family is moving to another city",
+        "multiline": true,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "edu_record_correction",
+    "category": "education",
+    "style": "application",
+    "titleHi": "विद्यालय अभिलेख में सुधार हेतु आवेदन",
+    "titleEn": "Correction in school records",
+    "descHi": "नाम, जन्म तिथि या माता-पिता के नाम में सुधार",
+    "descEn": "Correction of name, date of birth or parents' names",
+    "keywords": [
+      "correction",
+      "record correction",
+      "name correction",
+      "date of birth correction",
+      "dob correction",
+      "galti sudhar",
+      "naam sudhar",
+      "janm tithi",
+      "सुधार",
+      "नाम सुधार",
+      "जन्म तिथि सुधार",
+      "अभिलेख सुधार",
+      "संशोधन",
+      "माता पिता का नाम"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "प्रधानाचार्य महोदय",
+        "office": "विद्यालय"
+      },
+      "en": {
+        "designation": "The Principal",
+        "office": "School"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "विद्यालय अभिलेख में सुधार करने हेतु आवेदन",
+      "en": "Application for correction in school records"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ। मेरे पिता का नाम {{father}} है। मैं आपके विद्यालय में अध्ययनरत विद्यार्थी हूँ।\nनिवेदन है कि विद्यालय के अभिलेखों में {{item}} के संबंध में त्रुटि दर्ज हो गई है। अभिलेखों में {{wrong_entry}} दर्ज है, जबकि सही विवरण {{correct_entry}} है।\nइसके प्रमाण स्वरूप {{proof}} की प्रति प्रस्तुत है। यह सुधार आवश्यक है, क्योंकि ये अभिलेख परीक्षा एवं अन्य सरकारी दस्तावेज़ों में उपयोग किए जाते हैं।\nअतः आपसे विनम्र निवेदन है कि कृपया मामले की जाँच कर नियमानुसार अभिलेखों में आवश्यक सुधार करने की कृपा करें।\nधन्यवाद।",
+      "en": "My name is {{name}} and I live at {{address}}. My father's name is {{father}}. I am a student of your school.\nI wish to bring to your notice that an error has been entered in the school records regarding my {{item}}. The records show {{wrong_entry}}, whereas the correct detail is {{correct_entry}}.\nIn support of this, a copy of {{proof}} is submitted herewith. The correction is important because these records are used in examinations and other official documents.\nI therefore request you to kindly verify the matter and make the necessary correction in the school records as per the rules.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "item",
+        "labelHi": "सुधार का विषय",
+        "labelEn": "What needs correction",
+        "hintHi": "जैसे: जन्म तिथि, नाम, माता/पिता का नाम",
+        "hintEn": "e.g. date of birth, name, parent's name",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "wrong_entry",
+        "labelHi": "अभिलेख में दर्ज (गलत) विवरण",
+        "labelEn": "Wrong detail in the records",
+        "hintHi": "जैसे: 12-05-2011",
+        "hintEn": "e.g. 12-05-2011",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "correct_entry",
+        "labelHi": "सही विवरण",
+        "labelEn": "Correct detail",
+        "hintHi": "जैसे: 15-05-2011",
+        "hintEn": "e.g. 15-05-2011",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "proof",
+        "labelHi": "प्रमाण का दस्तावेज़",
+        "labelEn": "Supporting document",
+        "hintHi": "जैसे: जन्म प्रमाण पत्र",
+        "hintEn": "e.g. birth certificate",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "edu_exam",
+    "category": "education",
+    "style": "application",
+    "titleHi": "परीक्षा संबंधी आवेदन",
+    "titleEn": "Examination-related application",
+    "descHi": "पुनर्मूल्यांकन, प्रवेश पत्र, परीक्षा केंद्र आदि हेतु",
+    "descEn": "For re-evaluation, admit card, exam centre and similar requests",
+    "keywords": [
+      "exam",
+      "examination",
+      "pariksha",
+      "re-evaluation",
+      "revaluation",
+      "admit card",
+      "exam centre",
+      "exam center",
+      "supplementary",
+      "back paper",
+      "परीक्षा",
+      "पुनर्मूल्यांकन",
+      "प्रवेश पत्र",
+      "परीक्षा केंद्र",
+      "पूरक परीक्षा"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "परीक्षा नियंत्रक महोदय",
+        "office": "परीक्षा विभाग"
+      },
+      "en": {
+        "designation": "The Controller of Examinations",
+        "office": "Examination Section"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "परीक्षा से संबंधित अनुरोध हेतु आवेदन",
+      "en": "Application regarding an examination matter"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ। मैं {{exam_course}} का विद्यार्थी हूँ तथा मेरा अनुक्रमांक {{roll_no}} है।\nनिवेदन है कि परीक्षा के संबंध में मेरा अनुरोध इस प्रकार है: {{request}}\nआवश्यक प्रमाण या अभिलेख माँगे जाने पर उपलब्ध कराए जाएँगे। इस अनुरोध का कारण इस प्रकार है: {{reason}}\nअतः आपसे विनम्र निवेदन है कि कृपया मेरे अनुरोध पर नियमानुसार विचार कर उचित कार्यवाही करने की कृपा करें।\nधन्यवाद।",
+      "en": "My name is {{name}} and I live at {{address}}. I am a student of {{exam_course}}, and my roll number is {{roll_no}}.\nI wish to submit the following request regarding the examination: {{request}}\nThe relevant proof or documents will be provided whenever they are required. The reason for this request is as follows: {{reason}}\nI therefore request you to kindly consider my request as per the rules and take suitable action.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "exam_course",
+        "labelHi": "कक्षा / पाठ्यक्रम एवं परीक्षा",
+        "labelEn": "Class / course and exam",
+        "hintHi": "जैसे: बी.ए. तृतीय वर्ष, वार्षिक परीक्षा 2026",
+        "hintEn": "e.g. B.A. third year, annual exam 2026",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "roll_no",
+        "labelHi": "अनुक्रमांक (रोल नंबर)",
+        "labelEn": "Roll number",
+        "hintHi": "जैसे: 2026123456",
+        "hintEn": "e.g. 2026123456",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "request",
+        "labelHi": "आपका अनुरोध",
+        "labelEn": "Your request",
+        "hintHi": "जैसे: गणित की उत्तर पुस्तिका का पुनर्मूल्यांकन / प्रवेश पत्र की प्रति / परीक्षा केंद्र में परिवर्तन",
+        "hintEn": "e.g. re-evaluation of the Mathematics answer sheet / duplicate admit card / change of exam centre",
+        "multiline": true,
+        "required": false
+      },
+      {
+        "key": "reason",
+        "labelHi": "अनुरोध का कारण",
+        "labelEn": "Reason for the request",
+        "hintHi": "जैसे: प्रवेश पत्र खो गया है",
+        "hintEn": "e.g. the admit card has been lost",
+        "multiline": true,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "edu_leave",
+    "category": "education",
+    "style": "application",
+    "titleHi": "अवकाश हेतु प्रार्थना पत्र (विद्यार्थी)",
+    "titleEn": "Student leave application",
+    "descHi": "विद्यालय से अवकाश के लिए प्रार्थना पत्र",
+    "descEn": "Request for leave from school or class",
+    "keywords": [
+      "leave",
+      "leave application",
+      "chhutti",
+      "chutti",
+      "avkash",
+      "awkash",
+      "absent",
+      "sick leave",
+      "school leave",
+      "अवकाश",
+      "छुट्टी",
+      "प्रार्थना पत्र",
+      "बीमारी",
+      "अनुपस्थिति"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "प्रधानाचार्य महोदय",
+        "office": "विद्यालय"
+      },
+      "en": {
+        "designation": "The Principal",
+        "office": "School"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "अवकाश प्रदान करने हेतु प्रार्थना पत्र",
+      "en": "Application for grant of leave"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं आपके विद्यालय की {{class}} में अध्ययनरत विद्यार्थी हूँ। मेरे पिता का नाम {{father}} है।\n{{reason}} के कारण मेरा विद्यालय आना संभव नहीं है। इसलिए मुझे {{dates}} के लिए अवकाश की आवश्यकता है।\nअवकाश की अवधि में छूटे हुए पाठ एवं गृहकार्य मेरे द्वारा अवकाश के बाद पूरे कर लिए जाएँगे।\nअतः आपसे विनम्र निवेदन है कि कृपया उक्त अवधि का अवकाश स्वीकृत करने की कृपा करें।\nधन्यवाद।",
+      "en": "My name is {{name}} and I am a student of {{class}} in your school. My father's name is {{father}}.\nDue to {{reason}}, I am unable to attend school. I therefore need leave for {{dates}}.\nThe lessons and homework missed during this period will be completed by me after the leave.\nI therefore request you to kindly grant me leave for the above period.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "class",
+        "labelHi": "कक्षा एवं अनुभाग",
+        "labelEn": "Class and section",
+        "hintHi": "जैसे: कक्षा 9, अनुभाग ब",
+        "hintEn": "e.g. Class 9, Section B",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "dates",
+        "labelHi": "अवकाश की अवधि",
+        "labelEn": "Leave period",
+        "hintHi": "जैसे: 14 से 16 अक्टूबर 2026 तक (3 दिन)",
+        "hintEn": "e.g. 14 to 16 October 2026 (3 days)",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "reason",
+        "labelHi": "अवकाश का कारण",
+        "labelEn": "Reason for leave",
+        "hintHi": "जैसे: बुखार, परिवार में विवाह समारोह",
+        "hintEn": "e.g. fever, a wedding in the family",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "edu_fee_concession",
+    "category": "education",
+    "style": "application",
+    "titleHi": "शुल्क में रियायत हेतु आवेदन",
+    "titleEn": "Fee concession request",
+    "descHi": "शुल्क में छूट या रियायत के लिए प्रार्थना पत्र",
+    "descEn": "Request for concession or relief in fees",
+    "keywords": [
+      "fee concession",
+      "fees",
+      "fee maafi",
+      "fees maaf",
+      "fee waiver",
+      "fee relief",
+      "shulk",
+      "shulk maafi",
+      "शुल्क",
+      "फीस माफी",
+      "फीस में छूट",
+      "शुल्क माफी",
+      "रियायत",
+      "आर्थिक कठिनाई"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "प्रधानाचार्य महोदय",
+        "office": "विद्यालय / महाविद्यालय"
+      },
+      "en": {
+        "designation": "The Principal",
+        "office": "School / College"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "शुल्क में रियायत प्रदान करने हेतु आवेदन",
+      "en": "Application for concession in fees"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ। मैं आपके संस्थान में {{class_course}} में अध्ययनरत विद्यार्थी हूँ। मेरे पिता का नाम {{father}} है।\nनिवेदन है कि वर्तमान में मेरे परिवार के लिए पूरा शुल्क जमा करना कठिन है। परिवार की आर्थिक स्थिति इस प्रकार है: {{reason}}\nमेरी पढ़ाई बिना रुकावट जारी रहे, यही मेरा प्रयास है। आवश्यक प्रमाण पत्र माँगे जाने पर उपलब्ध कराए जाएँगे।\nअतः आपसे विनम्र निवेदन है कि कृपया संस्थान के नियमों के अनुसार मुझे निम्नलिखित रियायत प्रदान करने पर विचार करने की कृपा करें: {{request}}।\nधन्यवाद।",
+      "en": "My name is {{name}} and I live at {{address}}. I am a student of {{class_course}} at your institution. My father's name is {{father}}.\nI respectfully state that it is difficult for my family to pay the full fees at present. The financial position of my family is as follows: {{reason}}\nI am sincere about my studies and wish to continue them without interruption. The required documents will be provided whenever they are asked for.\nI therefore request you to kindly consider the following fee concession for me, as per the rules of the institution: {{request}}.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "class_course",
+        "labelHi": "कक्षा / पाठ्यक्रम",
+        "labelEn": "Class / course",
+        "hintHi": "जैसे: कक्षा 12",
+        "hintEn": "e.g. Class 12",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "reason",
+        "labelHi": "आर्थिक स्थिति का विवरण",
+        "labelEn": "Details of financial position",
+        "hintHi": "जैसे: पिता की आय सीमित है और परिवार में बीमारी का खर्च है",
+        "hintEn": "e.g. my father's income is limited and there are medical expenses in the family",
+        "multiline": true,
+        "required": false
+      },
+      {
+        "key": "request",
+        "labelHi": "अपेक्षित रियायत",
+        "labelEn": "Concession requested",
+        "hintHi": "जैसे: वार्षिक शुल्क में आंशिक छूट",
+        "hintEn": "e.g. a partial concession in the annual fees",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "edu_principal",
+    "category": "education",
+    "style": "application",
+    "titleHi": "प्राचार्य को सामान्य आवेदन",
+    "titleEn": "General application to the Principal",
+    "descHi": "महाविद्यालय से संबंधित किसी भी विषय पर आवेदन",
+    "descEn": "Application on any matter related to the college",
+    "keywords": [
+      "principal",
+      "application",
+      "college principal",
+      "general application",
+      "prarthna patra",
+      "aavedan",
+      "avedan",
+      "प्राचार्य",
+      "प्रधानाचार्य",
+      "आवेदन",
+      "प्रार्थना पत्र",
+      "महाविद्यालय",
+      "कॉलेज"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "प्राचार्य महोदय",
+        "office": "महाविद्यालय"
+      },
+      "en": {
+        "designation": "The Principal",
+        "office": "College"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "{{topic}} के संबंध में आवेदन",
+      "en": "Application regarding {{topic}}"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ। मैं आपके महाविद्यालय में {{class_course}} में अध्ययनरत विद्यार्थी हूँ।\nयह आवेदन {{topic}} के संबंध में है। मेरा निवेदन इस प्रकार है: {{details}}\nइस संबंध में आवश्यकता होने पर संबंधित अभिलेख या अन्य जानकारी उपलब्ध कराई जाएगी।\nअतः आपसे विनम्र निवेदन है कि कृपया उपर्युक्त विषय पर विचार कर उचित कार्यवाही करने की कृपा करें।\nधन्यवाद।",
+      "en": "My name is {{name}} and I live at {{address}}. I am a student of {{class_course}} at your college.\nThis application is regarding {{topic}}. My request is as follows: {{details}}\nIf required, the relevant documents or any other information will be provided in this regard.\nI therefore request you to kindly consider the above matter and take suitable action.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "class_course",
+        "labelHi": "कक्षा / पाठ्यक्रम",
+        "labelEn": "Class / course",
+        "hintHi": "जैसे: बी.ए. द्वितीय वर्ष",
+        "hintEn": "e.g. B.A. second year",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "topic",
+        "labelHi": "आवेदन का विषय",
+        "labelEn": "Subject of the application",
+        "hintHi": "जैसे: पुस्तकालय की सुविधा",
+        "hintEn": "e.g. library facilities",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "details",
+        "labelHi": "आपका निवेदन",
+        "labelEn": "Your request in detail",
+        "hintHi": "जैसे: पुस्तकालय का समय बढ़ाने का निवेदन",
+        "hintEn": "e.g. a request to extend the library timings",
+        "multiline": true,
+        "required": false
+      }
+    ]
+  }
+]

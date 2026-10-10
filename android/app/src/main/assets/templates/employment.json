@@ -1,0 +1,589 @@
+[
+  {
+    "id": "job_application",
+    "category": "employment",
+    "style": "application",
+    "titleHi": "नौकरी हेतु आवेदन पत्र",
+    "titleEn": "Job application",
+    "descHi": "किसी पद के लिए नौकरी का आवेदन",
+    "descEn": "Application for a job vacancy",
+    "keywords": [
+      "job",
+      "job application",
+      "naukri",
+      "naukri avedan",
+      "vacancy",
+      "recruitment",
+      "apply job",
+      "post",
+      "नौकरी",
+      "रोजगार",
+      "पद",
+      "रिक्ति",
+      "नियुक्ति",
+      "आवेदन"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "प्रबंधक महोदय",
+        "office": "कार्यालय"
+      },
+      "en": {
+        "designation": "The Manager",
+        "office": "Office"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "{{post}} के पद हेतु आवेदन",
+      "en": "Application for the post of {{post}}"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ। {{source}} के माध्यम से मुझे आपके संस्थान में {{post}} के पद की रिक्ति की जानकारी मिली है।\nमेरी शैक्षणिक योग्यता इस प्रकार है: {{qualification}}। मेरे कार्य का अनुभव इस प्रकार है: {{experience}}।\nमैं पूर्ण निष्ठा और लगन से कार्य करने के लिए तत्पर हूँ। मेरा बायोडाटा तथा आवश्यक प्रमाण पत्रों की प्रतियाँ आवेदन के साथ संलग्न हैं।\nअतः आपसे विनम्र निवेदन है कि कृपया मुझे चयन प्रक्रिया में सम्मिलित होने का अवसर प्रदान करने की कृपा करें।\nधन्यवाद।",
+      "en": "My name is {{name}} and I live at {{address}}. I came to know through {{source}} that there is a vacancy for the post of {{post}} in your organisation.\nMy educational qualification is as follows: {{qualification}}. My work experience is as follows: {{experience}}.\nI am ready to work with full sincerity and dedication. My resume and copies of the required certificates are enclosed with this application.\nI therefore request you to kindly give me an opportunity to take part in the selection process.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "post",
+        "labelHi": "पद का नाम",
+        "labelEn": "Post applied for",
+        "hintHi": "जैसे: कार्यालय सहायक",
+        "hintEn": "e.g. Office Assistant",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "qualification",
+        "labelHi": "शैक्षणिक योग्यता",
+        "labelEn": "Educational qualification",
+        "hintHi": "जैसे: स्नातक (बी.कॉम), 2025",
+        "hintEn": "e.g. B.Com graduate, 2025",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "experience",
+        "labelHi": "कार्य का अनुभव",
+        "labelEn": "Work experience",
+        "hintHi": "जैसे: 2 वर्ष का लेखा कार्य / कोई नहीं (नया)",
+        "hintEn": "e.g. 2 years in accounts / none (fresher)",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "source",
+        "labelHi": "सूचना का स्रोत",
+        "labelEn": "Source of the vacancy information",
+        "hintHi": "जैसे: समाचार पत्र में प्रकाशित विज्ञापन",
+        "hintEn": "e.g. an advertisement in the newspaper",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "job_cover_letter",
+    "category": "employment",
+    "style": "application",
+    "titleHi": "रिज़्यूमे के साथ कवर लेटर",
+    "titleEn": "Resume cover letter",
+    "descHi": "बायोडाटा के साथ भेजा जाने वाला परिचय पत्र",
+    "descEn": "Covering letter to send along with your resume",
+    "keywords": [
+      "cover letter",
+      "resume",
+      "cv",
+      "biodata",
+      "bio data",
+      "covering letter",
+      "job cover letter",
+      "naukri",
+      "कवर लेटर",
+      "रिज़्यूमे",
+      "बायोडाटा",
+      "परिचय पत्र",
+      "नौकरी"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "मानव संसाधन अधिकारी",
+        "office": "कार्यालय"
+      },
+      "en": {
+        "designation": "The HR Manager",
+        "office": "Office"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "{{post}} पद हेतु बायोडाटा सहित आवेदन",
+      "en": "Application with resume for the post of {{post}}"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ। इस पत्र के साथ आपके संस्थान में {{post}} के पद हेतु मेरा बायोडाटा (रिज़्यूमे) संलग्न है।\nमेरी शैक्षणिक एवं कार्य संबंधी पृष्ठभूमि इस प्रकार है: {{background}}। मेरे प्रमुख कौशल इस प्रकार हैं: {{skills}}\nमेरा विश्वास है कि ये कौशल इस पद के लिए उपयोगी सिद्ध हो सकते हैं। मैं अपने कार्य के प्रति समर्पित तथा संस्थान के लक्ष्यों में योगदान देने के लिए उत्सुक हूँ। मुझसे मोबाइल नंबर {{mobile}} पर संपर्क किया जा सकता है।\nअतः आपसे विनम्र निवेदन है कि कृपया मेरे बायोडाटा पर विचार करने तथा साक्षात्कार का अवसर प्रदान करने की कृपा करें।\nधन्यवाद।",
+      "en": "My name is {{name}} and I live at {{address}}. Please find enclosed my resume for the post of {{post}} in your organisation.\nMy academic and work background is as follows: {{background}}. My key skills are as follows: {{skills}}\nI believe that these skills would be useful for the post. I am dedicated to my work and eager to contribute to the goals of your organisation. I can be contacted on mobile number {{mobile}}.\nI therefore request you to kindly consider my resume and give me an opportunity for an interview.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "post",
+        "labelHi": "पद का नाम",
+        "labelEn": "Post applied for",
+        "hintHi": "जैसे: लेखा सहायक",
+        "hintEn": "e.g. Accounts Assistant",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "background",
+        "labelHi": "शैक्षणिक एवं कार्य पृष्ठभूमि",
+        "labelEn": "Academic and work background",
+        "hintHi": "जैसे: बी.कॉम, 2 वर्ष का लेखा कार्य का अनुभव",
+        "hintEn": "e.g. B.Com, 2 years of experience in accounts",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "skills",
+        "labelHi": "प्रमुख कौशल",
+        "labelEn": "Key skills",
+        "hintHi": "जैसे: टैली, एम.एस. एक्सेल, संवाद कौशल",
+        "hintEn": "e.g. Tally, MS Excel, communication skills",
+        "multiline": true,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "job_internship",
+    "category": "employment",
+    "style": "application",
+    "titleHi": "इंटर्नशिप हेतु आवेदन पत्र",
+    "titleEn": "Internship application",
+    "descHi": "प्रशिक्षण (इंटर्नशिप) के अवसर के लिए आवेदन",
+    "descEn": "Request for an internship opportunity",
+    "keywords": [
+      "internship",
+      "intern",
+      "training",
+      "summer training",
+      "apprentice",
+      "trainee",
+      "vocational training",
+      "इंटर्नशिप",
+      "प्रशिक्षण",
+      "प्रशिक्षु",
+      "ट्रेनिंग",
+      "आवेदन"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "प्रबंधक महोदय",
+        "office": "कार्यालय"
+      },
+      "en": {
+        "designation": "The Manager",
+        "office": "Office"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "इंटर्नशिप का अवसर प्रदान करने हेतु आवेदन",
+      "en": "Application for an internship opportunity"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ। मैं वर्तमान में {{course}} में अध्ययनरत विद्यार्थी हूँ।\nनिवेदन है कि मुझे आपके संस्थान में {{field_area}} के क्षेत्र में इंटर्नशिप का अवसर प्रदान किया जाए। इंटर्नशिप की वांछित अवधि {{duration}} है।\nइस इंटर्नशिप से मुझे व्यावहारिक अनुभव प्राप्त होगा तथा अपनी पढ़ाई से संबंधित कौशल विकसित करने में सहायता मिलेगी। संस्थान के नियमों एवं अनुशासन का पूर्ण पालन किया जाएगा। आवश्यकता होने पर मेरा बायोडाटा तथा शिक्षण संस्थान का पत्र उपलब्ध कराया जा सकता है।\nअतः आपसे विनम्र निवेदन है कि कृपया मेरे आवेदन पर विचार करने की कृपा करें।\nधन्यवाद।",
+      "en": "My name is {{name}} and I live at {{address}}. I am currently a student of {{course}}.\nI request you to kindly give me an opportunity to do an internship in the area of {{field_area}} in your organisation. The preferred duration of the internship is {{duration}}.\nThis internship will help me gain practical experience and develop skills related to my studies. The rules and discipline of your organisation will be followed fully. My resume and a letter from my institution can be provided if required.\nI therefore request you to kindly consider my application.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "course",
+        "labelHi": "वर्तमान पाठ्यक्रम एवं संस्था",
+        "labelEn": "Current course and institution",
+        "hintHi": "जैसे: बी.बी.ए. तृतीय वर्ष, राजकीय महाविद्यालय",
+        "hintEn": "e.g. BBA third year, Government College",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "field_area",
+        "labelHi": "इंटर्नशिप का क्षेत्र / विभाग",
+        "labelEn": "Area / department",
+        "hintHi": "जैसे: मार्केटिंग, कंप्यूटर, लेखा",
+        "hintEn": "e.g. marketing, computers, accounts",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "duration",
+        "labelHi": "वांछित अवधि",
+        "labelEn": "Preferred duration",
+        "hintHi": "जैसे: 6 सप्ताह, दिसंबर 2026 से",
+        "hintEn": "e.g. 6 weeks starting December 2026",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "job_experience_cert",
+    "category": "employment",
+    "style": "application",
+    "titleHi": "अनुभव प्रमाण पत्र हेतु आवेदन",
+    "titleEn": "Experience certificate request",
+    "descHi": "पूर्व कार्य का अनुभव प्रमाण पत्र माँगने के लिए",
+    "descEn": "Request to HR for an experience certificate",
+    "keywords": [
+      "experience certificate",
+      "experience letter",
+      "work experience",
+      "relieving letter",
+      "hr",
+      "anubhav praman patra",
+      "anubhav certificate",
+      "अनुभव प्रमाण पत्र",
+      "अनुभव पत्र",
+      "कार्य अनुभव",
+      "मानव संसाधन"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "मानव संसाधन अधिकारी",
+        "office": "कार्यालय"
+      },
+      "en": {
+        "designation": "The HR Manager",
+        "office": "Office"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "अनुभव प्रमाण पत्र जारी करने हेतु आवेदन",
+      "en": "Request for issue of an experience certificate"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ। मैंने आपके संस्थान में {{designation}} के पद पर {{period}} कार्य किया है। मेरा कर्मचारी क्रमांक {{employee_id}} था।\nनिवेदन है कि मुझे उक्त अवधि के कार्य का अनुभव प्रमाण पत्र प्रदान किया जाए। इसका उद्देश्य है: {{purpose}}।\nप्रमाण पत्र में मेरे पद, कार्य की अवधि तथा कार्य के स्वरूप का विवरण संस्थान के अभिलेखों के अनुसार दर्ज किया जाए।\nअतः आपसे विनम्र निवेदन है कि कृपया अनुभव प्रमाण पत्र शीघ्र जारी करने की कृपा करें।\nधन्यवाद।",
+      "en": "My name is {{name}} and I live at {{address}}. I worked in your organisation as {{designation}} {{period}}. My employee ID was {{employee_id}}.\nI request you to kindly issue an experience certificate for the above period of work. The purpose of the certificate is: {{purpose}}.\nThe details of my designation, period of work and nature of work may please be mentioned in the certificate as per the records of your organisation.\nI therefore request you to kindly issue the experience certificate at the earliest.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "designation",
+        "labelHi": "पद का नाम",
+        "labelEn": "Designation held",
+        "hintHi": "जैसे: कार्यालय सहायक",
+        "hintEn": "e.g. Office Assistant",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "period",
+        "labelHi": "कार्य की अवधि",
+        "labelEn": "Period of work",
+        "hintHi": "जैसे: 1 जनवरी 2023 से 30 सितंबर 2026 तक",
+        "hintEn": "e.g. from 1 January 2023 to 30 September 2026",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "employee_id",
+        "labelHi": "कर्मचारी क्रमांक",
+        "labelEn": "Employee ID",
+        "hintHi": "जैसे: EMP-1042",
+        "hintEn": "e.g. EMP-1042",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "purpose",
+        "labelHi": "प्रमाण पत्र का उद्देश्य",
+        "labelEn": "Purpose of the certificate",
+        "hintHi": "जैसे: नई नौकरी के लिए आवेदन",
+        "hintEn": "e.g. applying for a new job",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "job_salary_cert",
+    "category": "employment",
+    "style": "application",
+    "titleHi": "वेतन प्रमाण पत्र हेतु आवेदन",
+    "titleEn": "Salary certificate request",
+    "descHi": "वेतन प्रमाण पत्र (सैलरी सर्टिफिकेट) माँगने के लिए",
+    "descEn": "Request to HR/Accounts for a salary certificate",
+    "keywords": [
+      "salary certificate",
+      "salary slip",
+      "salary letter",
+      "income proof",
+      "salary proof",
+      "vetan praman patra",
+      "vetan",
+      "वेतन प्रमाण पत्र",
+      "वेतन",
+      "सैलरी सर्टिफिकेट",
+      "सैलरी",
+      "आय प्रमाण"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "मानव संसाधन / लेखा अधिकारी",
+        "office": "कार्यालय"
+      },
+      "en": {
+        "designation": "The HR / Accounts Officer",
+        "office": "Office"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "वेतन प्रमाण पत्र जारी करने हेतु आवेदन",
+      "en": "Request for issue of a salary certificate"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ। मैं आपके संस्थान में {{designation}} के पद पर कार्यरत हूँ।\nनिवेदन है कि मुझे {{salary_period}} की अवधि का वेतन प्रमाण पत्र प्रदान किया जाए, जिसमें मेरे पद, मासिक वेतन एवं सेवा की स्थिति का उल्लेख हो।\nइस प्रमाण पत्र की आवश्यकता का उद्देश्य है: {{purpose}}। प्रमाण पत्र का उपयोग केवल इसी प्रयोजन के लिए किया जाएगा।\nअतः आपसे विनम्र निवेदन है कि कृपया वेतन प्रमाण पत्र शीघ्र जारी करने की कृपा करें।\nधन्यवाद।",
+      "en": "My name is {{name}} and I live at {{address}}. I am working in your organisation as {{designation}}.\nI request you to kindly issue a salary certificate for the period {{salary_period}}, stating my designation, monthly salary and employment status.\nThe certificate is required for the following purpose: {{purpose}}. It will be used only for this purpose.\nI therefore request you to kindly issue the salary certificate at the earliest.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "designation",
+        "labelHi": "वर्तमान पद",
+        "labelEn": "Current designation",
+        "hintHi": "जैसे: वरिष्ठ लिपिक",
+        "hintEn": "e.g. Senior Clerk",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "salary_period",
+        "labelHi": "वेतन विवरण की अवधि",
+        "labelEn": "Period for salary details",
+        "hintHi": "जैसे: अप्रैल से सितंबर 2026",
+        "hintEn": "e.g. April to September 2026",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "purpose",
+        "labelHi": "प्रमाण पत्र का उद्देश्य",
+        "labelEn": "Purpose of the certificate",
+        "hintHi": "जैसे: बैंक ऋण के आवेदन हेतु",
+        "hintEn": "e.g. for a bank loan application",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "job_resignation",
+    "category": "employment",
+    "style": "application",
+    "titleHi": "त्यागपत्र (इस्तीफ़ा) पत्र",
+    "titleEn": "Resignation letter",
+    "descHi": "नौकरी से त्यागपत्र देने का पत्र, नोटिस अवधि सहित",
+    "descEn": "Letter of resignation with notice period",
+    "keywords": [
+      "resignation",
+      "resign",
+      "resignation letter",
+      "istifa",
+      "isteefa",
+      "tyagpatra",
+      "notice period",
+      "quit job",
+      "त्यागपत्र",
+      "इस्तीफ़ा",
+      "इस्तीफा",
+      "नोटिस अवधि",
+      "नौकरी छोड़ना"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "प्रबंधक महोदय",
+        "office": "कार्यालय"
+      },
+      "en": {
+        "designation": "The Manager",
+        "office": "Office"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "पद से त्यागपत्र प्रस्तुत करने के संबंध में",
+      "en": "Submission of resignation from the post"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं आपके संस्थान में {{designation}} के पद पर कार्यरत हूँ।\nइस पत्र के माध्यम से मेरा त्यागपत्र प्रस्तुत है। त्यागपत्र का कारण इस प्रकार है: {{reason}}।\nमैं {{notice_period}} की नोटिस अवधि पूर्ण करने के लिए तैयार हूँ। मेरा प्रस्तावित अंतिम कार्य दिवस {{last_day}} है। इस अवधि में अपने कार्य एवं दायित्व सौंपने में पूर्ण सहयोग देने के लिए तत्पर हूँ।\nआपके मार्गदर्शन तथा इस संस्थान में कार्य करने के अवसर के लिए मैं आभारी हूँ। अतः आपसे विनम्र निवेदन है कि कृपया मेरा त्यागपत्र स्वीकार करने तथा आगे की औपचारिकताओं की जानकारी देने की कृपा करें।\nधन्यवाद।",
+      "en": "My name is {{name}} and I am working in your organisation as {{designation}}.\nThrough this letter I am submitting my resignation from the above post. The reason for my resignation is as follows: {{reason}}.\nI am ready to serve a notice period of {{notice_period}}, and my proposed last working day is {{last_day}}. During this period I am ready to cooperate fully in handing over my work and responsibilities.\nI am grateful for the guidance and for the opportunity to work in your organisation. I therefore request you to kindly accept my resignation and inform me of the further formalities.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "designation",
+        "labelHi": "वर्तमान पद",
+        "labelEn": "Current designation",
+        "hintHi": "जैसे: कार्यालय सहायक",
+        "hintEn": "e.g. Office Assistant",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "reason",
+        "labelHi": "त्यागपत्र का कारण",
+        "labelEn": "Reason for resigning",
+        "hintHi": "जैसे: उच्च शिक्षा / व्यक्तिगत कारण",
+        "hintEn": "e.g. higher studies / personal reasons",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "notice_period",
+        "labelHi": "नोटिस अवधि",
+        "labelEn": "Notice period",
+        "hintHi": "जैसे: 30 दिन",
+        "hintEn": "e.g. 30 days",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "last_day",
+        "labelHi": "प्रस्तावित अंतिम कार्य दिवस",
+        "labelEn": "Proposed last working day",
+        "hintHi": "जैसे: 31 अक्टूबर 2026",
+        "hintEn": "e.g. 31 October 2026",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "job_leave",
+    "category": "employment",
+    "style": "application",
+    "titleHi": "कार्यालय में अवकाश हेतु आवेदन",
+    "titleEn": "Employee leave request",
+    "descHi": "कर्मचारी द्वारा प्रबंधक से अवकाश की प्रार्थना",
+    "descEn": "Leave request from an employee to the manager",
+    "keywords": [
+      "leave",
+      "leave application",
+      "employee leave",
+      "office leave",
+      "casual leave",
+      "sick leave",
+      "chhutti",
+      "chutti",
+      "avkash",
+      "अवकाश",
+      "छुट्टी",
+      "आकस्मिक अवकाश",
+      "बीमारी का अवकाश",
+      "कर्मचारी"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "प्रबंधक महोदय",
+        "office": "कार्यालय"
+      },
+      "en": {
+        "designation": "The Manager",
+        "office": "Office"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "अवकाश स्वीकृत करने हेतु आवेदन",
+      "en": "Application for sanction of leave"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं आपके कार्यालय में {{designation}} के पद पर कार्यरत हूँ।\nनिवेदन है कि {{reason}} के कारण मुझे {{dates}} के लिए {{leave_type}} की आवश्यकता है।\nअवकाश की अवधि में मेरे लंबित कार्यों की उचित व्यवस्था कर दी जाएगी। आवश्यकता होने पर मुझसे मोबाइल नंबर {{mobile}} पर संपर्क किया जा सकता है।\nअतः आपसे विनम्र निवेदन है कि कृपया उक्त अवधि का अवकाश स्वीकृत करने की कृपा करें।\nधन्यवाद।",
+      "en": "My name is {{name}} and I am working in your office as {{designation}}.\nDue to {{reason}}, I need {{leave_type}} for {{dates}}.\nDuring my leave, suitable arrangements will be made for my pending work. If required, I can be contacted on mobile number {{mobile}}.\nI therefore request you to kindly grant me leave for the above period.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "designation",
+        "labelHi": "वर्तमान पद",
+        "labelEn": "Current designation",
+        "hintHi": "जैसे: वरिष्ठ लिपिक",
+        "hintEn": "e.g. Senior Clerk",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "leave_type",
+        "labelHi": "अवकाश का प्रकार",
+        "labelEn": "Type of leave",
+        "hintHi": "जैसे: आकस्मिक अवकाश",
+        "hintEn": "e.g. casual leave",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "dates",
+        "labelHi": "अवकाश की अवधि",
+        "labelEn": "Leave period",
+        "hintHi": "जैसे: 14 से 16 अक्टूबर 2026 तक (3 दिन)",
+        "hintEn": "e.g. 14 to 16 October 2026 (3 days)",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "reason",
+        "labelHi": "अवकाश का कारण",
+        "labelEn": "Reason for leave",
+        "hintHi": "जैसे: बीमारी, पारिवारिक कार्यक्रम",
+        "hintEn": "e.g. illness, a family function",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  }
+]

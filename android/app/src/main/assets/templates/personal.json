@@ -1,0 +1,429 @@
+[
+  {
+    "id": "per_formal",
+    "category": "personal",
+    "style": "application",
+    "titleHi": "सामान्य औपचारिक पत्र",
+    "titleEn": "General formal letter",
+    "descHi": "किसी भी कार्यालय या अधिकारी को लिखने के लिए औपचारिक पत्र",
+    "descEn": "A formal letter to any office or authority",
+    "keywords": [
+      "formal letter",
+      "औपचारिक पत्र",
+      "general letter",
+      "सामान्य पत्र",
+      "application",
+      "प्रार्थना पत्र",
+      "aavedan",
+      "patra",
+      "official letter",
+      "karyalay",
+      "to whom it may concern"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "संबंधित अधिकारी महोदय",
+        "office": "कार्यालय"
+      },
+      "en": {
+        "designation": "The Concerned Authority",
+        "office": "Office"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "{{topic}} के संबंध में प्रार्थना पत्र",
+      "en": "Request regarding {{topic}}"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ।\nनिवेदन है कि {{topic}} के विषय में मेरी स्थिति इस प्रकार है। {{details}}\nइस विषय में आपका सहयोग मेरे लिए अत्यंत सहायक होगा। यदि आवश्यक हो तो संबंधित दस्तावेज़ उपलब्ध कराए जा सकते हैं।\nअतः आपसे विनम्र निवेदन है कि कृपया {{request}} की कृपा करें। संपर्क हेतु मेरा मोबाइल नंबर {{mobile}} है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I reside at {{address}}.\nI would like to bring the following to your kind notice regarding {{topic}}. {{details}}\nYour support in this matter will be of great help to me. If required, I can provide the relevant documents.\nI therefore request you to kindly {{request}}. My mobile number for contact is {{mobile}}.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "topic",
+        "labelHi": "पत्र का विषय",
+        "labelEn": "Subject of the letter",
+        "hintHi": "जैसे: पुराने बकाया का भुगतान",
+        "hintEn": "e.g. payment of an old pending amount",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "details",
+        "labelHi": "पूरी बात (संक्षेप में)",
+        "labelEn": "Details of the matter",
+        "hintHi": "जैसे: मामला कब से लंबित है और अब तक क्या हुआ",
+        "hintEn": "e.g. since when the matter is pending and what has happened so far",
+        "multiline": true,
+        "required": false
+      },
+      {
+        "key": "request",
+        "labelHi": "आपका अनुरोध",
+        "labelEn": "What you are requesting",
+        "hintHi": "जैसे: मामले की जाँच कर शीघ्र कार्रवाई करने",
+        "hintEn": "e.g. look into the matter and take prompt action",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "per_permission",
+    "category": "personal",
+    "style": "application",
+    "titleHi": "अनुमति पत्र",
+    "titleEn": "Permission request letter",
+    "descHi": "किसी कार्य या कार्यक्रम की अनुमति माँगने के लिए पत्र",
+    "descEn": "Letter asking permission for an activity or event",
+    "keywords": [
+      "permission",
+      "अनुमति",
+      "permission letter",
+      "anumati",
+      "अनुमति पत्र",
+      "request for permission",
+      "NOC",
+      "event permission",
+      "karyakram",
+      "आज्ञा",
+      "anumati patra"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "संबंधित अधिकारी महोदय",
+        "office": "कार्यालय"
+      },
+      "en": {
+        "designation": "The Concerned Authority",
+        "office": "Office"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "{{permission_for}} की अनुमति हेतु प्रार्थना पत्र",
+      "en": "Request for permission to {{permission_for}}"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ।\nविनम्र निवेदन है कि {{when}} के लिए मुझे {{permission_for}} की अनुमति की आवश्यकता है।\nइसका कारण यह है: {{reason}}। इस दौरान सभी नियमों और निर्देशों का पूर्ण पालन किया जाएगा तथा किसी को असुविधा न हो, इसका ध्यान रखा जाएगा।\nअतः आपसे विनम्र निवेदन है कि कृपया उपर्युक्त कार्य के लिए अनुमति प्रदान करने की कृपा करें। संपर्क हेतु मेरा मोबाइल नंबर {{mobile}} है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I reside at {{address}}.\nI respectfully request that I be permitted to {{permission_for}} on {{when}}.\nThe reason for this request is as follows: {{reason}}. All applicable rules and instructions will be followed fully, and care will be taken that no one is inconvenienced.\nI therefore request you to kindly grant permission for the above. My mobile number for contact is {{mobile}}.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "permission_for",
+        "labelHi": "किस कार्य की अनुमति",
+        "labelEn": "What permission is needed for",
+        "hintHi": "जैसे: परिसर में सांस्कृतिक कार्यक्रम आयोजित करने",
+        "hintEn": "e.g. hold a cultural programme in the premises",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "when",
+        "labelHi": "तिथि या अवधि",
+        "labelEn": "Date or period",
+        "hintHi": "जैसे: 25 अक्टूबर 2026 (शाम 5 से 8 बजे)",
+        "hintEn": "e.g. 25 October 2026 (5 pm to 8 pm)",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "reason",
+        "labelHi": "अनुमति का कारण",
+        "labelEn": "Reason for the request",
+        "hintHi": "जैसे: दीपावली मिलन समारोह के लिए",
+        "hintEn": "e.g. for a Diwali get-together",
+        "multiline": true,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "per_thank_you",
+    "category": "personal",
+    "style": "personal",
+    "titleHi": "धन्यवाद पत्र",
+    "titleEn": "Thank-you letter",
+    "descHi": "किसी की सहायता या सहयोग के लिए आभार पत्र",
+    "descEn": "A letter thanking someone for their help or support",
+    "keywords": [
+      "thank you",
+      "धन्यवाद",
+      "thank you letter",
+      "dhanyawad",
+      "आभार",
+      "abhar",
+      "धन्यवाद पत्र",
+      "gratitude",
+      "thanks",
+      "shukriya",
+      "aabhar patra"
+    ],
+    "recipient": null,
+    "salutation": {
+      "hi": "आदरणीय / प्रिय [नाम],",
+      "en": "Dear [Name],"
+    },
+    "subject": {
+      "hi": "आपके सहयोग के लिए धन्यवाद",
+      "en": "Thank you for your support"
+    },
+    "body": {
+      "hi": "आशा है कि आप स्वस्थ और प्रसन्न होंगे। यह पत्र मैंने आपका हृदय से आभार प्रकट करने के लिए लिखा है।\nआपने {{thanks_for}} में जो सहयोग दिया, वह मेरे लिए अत्यंत मूल्यवान रहा। आपकी सहायता से {{effect}}।\nआपका यह स्नेह और सहयोग मुझे सदा याद रहेगा। आशा है कि भविष्य में भी आपका मार्गदर्शन और आशीर्वाद इसी प्रकार मिलता रहेगा।\nएक बार पुनः हृदय से धन्यवाद।",
+      "en": "I hope this letter finds you in good health and good spirits. I have written it to express my sincere gratitude to you.\nThe support you gave me with {{thanks_for}} meant a great deal to me. Because of your help, {{effect}}.\nI will always remember your kindness and support. I hope I will continue to receive your guidance and good wishes in the future as well.\nThank you once again, from the bottom of my heart."
+    },
+    "closing": {
+      "hi": "सादर / स्नेह सहित,",
+      "en": "Yours sincerely,"
+    },
+    "fields": [
+      {
+        "key": "thanks_for",
+        "labelHi": "किस बात के लिए धन्यवाद",
+        "labelEn": "What you are thanking for",
+        "hintHi": "जैसे: मेरी परीक्षा की तैयारी",
+        "hintEn": "e.g. my exam preparation",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "effect",
+        "labelHi": "उससे क्या लाभ हुआ",
+        "labelEn": "How it helped you",
+        "hintHi": "जैसे: मुझे अपने लक्ष्य की ओर बढ़ने में बहुत मदद मिली",
+        "hintEn": "e.g. it helped me a lot in moving towards my goal",
+        "multiline": true,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "per_invitation",
+    "category": "personal",
+    "style": "personal",
+    "titleHi": "निमंत्रण पत्र",
+    "titleEn": "Invitation letter",
+    "descHi": "विवाह, पूजा, जन्मदिन या किसी कार्यक्रम का निमंत्रण",
+    "descEn": "Invitation to a wedding, puja, birthday or any event",
+    "keywords": [
+      "invitation",
+      "निमंत्रण",
+      "nimantran",
+      "निमंत्रण पत्र",
+      "invite",
+      "आमंत्रण",
+      "amantran",
+      "wedding card",
+      "party",
+      "function",
+      "karyakram",
+      "shaadi"
+    ],
+    "recipient": null,
+    "salutation": {
+      "hi": "आदरणीय / प्रिय [नाम],",
+      "en": "Dear [Name],"
+    },
+    "subject": {
+      "hi": "आपको सादर निमंत्रण",
+      "en": "Invitation to our event"
+    },
+    "body": {
+      "hi": "सादर नमस्कार। आशा है कि आप स्वस्थ और प्रसन्न होंगे। आपको यह जानकर प्रसन्नता होगी कि {{event}} का आयोजन किया जा रहा है।\nकार्यक्रम का विवरण इस प्रकार है: दिनांक {{event_date}}, समय {{event_time}}, स्थान {{venue}}।\nइस अवसर पर आपकी उपस्थिति हमारे लिए अत्यंत हर्ष का विषय होगी। आपसे सादर आग्रह है कि सपरिवार पधारकर कार्यक्रम की शोभा बढ़ाएँ।\nआपके आगमन की हम सभी को प्रतीक्षा रहेगी। धन्यवाद।",
+      "en": "Warm greetings. I hope you are in good health and good spirits. We are pleased to inform you that {{event}} is being organised.\nThe details of the event are as follows: date {{event_date}}, time {{event_time}}, venue {{venue}}.\nYour presence on this occasion would give us great joy. We warmly request you to attend with your family and grace the event.\nWe shall all look forward to welcoming you. Thank you."
+    },
+    "closing": {
+      "hi": "सादर / स्नेह सहित,",
+      "en": "Yours sincerely,"
+    },
+    "fields": [
+      {
+        "key": "event",
+        "labelHi": "कार्यक्रम का नाम",
+        "labelEn": "Event",
+        "hintHi": "जैसे: मेरे पुत्र का विवाह समारोह / गृह प्रवेश पूजा",
+        "hintEn": "e.g. wedding ceremony / housewarming puja",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "event_date",
+        "labelHi": "दिनांक",
+        "labelEn": "Date",
+        "hintHi": "जैसे: 15 नवंबर 2026",
+        "hintEn": "e.g. 15 November 2026",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "event_time",
+        "labelHi": "समय",
+        "labelEn": "Time",
+        "hintHi": "जैसे: शाम 6 बजे से",
+        "hintEn": "e.g. from 6 pm",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "venue",
+        "labelHi": "स्थान",
+        "labelEn": "Venue",
+        "hintHi": "जैसे: राजेंद्र भवन, मुख्य बाज़ार, लखनऊ",
+        "hintEn": "e.g. Rajendra Bhawan, Main Bazaar, Lucknow",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "per_apology",
+    "category": "personal",
+    "style": "personal",
+    "titleHi": "क्षमा याचना पत्र",
+    "titleEn": "Apology letter",
+    "descHi": "किसी भूल या असुविधा के लिए क्षमा माँगने का पत्र",
+    "descEn": "A letter apologising for a mistake or inconvenience",
+    "keywords": [
+      "apology",
+      "क्षमा",
+      "kshama",
+      "sorry",
+      "माफ़ी",
+      "maafi",
+      "क्षमा याचना पत्र",
+      "apology letter",
+      "माफी",
+      "kshama yachna",
+      "regret"
+    ],
+    "recipient": null,
+    "salutation": {
+      "hi": "आदरणीय / प्रिय [नाम],",
+      "en": "Dear [Name],"
+    },
+    "subject": {
+      "hi": "क्षमा याचना",
+      "en": "Apology"
+    },
+    "body": {
+      "hi": "आशा है कि आप स्वस्थ होंगे। यह पत्र मैंने {{mistake}} के लिए आपसे क्षमा माँगने के उद्देश्य से लिखा है।\nमुझे इस बात का सच्चा खेद है। {{reason}} इससे आपको जो कष्ट या असुविधा हुई, उसका मुझे गहरा दुख है।\nमैंने इस भूल से सीख ली है और मेरा प्रयास रहेगा कि भविष्य में ऐसा दोबारा न हो। इसे सुधारने के लिए मेरा प्रस्ताव है: {{make_amends}}\nआशा है कि आप मुझे क्षमा करेंगे और हमारा संबंध पहले की तरह मधुर बना रहेगा। धन्यवाद।",
+      "en": "I hope you are well. I have written this letter to apologise to you for {{mistake}}.\nI am truly sorry about this. {{reason}} I deeply regret the hurt or inconvenience it caused you.\nI have learnt from this mistake and will try my best to ensure that it does not happen again. To make up for it, I would like to propose the following: {{make_amends}}\nI hope you will forgive me and that our relationship will remain as warm as before. Thank you."
+    },
+    "closing": {
+      "hi": "सादर / स्नेह सहित,",
+      "en": "Yours sincerely,"
+    },
+    "fields": [
+      {
+        "key": "mistake",
+        "labelHi": "किस बात के लिए क्षमा",
+        "labelEn": "What you are apologising for",
+        "hintHi": "जैसे: समय पर न पहुँचने / आपकी बात न मानने",
+        "hintEn": "e.g. not arriving on time / not listening to you",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "reason",
+        "labelHi": "कारण या स्पष्टीकरण",
+        "labelEn": "Reason or explanation",
+        "hintHi": "जैसे: अचानक काम आ जाने से मैं सूचना भी नहीं दे सका।",
+        "hintEn": "e.g. an urgent matter came up and I could not even inform you.",
+        "multiline": true,
+        "required": false
+      },
+      {
+        "key": "make_amends",
+        "labelHi": "भूल सुधारने का प्रस्ताव",
+        "labelEn": "How you will make it right",
+        "hintHi": "जैसे: इसी सप्ताह मिलकर बात करना",
+        "hintEn": "e.g. meeting you this week to talk it over",
+        "multiline": true,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "per_request",
+    "category": "personal",
+    "style": "personal",
+    "titleHi": "अनुरोध पत्र",
+    "titleEn": "Request letter",
+    "descHi": "किसी से विनम्रतापूर्वक सहायता या सहयोग माँगने का पत्र",
+    "descEn": "A polite letter asking someone for help or a favour",
+    "keywords": [
+      "request",
+      "अनुरोध",
+      "anurodh",
+      "request letter",
+      "अनुरोध पत्र",
+      "favour",
+      "help",
+      "सहायता",
+      "sahayata",
+      "nivedan",
+      "madad"
+    ],
+    "recipient": null,
+    "salutation": {
+      "hi": "आदरणीय / प्रिय [नाम],",
+      "en": "Dear [Name],"
+    },
+    "subject": {
+      "hi": "विनम्र अनुरोध",
+      "en": "A polite request"
+    },
+    "body": {
+      "hi": "सादर नमस्कार। आशा है कि आप स्वस्थ और कुशल होंगे।\nआपसे एक छोटी-सी सहायता के लिए यह पत्र लिखा है। मेरा अनुरोध है कि कृपया {{request_for}}।\nइसकी आवश्यकता का कारण यह है: {{reason}}। यदि संभव हो तो {{by_when}} तक यह कार्य हो जाए।\nयदि किसी कारण से यह संभव न हो, तो कृपया बेझिझक बता दें। आपकी सहायता के लिए अग्रिम धन्यवाद।",
+      "en": "Warm greetings. I hope you are well.\nI am writing to ask for a small favour. I would be grateful if you could please {{request_for}}.\nThe reason I need this is as follows: {{reason}}. If possible, it would help me to have this done by {{by_when}}.\nIf it is not possible for any reason, please do not hesitate to tell me. Thank you in advance for your help."
+    },
+    "closing": {
+      "hi": "सादर / स्नेह सहित,",
+      "en": "Yours sincerely,"
+    },
+    "fields": [
+      {
+        "key": "request_for",
+        "labelHi": "आपका अनुरोध",
+        "labelEn": "What you are requesting",
+        "hintHi": "जैसे: मुझे अपनी पुरानी किताबें कुछ दिनों के लिए दे दें",
+        "hintEn": "e.g. lend me your old books for a few days",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "reason",
+        "labelHi": "आवश्यकता का कारण",
+        "labelEn": "Reason you need it",
+        "hintHi": "जैसे: आगामी परीक्षा की तैयारी के लिए",
+        "hintEn": "e.g. to prepare for the upcoming exam",
+        "multiline": true,
+        "required": false
+      },
+      {
+        "key": "by_when",
+        "labelHi": "कब तक चाहिए",
+        "labelEn": "By when",
+        "hintHi": "जैसे: 20 अक्टूबर",
+        "hintEn": "e.g. 20 October",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  }
+]

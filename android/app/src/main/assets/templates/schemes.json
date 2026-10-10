@@ -1,0 +1,799 @@
+[
+  {
+    "id": "sch_ration_correction",
+    "category": "schemes",
+    "style": "application",
+    "titleHi": "राशन कार्ड में सुधार",
+    "titleEn": "Ration card correction",
+    "descHi": "राशन कार्ड में दर्ज गलत विवरण सुधारने का अनुरोध",
+    "descEn": "Request to correct wrong details on a ration card",
+    "keywords": [
+      "ration card",
+      "राशन कार्ड",
+      "ration card correction",
+      "राशन कार्ड सुधार",
+      "ration sudhar",
+      "name correction",
+      "नाम सुधार",
+      "जिला पूर्ति",
+      "jila purti",
+      "PDS",
+      "khadya"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "जिला पूर्ति अधिकारी महोदय",
+        "office": "जिला पूर्ति कार्यालय"
+      },
+      "en": {
+        "designation": "The District Supply Officer",
+        "office": "District Supply Office"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "राशन कार्ड में दर्ज विवरण में सुधार हेतु प्रार्थना पत्र",
+      "en": "Request for correction of details in ration card"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ। मेरे परिवार की राशन कार्ड संख्या {{ration_card_no}} है।\nनिवेदन है कि राशन कार्ड में मेरे परिवार से संबंधित कुछ विवरण गलत दर्ज है। गलत दर्ज विवरण: {{wrong_detail}}। सही विवरण: {{correct_detail}}।\nइस त्रुटि के कारण राशन प्राप्त करने तथा अन्य आवश्यक कार्यों में असुविधा हो रही है। सही विवरण के प्रमाण के रूप में आवश्यक दस्तावेज़ों की प्रतियाँ इस पत्र के साथ संलग्न हैं।\nअतः आपसे विनम्र निवेदन है कि कृपया राशन कार्ड में उक्त सुधार करने की कृपा करें। संपर्क हेतु मेरा मोबाइल नंबर {{mobile}} है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I reside at {{address}}. The ration card number of my family is {{ration_card_no}}.\nI would like to bring to your notice that some details relating to my family have been entered incorrectly in the ration card. Incorrect detail: {{wrong_detail}}. Correct detail: {{correct_detail}}.\nBecause of this error, my family is facing inconvenience in obtaining ration and in other work that requires the card. Copies of the supporting documents are enclosed with this letter.\nI therefore request you to kindly get the above correction made in the ration card. My mobile number for contact is {{mobile}}.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "ration_card_no",
+        "labelHi": "राशन कार्ड संख्या",
+        "labelEn": "Ration card number",
+        "hintHi": "जैसे: कार्ड पर छपी संख्या",
+        "hintEn": "e.g. the number printed on the card",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "wrong_detail",
+        "labelHi": "गलत दर्ज विवरण",
+        "labelEn": "Incorrect detail",
+        "hintHi": "जैसे: नाम 'सुरेश कुमर' दर्ज है",
+        "hintEn": "e.g. name is entered as 'Suresh Kumr'",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "correct_detail",
+        "labelHi": "सही विवरण",
+        "labelEn": "Correct detail",
+        "hintHi": "जैसे: सही नाम 'सुरेश कुमार' है",
+        "hintEn": "e.g. the correct name is 'Suresh Kumar'",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "sch_ration_add_member",
+    "category": "schemes",
+    "style": "application",
+    "titleHi": "राशन कार्ड में सदस्य जोड़ना",
+    "titleEn": "Add member to ration card",
+    "descHi": "राशन कार्ड में परिवार के सदस्य का नाम जुड़वाने का अनुरोध",
+    "descEn": "Request to add a family member to the ration card",
+    "keywords": [
+      "ration card",
+      "राशन कार्ड",
+      "add member",
+      "सदस्य जोड़ना",
+      "naam jodna",
+      "name add",
+      "नाम जुड़वाना",
+      "new member",
+      "jila purti",
+      "जिला पूर्ति",
+      "ration card me naam"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "जिला पूर्ति अधिकारी महोदय",
+        "office": "जिला पूर्ति कार्यालय"
+      },
+      "en": {
+        "designation": "The District Supply Officer",
+        "office": "District Supply Office"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "राशन कार्ड में परिवार के सदस्य का नाम जुड़वाने हेतु प्रार्थना पत्र",
+      "en": "Request for adding a family member's name to the ration card"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ। मेरे परिवार की राशन कार्ड संख्या {{ration_card_no}} है।\nनिवेदन है कि मेरे परिवार के सदस्य {{member_name}} का नाम (मेरे साथ संबंध: {{relation}}) अभी तक राशन कार्ड में दर्ज नहीं है। नाम जोड़ने का कारण: {{reason}}।\nसदस्य की पहचान तथा संबंध से जुड़े आवश्यक दस्तावेज़ों की प्रतियाँ इस पत्र के साथ संलग्न हैं।\nअतः आपसे विनम्र निवेदन है कि कृपया उक्त सदस्य का नाम राशन कार्ड में जोड़ने की कृपा करें। संपर्क हेतु मेरा मोबाइल नंबर {{mobile}} है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I reside at {{address}}. The ration card number of my family is {{ration_card_no}}.\nI wish to inform you that the name of {{member_name}} (relationship to me: {{relation}}), a member of my family, is not yet entered in the ration card. Reason for adding the name: {{reason}}.\nCopies of the documents required to establish the identity and relationship of the member are enclosed with this letter.\nI therefore request you to kindly add the name of the said member to the ration card. My mobile number for contact is {{mobile}}.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "ration_card_no",
+        "labelHi": "राशन कार्ड संख्या",
+        "labelEn": "Ration card number",
+        "hintHi": "जैसे: कार्ड पर छपी संख्या",
+        "hintEn": "e.g. the number printed on the card",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "member_name",
+        "labelHi": "जोड़े जाने वाले सदस्य का नाम",
+        "labelEn": "Name of member to be added",
+        "hintHi": "जैसे: सुनीता देवी",
+        "hintEn": "e.g. Sunita Devi",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "relation",
+        "labelHi": "आपके साथ संबंध",
+        "labelEn": "Relationship to you",
+        "hintHi": "जैसे: पत्नी, पुत्र, बहू",
+        "hintEn": "e.g. wife, son, daughter-in-law",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "reason",
+        "labelHi": "नाम जोड़ने का कारण",
+        "labelEn": "Reason for addition",
+        "hintHi": "जैसे: विवाह के बाद परिवार में शामिल / नवजात का जन्म",
+        "hintEn": "e.g. joined the family after marriage / birth of a child",
+        "multiline": true,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "sch_ration_remove_member",
+    "category": "schemes",
+    "style": "application",
+    "titleHi": "राशन कार्ड से सदस्य हटाना",
+    "titleEn": "Remove member from ration card",
+    "descHi": "राशन कार्ड से किसी सदस्य का नाम हटवाने का अनुरोध",
+    "descEn": "Request to remove a member's name from the ration card",
+    "keywords": [
+      "ration card",
+      "राशन कार्ड",
+      "remove member",
+      "सदस्य हटाना",
+      "naam hatana",
+      "name delete",
+      "नाम कटवाना",
+      "नाम हटवाना",
+      "jila purti",
+      "जिला पूर्ति",
+      "ration card se naam"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "जिला पूर्ति अधिकारी महोदय",
+        "office": "जिला पूर्ति कार्यालय"
+      },
+      "en": {
+        "designation": "The District Supply Officer",
+        "office": "District Supply Office"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "राशन कार्ड से सदस्य का नाम हटवाने हेतु प्रार्थना पत्र",
+      "en": "Request for removal of a member's name from the ration card"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ। मेरे परिवार की राशन कार्ड संख्या {{ration_card_no}} है।\nनिवेदन है कि राशन कार्ड में दर्ज सदस्य {{member_name}} (मेरे साथ संबंध: {{relation}}) का नाम अब कार्ड से हटाया जाना आवश्यक है। नाम हटाने का कारण: {{reason}}।\nउपर्युक्त जानकारी मेरी जानकारी के अनुसार सत्य है। आवश्यक दस्तावेज़ों की प्रतियाँ इस पत्र के साथ संलग्न हैं। शेष सदस्यों के नाम कार्ड में यथावत रहें, ऐसा अनुरोध है।\nअतः आपसे विनम्र निवेदन है कि कृपया उक्त सदस्य का नाम राशन कार्ड से हटाने की कृपा करें। संपर्क हेतु मेरा मोबाइल नंबर {{mobile}} है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I reside at {{address}}. The ration card number of my family is {{ration_card_no}}.\nI wish to inform you that the name of {{member_name}} (relationship to me: {{relation}}), entered in the ration card, now needs to be removed from the card. Reason for removal: {{reason}}.\nThe above information is true to the best of my knowledge. Copies of the necessary documents are enclosed with this letter. I request that the names of the remaining members continue unchanged in the card.\nI therefore request you to kindly remove the name of the said member from the ration card. My mobile number for contact is {{mobile}}.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "ration_card_no",
+        "labelHi": "राशन कार्ड संख्या",
+        "labelEn": "Ration card number",
+        "hintHi": "जैसे: कार्ड पर छपी संख्या",
+        "hintEn": "e.g. the number printed on the card",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "member_name",
+        "labelHi": "हटाए जाने वाले सदस्य का नाम",
+        "labelEn": "Name of member to be removed",
+        "hintHi": "जैसे: रमेश कुमार",
+        "hintEn": "e.g. Ramesh Kumar",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "relation",
+        "labelHi": "आपके साथ संबंध",
+        "labelEn": "Relationship to you",
+        "hintHi": "जैसे: पुत्र, भाई, बहन",
+        "hintEn": "e.g. son, brother, sister",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "reason",
+        "labelHi": "नाम हटाने का कारण",
+        "labelEn": "Reason for removal",
+        "hintHi": "जैसे: विवाह के बाद अन्यत्र निवास / निधन",
+        "hintEn": "e.g. living elsewhere after marriage / demise",
+        "multiline": true,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "sch_aadhaar",
+    "category": "schemes",
+    "style": "application",
+    "titleHi": "आधार में सुधार / अद्यतन आवेदन",
+    "titleEn": "Aadhaar correction / update",
+    "descHi": "आधार में दर्ज विवरण सुधारने या अद्यतन कराने का अनुरोध",
+    "descEn": "Request to correct or update details in Aadhaar",
+    "keywords": [
+      "aadhaar",
+      "आधार",
+      "aadhar",
+      "आधार कार्ड",
+      "aadhaar update",
+      "आधार सुधार",
+      "UIDAI",
+      "aadhaar correction",
+      "name change",
+      "address change",
+      "aadhar card me sudhar"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "प्रभारी अधिकारी महोदय",
+        "office": "आधार सेवा केंद्र / यूआईडीएआई क्षेत्रीय कार्यालय"
+      },
+      "en": {
+        "designation": "The Officer-in-Charge",
+        "office": "Aadhaar Seva Kendra / UIDAI Regional Office"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "आधार में विवरण सुधार / अद्यतन हेतु प्रार्थना पत्र",
+      "en": "Request for correction / update of details in Aadhaar"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ। मेरे आधार (संख्या के अंतिम 4 अंक: {{aadhaar_last4}}) में दर्ज कुछ विवरण को सुधारने या अद्यतन कराने की आवश्यकता है।\nसुधार या अद्यतन का विवरण: {{update_details}}।\nइसका कारण: {{reason}}। सही विवरण के समर्थन में आवश्यक दस्तावेज़ आपके निर्देशानुसार प्रस्तुत किए जाएँगे।\nअतः आपसे विनम्र निवेदन है कि कृपया उक्त सुधार या अद्यतन की प्रक्रिया बताने तथा उसे पूर्ण कराने की कृपा करें। संपर्क हेतु मेरा मोबाइल नंबर {{mobile}} है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I reside at {{address}}. Some details recorded in my Aadhaar (last 4 digits of the number: {{aadhaar_last4}}) need to be corrected or updated.\nDetails of the correction or update required: {{update_details}}.\nThe reason for this is: {{reason}}. The necessary documents in support of the correct details will be produced as per your instructions.\nI therefore request you to kindly guide me on the procedure for the above correction or update and help me complete it. My mobile number for contact is {{mobile}}.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "aadhaar_last4",
+        "labelHi": "आधार संख्या (अंतिम 4 अंक)",
+        "labelEn": "Aadhaar number (last 4 digits)",
+        "hintHi": "जैसे: 1234 (पूरी आधार संख्या न लिखें)",
+        "hintEn": "e.g. 1234 (do not type the full number)",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "update_details",
+        "labelHi": "क्या बदलना या सुधारना है",
+        "labelEn": "What needs to be updated",
+        "hintHi": "जैसे: नाम 'अनिल' की जगह 'अनिल कुमार'; मोबाइल नंबर बदलना",
+        "hintEn": "e.g. name 'Anil' to 'Anil Kumar'; change of mobile number",
+        "multiline": true,
+        "required": false
+      },
+      {
+        "key": "reason",
+        "labelHi": "सुधार का कारण",
+        "labelEn": "Reason for the change",
+        "hintHi": "जैसे: स्कूल के दस्तावेज़ों में नाम अलग है",
+        "hintEn": "e.g. name differs in school records",
+        "multiline": true,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "sch_income_cert",
+    "category": "schemes",
+    "style": "application",
+    "titleHi": "आय प्रमाण पत्र आवेदन",
+    "titleEn": "Income certificate request",
+    "descHi": "आय प्रमाण पत्र जारी करने हेतु तहसीलदार को प्रार्थना पत्र",
+    "descEn": "Application to the Tehsildar for an income certificate",
+    "keywords": [
+      "income certificate",
+      "आय प्रमाण पत्र",
+      "aay praman patra",
+      "income proof",
+      "आय प्रमाणपत्र",
+      "tehsil",
+      "तहसील",
+      "aay praman",
+      "annual income",
+      "वार्षिक आय",
+      "aay certificate"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "तहसीलदार महोदय",
+        "office": "तहसील कार्यालय"
+      },
+      "en": {
+        "designation": "The Tehsildar",
+        "office": "Tehsil Office"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "आय प्रमाण पत्र बनवाने हेतु प्रार्थना पत्र",
+      "en": "Request for issue of an income certificate"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ। मेरे पिता का नाम {{father}} है।\nनिवेदन है कि मुझे {{purpose}} के लिए आय प्रमाण पत्र की आवश्यकता है। मेरे परिवार की वार्षिक आय लगभग {{annual_income}} है और आय का मुख्य स्रोत {{income_source}} है।\nउपर्युक्त जानकारी मेरी जानकारी के अनुसार सत्य है। आवश्यक दस्तावेज़ इस पत्र के साथ संलग्न हैं।\nअतः आपसे विनम्र निवेदन है कि कृपया जाँच के उपरांत नियमानुसार मेरा आय प्रमाण पत्र जारी करने की कृपा करें। संपर्क हेतु मेरा मोबाइल नंबर {{mobile}} है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I reside at {{address}}. My father's name is {{father}}.\nI request you to issue an income certificate, which I require for {{purpose}}. The annual income of my family is approximately {{annual_income}}, and the main source of income is {{income_source}}.\nThe above information is true to the best of my knowledge. The necessary documents are enclosed with this letter.\nI therefore request you to kindly issue my income certificate after verification, as per the applicable procedure. My mobile number for contact is {{mobile}}.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "purpose",
+        "labelHi": "प्रमाण पत्र किस काम के लिए चाहिए",
+        "labelEn": "Purpose of the certificate",
+        "hintHi": "जैसे: छात्रवृत्ति आवेदन / कॉलेज प्रवेश",
+        "hintEn": "e.g. scholarship application / college admission",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "annual_income",
+        "labelHi": "परिवार की वार्षिक आय (लगभग)",
+        "labelEn": "Annual family income (approx.)",
+        "hintHi": "जैसे: 1,20,000 रुपये",
+        "hintEn": "e.g. Rs. 1,20,000",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "income_source",
+        "labelHi": "आय का मुख्य स्रोत",
+        "labelEn": "Main source of income",
+        "hintHi": "जैसे: खेती / मजदूरी / नौकरी",
+        "hintEn": "e.g. farming / daily wages / salaried job",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "sch_caste_cert",
+    "category": "schemes",
+    "style": "application",
+    "titleHi": "जाति प्रमाण पत्र आवेदन",
+    "titleEn": "Caste certificate request",
+    "descHi": "जाति प्रमाण पत्र जारी करने हेतु तहसीलदार को प्रार्थना पत्र",
+    "descEn": "Application to the Tehsildar for a caste certificate",
+    "keywords": [
+      "caste certificate",
+      "जाति प्रमाण पत्र",
+      "jati praman patra",
+      "jaati",
+      "जाति प्रमाणपत्र",
+      "SC ST OBC",
+      "category certificate",
+      "tehsil",
+      "तहसील",
+      "caste praman patra",
+      "jati certificate"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "तहसीलदार महोदय",
+        "office": "तहसील कार्यालय"
+      },
+      "en": {
+        "designation": "The Tehsildar",
+        "office": "Tehsil Office"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "जाति प्रमाण पत्र बनवाने हेतु प्रार्थना पत्र",
+      "en": "Request for issue of a caste certificate"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ। मेरे पिता का नाम {{father}} है।\nनिवेदन है कि मेरा परिवार {{caste}} जाति या वर्ग से संबंधित है और मुझे {{purpose}} के लिए जाति प्रमाण पत्र की आवश्यकता है।\nइस संबंध में मेरे पास उपलब्ध दस्तावेज़: {{proof_docs}}। इनकी प्रतियाँ इस पत्र के साथ संलग्न हैं।\nअतः आपसे विनम्र निवेदन है कि कृपया जाँच के उपरांत नियमानुसार मेरा जाति प्रमाण पत्र जारी करने की कृपा करें। संपर्क हेतु मेरा मोबाइल नंबर {{mobile}} है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I reside at {{address}}. My father's name is {{father}}.\nI wish to state that my family belongs to the {{caste}} caste or category, and I require a caste certificate for {{purpose}}.\nThe documents available with me in this regard are: {{proof_docs}}. Copies of these are enclosed with this letter.\nI therefore request you to kindly issue my caste certificate after verification, as per the applicable procedure. My mobile number for contact is {{mobile}}.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "caste",
+        "labelHi": "जाति / वर्ग",
+        "labelEn": "Caste / category",
+        "hintHi": "जैसे: जाति या वर्ग का नाम लिखें",
+        "hintEn": "e.g. write the caste or category name",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "purpose",
+        "labelHi": "प्रमाण पत्र किस काम के लिए चाहिए",
+        "labelEn": "Purpose of the certificate",
+        "hintHi": "जैसे: स्कूल / कॉलेज प्रवेश, नौकरी आवेदन",
+        "hintEn": "e.g. school / college admission, job application",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "proof_docs",
+        "labelHi": "उपलब्ध सहायक दस्तावेज़",
+        "labelEn": "Supporting documents available",
+        "hintHi": "जैसे: पिता का जाति प्रमाण पत्र, राशन कार्ड, विद्यालय प्रमाण पत्र",
+        "hintEn": "e.g. father's caste certificate, ration card, school certificate",
+        "multiline": true,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "sch_domicile_cert",
+    "category": "schemes",
+    "style": "application",
+    "titleHi": "अधिवास प्रमाण पत्र आवेदन",
+    "titleEn": "Domicile certificate request",
+    "descHi": "मूल निवास (अधिवास) प्रमाण पत्र के लिए प्रार्थना पत्र",
+    "descEn": "Application for a domicile (resident) certificate",
+    "keywords": [
+      "domicile certificate",
+      "अधिवास प्रमाण पत्र",
+      "mool niwas",
+      "मूल निवास प्रमाण पत्र",
+      "niwas praman patra",
+      "residence certificate",
+      "resident certificate",
+      "निवास प्रमाण पत्र",
+      "tehsil",
+      "domicile",
+      "mool niwasi"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "तहसीलदार महोदय",
+        "office": "तहसील कार्यालय"
+      },
+      "en": {
+        "designation": "The Tehsildar",
+        "office": "Tehsil Office"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "अधिवास (मूल निवास) प्रमाण पत्र बनवाने हेतु प्रार्थना पत्र",
+      "en": "Request for issue of a domicile certificate"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ। मेरे पिता का नाम {{father}} है।\nनिवेदन है कि मेरा निवास {{residing_since}} से इसी पते पर है और हमारा परिवार यहीं का निवासी है। मुझे {{purpose}} के लिए अधिवास (मूल निवास) प्रमाण पत्र की आवश्यकता है।\nनिवास के प्रमाण के रूप में उपलब्ध दस्तावेज़: {{proof_docs}}। इनकी प्रतियाँ इस पत्र के साथ संलग्न हैं।\nअतः आपसे विनम्र निवेदन है कि कृपया जाँच के उपरांत नियमानुसार अधिवास प्रमाण पत्र जारी करने की कृपा करें। संपर्क हेतु मेरा मोबाइल नंबर {{mobile}} है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I reside at {{address}}. My father's name is {{father}}.\nI wish to state that I have been living at this address since {{residing_since}}, and my family is a resident of this place. I require a domicile certificate for {{purpose}}.\nThe documents available as proof of residence are: {{proof_docs}}. Copies of these are enclosed with this letter.\nI therefore request you to kindly issue the domicile certificate after verification, as per the applicable procedure. My mobile number for contact is {{mobile}}.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "residing_since",
+        "labelHi": "इस पते पर कब से निवास",
+        "labelEn": "Residing at this address since",
+        "hintHi": "जैसे: जन्म से / वर्ष 2005 से",
+        "hintEn": "e.g. since birth / since 2005",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "purpose",
+        "labelHi": "प्रमाण पत्र किस काम के लिए चाहिए",
+        "labelEn": "Purpose of the certificate",
+        "hintHi": "जैसे: प्रवेश परीक्षा, नौकरी आवेदन",
+        "hintEn": "e.g. entrance exam, job application",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "proof_docs",
+        "labelHi": "निवास के सहायक दस्तावेज़",
+        "labelEn": "Documents proving residence",
+        "hintHi": "जैसे: राशन कार्ड, बिजली बिल, मतदाता पहचान पत्र",
+        "hintEn": "e.g. ration card, electricity bill, voter ID",
+        "multiline": true,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "sch_birth_cert_correction",
+    "category": "schemes",
+    "style": "application",
+    "titleHi": "जन्म प्रमाण पत्र में सुधार",
+    "titleEn": "Birth certificate correction",
+    "descHi": "जन्म प्रमाण पत्र में दर्ज गलत विवरण सुधारने का अनुरोध",
+    "descEn": "Request to correct wrong details in a birth certificate",
+    "keywords": [
+      "birth certificate",
+      "जन्म प्रमाण पत्र",
+      "janm praman patra",
+      "birth certificate correction",
+      "जन्म प्रमाण पत्र सुधार",
+      "name correction",
+      "date of birth correction",
+      "जन्म तिथि सुधार",
+      "registrar",
+      "पंजीयक",
+      "janm mrityu"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "जन्म-मृत्यु पंजीयक महोदय",
+        "office": "जन्म एवं मृत्यु पंजीकरण कार्यालय"
+      },
+      "en": {
+        "designation": "The Registrar of Births and Deaths",
+        "office": "Office of Birth and Death Registration"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "जन्म प्रमाण पत्र में सुधार हेतु प्रार्थना पत्र",
+      "en": "Request for correction in birth certificate"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ।\nनिवेदन है कि जन्म प्रमाण पत्र (पंजीकरण संख्या: {{reg_no}}) में कुछ विवरण गलत दर्ज है। प्रमाण पत्र जिनका है, उनका नाम व जन्म तिथि: {{person_details}}। गलत दर्ज विवरण: {{wrong_detail}}। सही विवरण: {{correct_detail}}।\nइस त्रुटि के कारण विद्यालय, पहचान पत्र तथा अन्य आवश्यक कार्यों में कठिनाई हो सकती है। सही विवरण के प्रमाण के रूप में उपलब्ध दस्तावेज़ों की प्रतियाँ इस पत्र के साथ संलग्न हैं।\nअतः आपसे विनम्र निवेदन है कि कृपया नियमानुसार उक्त सुधार करने तथा संशोधित जन्म प्रमाण पत्र उपलब्ध कराने की कृपा करें। संपर्क हेतु मेरा मोबाइल नंबर {{mobile}} है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I reside at {{address}}.\nI wish to bring to your notice that some details are recorded incorrectly in the birth certificate (registration number: {{reg_no}}). Name and date of birth of the person to whom the certificate belongs: {{person_details}}. Incorrect detail: {{wrong_detail}}. Correct detail: {{correct_detail}}.\nThis error may cause difficulty in school matters, identity documents and other important work. Copies of the available documents supporting the correct details are enclosed with this letter.\nI therefore request you to kindly make the above correction as per the applicable procedure and provide the corrected birth certificate. My mobile number for contact is {{mobile}}.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "reg_no",
+        "labelHi": "जन्म पंजीकरण संख्या",
+        "labelEn": "Birth registration number",
+        "hintHi": "जैसे: प्रमाण पत्र पर छपी संख्या",
+        "hintEn": "e.g. the number printed on the certificate",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "person_details",
+        "labelHi": "व्यक्ति का नाम व जन्म तिथि",
+        "labelEn": "Person's name and date of birth",
+        "hintHi": "जैसे: अनन्या शर्मा, 12 मई 2014",
+        "hintEn": "e.g. Ananya Sharma, 12 May 2014",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "wrong_detail",
+        "labelHi": "गलत दर्ज विवरण",
+        "labelEn": "Incorrect detail",
+        "hintHi": "जैसे: पिता का नाम 'रमेश कुमर' दर्ज है",
+        "hintEn": "e.g. father's name entered as 'Ramesh Kumr'",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "correct_detail",
+        "labelHi": "सही विवरण",
+        "labelEn": "Correct detail",
+        "hintHi": "जैसे: सही नाम 'रमेश कुमार' है",
+        "hintEn": "e.g. the correct name is 'Ramesh Kumar'",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "sch_pension",
+    "category": "schemes",
+    "style": "application",
+    "titleHi": "पेंशन संबंधी प्रार्थना पत्र",
+    "titleEn": "Pension-related application",
+    "descHi": "वृद्धावस्था, विधवा, दिव्यांग या सेवानिवृत्ति पेंशन का अनुरोध",
+    "descEn": "Request on old-age, widow, disability or retirement pension",
+    "keywords": [
+      "pension",
+      "पेंशन",
+      "old age pension",
+      "वृद्धावस्था पेंशन",
+      "widow pension",
+      "विधवा पेंशन",
+      "disability pension",
+      "दिव्यांग पेंशन",
+      "retirement pension",
+      "सेवानिवृत्ति पेंशन",
+      "pension band"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "पेंशन अधिकारी महोदय",
+        "office": "पेंशन कार्यालय"
+      },
+      "en": {
+        "designation": "The Pension Officer",
+        "office": "Pension Office"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "{{pension_type}} के संबंध में प्रार्थना पत्र",
+      "en": "Application regarding {{pension_type}}"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ।\nनिवेदन है कि {{pension_type}} के संबंध में मेरा यह प्रार्थना पत्र है। मेरी पेंशन संदर्भ संख्या (पीपीओ संख्या, खाता संख्या या आवेदन संख्या, यदि उपलब्ध हो): {{reference_no}}।\nइस विषय में मेरा अनुरोध इस प्रकार है: {{matter}}\nआवश्यक दस्तावेज़ों की प्रतियाँ इस पत्र के साथ संलग्न हैं तथा आवश्यकता होने पर अन्य दस्तावेज़ भी प्रस्तुत किए जा सकेंगे।\nअतः आपसे विनम्र निवेदन है कि कृपया मामले की जाँच कर नियमानुसार आवश्यक कार्रवाई करने तथा मुझे सूचित करने की कृपा करें। संपर्क हेतु मेरा मोबाइल नंबर {{mobile}} है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I reside at {{address}}.\nI am writing this application regarding {{pension_type}}. My pension reference (PPO number, account number or application number, if available): {{reference_no}}.\nMy request in this matter is as follows: {{matter}}\nCopies of the necessary documents are enclosed with this letter, and other documents can be produced if required.\nI therefore request you to kindly look into the matter, take the necessary action as per the applicable procedure and inform me accordingly. My mobile number for contact is {{mobile}}.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "pension_type",
+        "labelHi": "पेंशन का प्रकार",
+        "labelEn": "Type of pension",
+        "hintHi": "जैसे: वृद्धावस्था पेंशन / विधवा पेंशन / सेवानिवृत्ति पेंशन",
+        "hintEn": "e.g. old-age pension / widow pension / retirement pension",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "reference_no",
+        "labelHi": "पेंशन संदर्भ संख्या",
+        "labelEn": "Pension reference number",
+        "hintHi": "जैसे: पीपीओ संख्या या आवेदन संख्या",
+        "hintEn": "e.g. PPO number or application number",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "matter",
+        "labelHi": "आपका अनुरोध",
+        "labelEn": "Your request",
+        "hintHi": "जैसे: पिछले तीन माह से पेंशन खाते में नहीं आई, स्थिति बताएँ",
+        "hintEn": "e.g. pension not credited for the last three months, please inform the status",
+        "multiline": true,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "sch_pm_kisan",
+    "category": "schemes",
+    "style": "application",
+    "titleHi": "पीएम-किसान संबंधी अनुरोध",
+    "titleEn": "PM-Kisan related request",
+    "descHi": "पीएम-किसान की स्थिति, बैंक विवरण या नाम सुधार का अनुरोध",
+    "descEn": "Request on PM-Kisan status, bank details or name correction",
+    "keywords": [
+      "PM Kisan",
+      "पीएम किसान",
+      "pm kisan samman nidhi",
+      "किसान सम्मान निधि",
+      "kisan",
+      "किसान",
+      "bank detail correction",
+      "name correction",
+      "status",
+      "kisan yojana",
+      "pmkisan"
+    ],
+    "recipient": {
+      "hi": {
+        "designation": "कृषि अधिकारी महोदय",
+        "office": "विकासखंड / जिला कृषि कार्यालय"
+      },
+      "en": {
+        "designation": "The Agriculture Officer",
+        "office": "Block / District Agriculture Office"
+      }
+    },
+    "salutation": {
+      "hi": "महोदय / महोदया,",
+      "en": "Respected Sir/Madam,"
+    },
+    "subject": {
+      "hi": "पीएम-किसान योजना से संबंधित अनुरोध",
+      "en": "Request regarding PM-Kisan scheme"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ। प्रधानमंत्री किसान सम्मान निधि (पीएम-किसान) योजना में मेरी पंजीकरण संख्या {{registration_no}} है।\nनिवेदन है कि इस योजना के संबंध में मेरा अनुरोध इस प्रकार है: {{request_type}}। इसका विवरण: {{details}}\nयह विषय स्पष्ट न होने से योजना का लाभ प्राप्त करने में कठिनाई हो रही है। संबंधित दस्तावेज़ों की प्रतियाँ इस पत्र के साथ संलग्न हैं।\nअतः आपसे विनम्र निवेदन है कि कृपया मामले की जाँच कर नियमानुसार आवश्यक कार्रवाई करने तथा मुझे सूचित करने की कृपा करें। संपर्क हेतु मेरा मोबाइल नंबर {{mobile}} है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I reside at {{address}}. My registration number under the Pradhan Mantri Kisan Samman Nidhi (PM-Kisan) scheme is {{registration_no}}.\nI would like to make the following request regarding the scheme: {{request_type}}. Details: {{details}}\nBecause this matter remains unresolved, I am facing difficulty in receiving the benefit of the scheme. Copies of the relevant documents are enclosed with this letter.\nI therefore request you to kindly look into the matter, take the necessary action as per the applicable procedure and inform me accordingly. My mobile number for contact is {{mobile}}.\nThank you."
+    },
+    "closing": {
+      "hi": "भवदीय,",
+      "en": "Yours faithfully,"
+    },
+    "fields": [
+      {
+        "key": "registration_no",
+        "labelHi": "पीएम-किसान पंजीकरण संख्या",
+        "labelEn": "PM-Kisan registration number",
+        "hintHi": "जैसे: पोर्टल या आवेदन रसीद पर दी गई संख्या",
+        "hintEn": "e.g. number on the portal or application receipt",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "request_type",
+        "labelHi": "अनुरोध का प्रकार",
+        "labelEn": "Type of request",
+        "hintHi": "जैसे: भुगतान की स्थिति / बैंक विवरण सुधार / नाम सुधार",
+        "hintEn": "e.g. payment status / bank detail correction / name correction",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "details",
+        "labelHi": "विवरण",
+        "labelEn": "Details",
+        "hintHi": "जैसे: बैंक खाता संख्या बदलनी है, नया खाता विवरण संलग्न है",
+        "hintEn": "e.g. bank account needs to be changed, new account details attached",
+        "multiline": true,
+        "required": false
+      }
+    ]
+  }
+]

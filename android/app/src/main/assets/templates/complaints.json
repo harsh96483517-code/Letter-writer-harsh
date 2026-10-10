@@ -1,0 +1,568 @@
+[
+  {
+    "id": "cmp_electricity",
+    "category": "complaints",
+    "style": "application",
+    "titleHi": "बिजली शिकायत पत्र",
+    "titleEn": "Electricity complaint",
+    "descHi": "बिजली आपूर्ति की समस्या की शिकायत",
+    "descEn": "Complaint about power supply problems",
+    "keywords": ["bijli", "electricity", "power cut", "बिजली", "बत्ती", "light", "discom", "vidyut", "बिजली कटौती", "bijli complaint", "voltage", "बिजली विभाग", "light nahi aa rahi"],
+    "recipient": {
+      "hi": { "designation": "अधिशासी अभियंता महोदय", "office": "विद्युत वितरण खंड" },
+      "en": { "designation": "The Executive Engineer", "office": "Electricity Distribution Division" }
+    },
+    "salutation": { "hi": "महोदय / महोदया,", "en": "Respected Sir/Madam," },
+    "subject": {
+      "hi": "बिजली आपूर्ति की समस्या के समाधान हेतु शिकायत",
+      "en": "Complaint regarding electricity supply problem"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ। मेरी विद्युत उपभोक्ता खाता संख्या {{consumer_no}} है।\nविनम्र निवेदन है कि {{since_when}} से हमारे क्षेत्र में बिजली आपूर्ति की समस्या बनी हुई है। {{problem_details}}\nइससे घर के दैनिक कार्यों और बच्चों की पढ़ाई में कठिनाई हो रही है। इस संबंध में पहले भी सूचित किया गया था (पूर्व शिकायत संख्या: {{complaint_no}}), परंतु अभी तक समस्या का समाधान नहीं हुआ है।\nअतः आपसे विनम्र निवेदन है कि कृपया मामले की जाँच कराकर शीघ्र समाधान कराने की कृपा करें। आवश्यकता होने पर मुझसे मोबाइल नंबर {{mobile}} पर संपर्क किया जा सकता है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I live at {{address}}. My electricity consumer account number is {{consumer_no}}.\nI would like to bring to your notice that our area has been facing problems with electricity supply since {{since_when}}. {{problem_details}}\nThis is causing difficulty in daily household work and in my children's studies. The matter was reported earlier as well (previous complaint number: {{complaint_no}}), but it has not been resolved so far.\nI therefore request you to kindly look into the matter and arrange for a prompt resolution. I can be contacted on my mobile number {{mobile}} if required.\nThank you."
+    },
+    "closing": { "hi": "भवदीय,", "en": "Yours faithfully," },
+    "fields": [
+      {
+        "key": "consumer_no",
+        "labelHi": "उपभोक्ता खाता संख्या",
+        "labelEn": "Consumer account number",
+        "hintHi": "जैसे: 1234567890 (बिजली बिल पर लिखा होता है)",
+        "hintEn": "e.g. 1234567890 (printed on your electricity bill)",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "since_when",
+        "labelHi": "समस्या कब से है",
+        "labelEn": "Since when",
+        "hintHi": "जैसे: 5 अक्टूबर",
+        "hintEn": "e.g. 5 October",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "problem_details",
+        "labelHi": "समस्या का विवरण",
+        "labelEn": "Problem details",
+        "hintHi": "जैसे: दिन में 8 घंटे बिजली नहीं आती और रात में वोल्टेज कम रहता है",
+        "hintEn": "e.g. no power for 8 hours a day and low voltage at night",
+        "multiline": true,
+        "required": false
+      },
+      {
+        "key": "complaint_no",
+        "labelHi": "पूर्व शिकायत संख्या",
+        "labelEn": "Previous complaint number",
+        "hintHi": "जैसे: 2026100512345",
+        "hintEn": "e.g. 2026100512345",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "cmp_water",
+    "category": "complaints",
+    "style": "application",
+    "titleHi": "जलापूर्ति शिकायत पत्र",
+    "titleEn": "Water supply complaint",
+    "descHi": "पेयजल आपूर्ति की समस्या की शिकायत",
+    "descEn": "Complaint about drinking water supply problems",
+    "keywords": ["pani", "water", "jal", "पानी", "पेयजल", "जल संस्थान", "jal sansthan", "jal nigam", "water supply", "paani nahi aa raha", "tanki", "नल", "tap", "जलापूर्ति"],
+    "recipient": {
+      "hi": { "designation": "अधिशासी अभियंता महोदय", "office": "जल संस्थान / जल निगम, जलापूर्ति विभाग" },
+      "en": { "designation": "The Executive Engineer", "office": "Jal Sansthan / Jal Nigam, Water Supply Department" }
+    },
+    "salutation": { "hi": "महोदय / महोदया,", "en": "Respected Sir/Madam," },
+    "subject": {
+      "hi": "पेयजल आपूर्ति की समस्या के समाधान हेतु शिकायत",
+      "en": "Complaint regarding drinking water supply problem"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ।\nविनम्र निवेदन है कि {{location}} में {{since_when}} से पेयजल आपूर्ति की समस्या बनी हुई है। {{problem_details}}\nपीने, खाना बनाने और अन्य दैनिक आवश्यकताओं के लिए पानी न मिलने से निवासियों को गंभीर कठिनाई हो रही है, और बच्चों तथा बुजुर्गों के स्वास्थ्य की चिंता भी बनी हुई है। इस संबंध में संबंधित कर्मचारियों को पहले भी अवगत कराया गया था, परंतु अभी तक समाधान नहीं हुआ है।\nअतः आपसे अनुरोध है कि कृपया स्थल का निरीक्षण कराकर स्वच्छ पेयजल की नियमित आपूर्ति शीघ्र सुनिश्चित कराने की कृपा करें। आवश्यकता होने पर मुझसे मोबाइल नंबर {{mobile}} पर संपर्क किया जा सकता है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I live at {{address}}.\nI wish to bring to your kind notice that there has been a problem with the drinking water supply in {{location}} since {{since_when}}. {{problem_details}}\nThe residents are facing serious difficulty in drinking, cooking and other daily needs because of the lack of water, and there is also concern about the health of children and elderly persons. The concerned staff were informed about this earlier as well, but the problem has not been resolved so far.\nI therefore request you to kindly get the site inspected and ensure a regular supply of clean drinking water at the earliest. I can be contacted on my mobile number {{mobile}} if required.\nThank you."
+    },
+    "closing": { "hi": "भवदीय,", "en": "Yours faithfully," },
+    "fields": [
+      {
+        "key": "location",
+        "labelHi": "प्रभावित क्षेत्र / मोहल्ला",
+        "labelEn": "Affected area",
+        "hintHi": "जैसे: गली संख्या 4, वार्ड 12",
+        "hintEn": "e.g. Lane 4, Ward 12",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "since_when",
+        "labelHi": "समस्या कब से है",
+        "labelEn": "Since when",
+        "hintHi": "जैसे: 10 अक्टूबर",
+        "hintEn": "e.g. 10 October",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "problem_details",
+        "labelHi": "समस्या का विवरण",
+        "labelEn": "Problem details",
+        "hintHi": "जैसे: नल में पानी बहुत कम और गंदा आता है",
+        "hintEn": "e.g. very little and dirty water comes from the tap",
+        "multiline": true,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "cmp_road",
+    "category": "complaints",
+    "style": "application",
+    "titleHi": "सड़क मरम्मत शिकायत पत्र",
+    "titleEn": "Road repair complaint",
+    "descHi": "टूटी या गड्ढेदार सड़क की मरम्मत हेतु शिकायत",
+    "descEn": "Complaint about a damaged road needing repair",
+    "keywords": ["sadak", "road", "गड्ढे", "सड़क", "pothole", "road repair", "PWD", "लोक निर्माण विभाग", "टूटी सड़क", "sadak ki marammat", "nagar palika", "नगर पालिका", "गड्ढा"],
+    "recipient": {
+      "hi": { "designation": "अधिशासी अधिकारी महोदय", "office": "नगर पालिका परिषद / नगर पंचायत" },
+      "en": { "designation": "The Executive Officer", "office": "Nagar Palika Parishad / Nagar Panchayat" }
+    },
+    "salutation": { "hi": "महोदय / महोदया,", "en": "Respected Sir/Madam," },
+    "subject": {
+      "hi": "क्षतिग्रस्त सड़क की मरम्मत कराने हेतु शिकायत",
+      "en": "Complaint regarding damaged road and request for repair"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ।\nविनम्र निवेदन है कि {{location}} की सड़क {{since_when}} से अत्यंत खराब स्थिति में है। {{problem_details}}\nसड़क पर गड्ढे और टूट-फूट के कारण पैदल चलने वालों, विद्यार्थियों, बुजुर्गों और वाहन चालकों को भारी असुविधा हो रही है तथा दुर्घटना का खतरा बना रहता है। बरसात के दिनों में स्थिति और भी खराब हो जाती है।\nअतः आपसे अनुरोध है कि कृपया स्थल का निरीक्षण कराकर सड़क की शीघ्र मरम्मत कराने की कृपा करें।\nधन्यवाद।",
+      "en": "My name is {{name}} and I live at {{address}}.\nI would like to bring to your notice that the road at {{location}} has been in a badly damaged condition since {{since_when}}. {{problem_details}}\nBecause of the potholes and the broken surface, pedestrians, schoolchildren, elderly persons and drivers are facing great inconvenience, and there is a constant risk of accidents. The condition becomes even worse during the rainy season.\nI therefore request you to kindly get the site inspected and arrange for the road to be repaired at the earliest.\nThank you."
+    },
+    "closing": { "hi": "भवदीय,", "en": "Yours faithfully," },
+    "fields": [
+      {
+        "key": "location",
+        "labelHi": "सड़क / क्षेत्र का नाम",
+        "labelEn": "Road or area",
+        "hintHi": "जैसे: गली संख्या 4, वार्ड 12",
+        "hintEn": "e.g. Lane 4, Ward 12",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "since_when",
+        "labelHi": "समस्या कब से है",
+        "labelEn": "Since when",
+        "hintHi": "जैसे: पिछले तीन महीने",
+        "hintEn": "e.g. the last three months",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "problem_details",
+        "labelHi": "समस्या का विवरण",
+        "labelEn": "Problem details",
+        "hintHi": "जैसे: सड़क पर कई गहरे गड्ढे हैं और बारिश में पानी भर जाता है",
+        "hintEn": "e.g. many deep potholes and water collects after rain",
+        "multiline": true,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "cmp_garbage",
+    "category": "complaints",
+    "style": "application",
+    "titleHi": "कूड़ा उठान शिकायत पत्र",
+    "titleEn": "Garbage collection complaint",
+    "descHi": "कूड़ा न उठने और गंदगी की शिकायत",
+    "descEn": "Complaint about uncollected garbage and dirt",
+    "keywords": ["kooda", "garbage", "कूड़ा", "कचरा", "safai", "सफाई", "sanitation", "nagar nigam", "नगर निगम", "gandagi", "गंदगी", "kachra", "waste", "ग्राम पंचायत"],
+    "recipient": {
+      "hi": { "designation": "नगर आयुक्त / अधिशासी अधिकारी महोदय", "office": "नगर निगम / नगर पालिका परिषद" },
+      "en": { "designation": "The Municipal Commissioner / Executive Officer", "office": "Nagar Nigam / Nagar Palika Parishad" }
+    },
+    "salutation": { "hi": "महोदय / महोदया,", "en": "Respected Sir/Madam," },
+    "subject": {
+      "hi": "कूड़े के नियमित उठान और सफाई व्यवस्था हेतु शिकायत",
+      "en": "Complaint regarding irregular garbage collection and cleanliness"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ।\nविनम्र निवेदन है कि {{location}} में {{since_when}} से कूड़ा नियमित रूप से नहीं उठाया जा रहा है। {{problem_details}}\nकूड़े के ढेर और उससे उठने वाली दुर्गंध से आसपास के निवासियों को परेशानी हो रही है। मक्खी-मच्छर और आवारा पशु बढ़ने से बीमारियाँ फैलने की आशंका भी है, जिसका असर विशेषकर बच्चों और बुजुर्गों के स्वास्थ्य पर पड़ सकता है।\nअतः आपसे अनुरोध है कि कृपया संबंधित सफाई कर्मचारियों को निर्देश देकर कूड़े का नियमित उठान और क्षेत्र की सफाई कराने की कृपा करें।\nधन्यवाद।",
+      "en": "My name is {{name}} and I live at {{address}}.\nI wish to bring to your kind notice that garbage has not been collected regularly in {{location}} since {{since_when}}. {{problem_details}}\nThe heaps of garbage and the foul smell are causing inconvenience to the residents. Flies, mosquitoes and stray animals are increasing, and there is a risk of diseases spreading, especially among children and elderly persons.\nI therefore request you to kindly instruct the concerned sanitation staff to ensure regular collection of garbage and cleaning of the area.\nThank you."
+    },
+    "closing": { "hi": "भवदीय,", "en": "Yours faithfully," },
+    "fields": [
+      {
+        "key": "location",
+        "labelHi": "क्षेत्र / मोहल्ला",
+        "labelEn": "Area or locality",
+        "hintHi": "जैसे: वार्ड 7, शिव कॉलोनी",
+        "hintEn": "e.g. Ward 7, Shiv Colony",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "since_when",
+        "labelHi": "समस्या कब से है",
+        "labelEn": "Since when",
+        "hintHi": "जैसे: पिछले 15 दिन",
+        "hintEn": "e.g. the last 15 days",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "problem_details",
+        "labelHi": "समस्या का विवरण",
+        "labelEn": "Problem details",
+        "hintHi": "जैसे: गली के मोड़ पर कूड़े का बड़ा ढेर लगा है, कूड़ा गाड़ी नहीं आती",
+        "hintEn": "e.g. a large heap of garbage at the lane corner and the garbage van does not come",
+        "multiline": true,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "cmp_drainage",
+    "category": "complaints",
+    "style": "application",
+    "titleHi": "नाली / सीवर शिकायत पत्र",
+    "titleEn": "Drainage complaint",
+    "descHi": "नाली जाम या सीवर ओवरफ्लो की शिकायत",
+    "descEn": "Complaint about blocked drains or sewer overflow",
+    "keywords": ["nali", "drainage", "नाली", "सीवर", "sewer", "sewage", "जलभराव", "नाला", "drain", "nali jam", "gandi nali", "जल निकासी", "overflow", "nagar palika"],
+    "recipient": {
+      "hi": { "designation": "अधिशासी अधिकारी महोदय", "office": "नगर पालिका परिषद / नगर निगम, जल निकासी विभाग" },
+      "en": { "designation": "The Executive Officer", "office": "Nagar Palika Parishad / Nagar Nigam, Drainage Department" }
+    },
+    "salutation": { "hi": "महोदय / महोदया,", "en": "Respected Sir/Madam," },
+    "subject": {
+      "hi": "नाली एवं सीवर की समस्या के समाधान हेतु शिकायत",
+      "en": "Complaint regarding blocked drain and sewer overflow"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ।\nविनम्र निवेदन है कि {{location}} में {{since_when}} से नाली जाम होने और गंदा पानी भरने तथा बहने की समस्या बनी हुई है। {{problem_details}}\nगंदे पानी के जमाव से दुर्गंध फैल रही है और घरों के सामने से निकलना कठिन हो गया है। मच्छर पनपने से डेंगू और मलेरिया जैसी बीमारियाँ फैलने का खतरा भी है।\nअतः आपसे अनुरोध है कि कृपया नाली और सीवर लाइन की सफाई कराकर क्षेत्र में जल निकासी की उचित व्यवस्था शीघ्र कराने की कृपा करें।\nधन्यवाद।",
+      "en": "My name is {{name}} and I live at {{address}}.\nI would like to bring to your notice that there has been a problem of blocked drains and overflowing dirty water in {{location}} since {{since_when}}. {{problem_details}}\nThe stagnant dirty water is causing a foul smell and has made it difficult to walk past our houses. It is also breeding mosquitoes, which raises the risk of diseases such as dengue and malaria.\nI therefore request you to kindly get the drains and sewer lines cleaned and arrange for proper drainage in the area at the earliest.\nThank you."
+    },
+    "closing": { "hi": "भवदीय,", "en": "Yours faithfully," },
+    "fields": [
+      {
+        "key": "location",
+        "labelHi": "प्रभावित क्षेत्र / मोहल्ला",
+        "labelEn": "Affected area",
+        "hintHi": "जैसे: गली संख्या 4, वार्ड 12",
+        "hintEn": "e.g. Lane 4, Ward 12",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "since_when",
+        "labelHi": "समस्या कब से है",
+        "labelEn": "Since when",
+        "hintHi": "जैसे: 8 अक्टूबर",
+        "hintEn": "e.g. 8 October",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "problem_details",
+        "labelHi": "समस्या का विवरण",
+        "labelEn": "Problem details",
+        "hintHi": "जैसे: मुख्य नाली कूड़े से भरी है और सीवर का पानी सड़क पर बह रहा है",
+        "hintEn": "e.g. the main drain is choked with waste and sewer water is flowing onto the road",
+        "multiline": true,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "cmp_streetlight",
+    "category": "complaints",
+    "style": "application",
+    "titleHi": "स्ट्रीट लाइट शिकायत पत्र",
+    "titleEn": "Streetlight complaint",
+    "descHi": "खराब या बंद स्ट्रीट लाइट की शिकायत",
+    "descEn": "Complaint about faulty or non-working streetlights",
+    "keywords": ["street light", "streetlight", "स्ट्रीट लाइट", "बत्ती", "light", "pole", "खंभा", "अंधेरा", "andhera", "batti band", "लाइट खराब", "सड़क की बत्ती", "nagar nigam"],
+    "recipient": {
+      "hi": { "designation": "अधिशासी अधिकारी महोदय", "office": "नगर निगम / नगर पालिका परिषद, विद्युत प्रकाश विभाग" },
+      "en": { "designation": "The Executive Officer", "office": "Nagar Nigam / Nagar Palika Parishad, Street Lighting Department" }
+    },
+    "salutation": { "hi": "महोदय / महोदया,", "en": "Respected Sir/Madam," },
+    "subject": {
+      "hi": "स्ट्रीट लाइट की मरम्मत हेतु शिकायत",
+      "en": "Complaint regarding non-working streetlights"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ।\nविनम्र निवेदन है कि {{location}} में स्ट्रीट लाइट {{since_when}} से बंद या खराब है। {{problem_details}}\nरात में अंधेरा रहने से राहगीरों, विशेषकर महिलाओं, बच्चों और बुजुर्गों को आने-जाने में कठिनाई होती है तथा चोरी और दुर्घटना की आशंका बनी रहती है।\nअतः आपसे अनुरोध है कि कृपया स्ट्रीट लाइट की मरम्मत कराकर, आवश्यकता होने पर नई लाइट लगवाकर, क्षेत्र में रोशनी की उचित व्यवस्था कराने की कृपा करें।\nधन्यवाद।",
+      "en": "My name is {{name}} and I live at {{address}}.\nI would like to bring to your notice that the streetlight at {{location}} has not been working since {{since_when}}. {{problem_details}}\nBecause of the darkness at night, passers-by, especially women, children and elderly persons, find it difficult to move around, and there is a constant risk of theft and accidents.\nI therefore request you to kindly get the streetlight repaired, or a new light installed if necessary, so that the area is properly lit.\nThank you."
+    },
+    "closing": { "hi": "भवदीय,", "en": "Yours faithfully," },
+    "fields": [
+      {
+        "key": "location",
+        "labelHi": "स्ट्रीट लाइट का स्थान",
+        "labelEn": "Location of the streetlight",
+        "hintHi": "जैसे: मंदिर वाले चौराहे के पास, गली संख्या 3",
+        "hintEn": "e.g. near the temple crossing, Lane 3",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "since_when",
+        "labelHi": "समस्या कब से है",
+        "labelEn": "Since when",
+        "hintHi": "जैसे: लगभग एक माह",
+        "hintEn": "e.g. about a month",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "problem_details",
+        "labelHi": "समस्या का विवरण",
+        "labelEn": "Problem details",
+        "hintHi": "जैसे: गली के 5 खंभों की लाइटें बंद हैं, खंभा संख्या 14 से 18",
+        "hintEn": "e.g. lights on 5 poles in the lane are off, pole numbers 14 to 18",
+        "multiline": true,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "cmp_public_service",
+    "category": "complaints",
+    "style": "application",
+    "titleHi": "सरकारी सेवा शिकायत पत्र",
+    "titleEn": "Public service complaint",
+    "descHi": "किसी सरकारी विभाग की सेवा में समस्या की शिकायत",
+    "descEn": "Complaint about a government office or service",
+    "keywords": ["sarkari", "government", "सरकारी", "विभाग", "office", "complaint", "शिकायत", "department", "public service", "sarkari office", "karyalay", "कार्यालय", "kaam nahi ho raha", "grievance"],
+    "recipient": {
+      "hi": { "designation": "प्रभारी अधिकारी महोदय", "office": "संबंधित विभाग / कार्यालय" },
+      "en": { "designation": "The Officer-in-Charge", "office": "Concerned Department / Office" }
+    },
+    "salutation": { "hi": "महोदय / महोदया,", "en": "Respected Sir/Madam," },
+    "subject": {
+      "hi": "{{department}} की सेवा में हो रही असुविधा के संबंध में शिकायत",
+      "en": "Complaint regarding inconvenience in the services of {{department}}"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ।\nविनम्र निवेदन है कि मुझे {{department}} की सेवा के संबंध में कठिनाई का सामना करना पड़ रहा है। {{issue_details}}\nइस संबंध में मेरे द्वारा {{contact_date}} को कार्यालय में संपर्क किया गया था (संदर्भ या आवेदन संख्या: {{reference_no}}), परंतु अभी तक संतोषजनक कार्रवाई नहीं हुई है। इससे मुझे अनावश्यक परेशानी हो रही है और समय की हानि हो रही है।\nअतः आपसे अनुरोध है कि कृपया मामले की जाँच कराकर संबंधित कर्मचारियों को आवश्यक निर्देश देने और सेवा शीघ्र उपलब्ध कराने की कृपा करें। आवश्यकता होने पर मुझसे मोबाइल नंबर {{mobile}} पर संपर्क किया जा सकता है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I live at {{address}}.\nI wish to bring to your kind notice that I am facing difficulty with the services of {{department}}. {{issue_details}}\nI approached the office in this regard on {{contact_date}} (reference or application number: {{reference_no}}), but satisfactory action has not been taken so far. This has caused me avoidable inconvenience and loss of time.\nI therefore request you to kindly look into the matter, give the necessary instructions to the concerned staff and arrange for the service to be provided at the earliest. I can be contacted on my mobile number {{mobile}} if required.\nThank you."
+    },
+    "closing": { "hi": "भवदीय,", "en": "Yours faithfully," },
+    "fields": [
+      {
+        "key": "department",
+        "labelHi": "विभाग / कार्यालय का नाम",
+        "labelEn": "Department or office",
+        "hintHi": "जैसे: तहसील कार्यालय",
+        "hintEn": "e.g. Tehsil Office",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "issue_details",
+        "labelHi": "समस्या का विवरण",
+        "labelEn": "Problem details",
+        "hintHi": "जैसे: आवेदन जमा करने के बाद भी प्रमाण पत्र जारी नहीं हुआ और कर्मचारी जवाब नहीं देते",
+        "hintEn": "e.g. the certificate has not been issued despite applying and staff do not respond",
+        "multiline": true,
+        "required": false
+      },
+      {
+        "key": "contact_date",
+        "labelHi": "कार्यालय में संपर्क / आवेदन की तिथि",
+        "labelEn": "Date of visit or application",
+        "hintHi": "जैसे: 3 अक्टूबर 2026",
+        "hintEn": "e.g. 3 October 2026",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "reference_no",
+        "labelHi": "संदर्भ / आवेदन संख्या",
+        "labelEn": "Reference or application number",
+        "hintHi": "जैसे: UP2026/123456",
+        "hintEn": "e.g. UP2026/123456",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "cmp_consumer",
+    "category": "complaints",
+    "style": "application",
+    "titleHi": "उपभोक्ता शिकायत पत्र",
+    "titleEn": "Consumer complaint",
+    "descHi": "खराब वस्तु या सेवा पर रिफंड या बदलने की माँग",
+    "descEn": "Defective product or poor service; refund or replacement",
+    "keywords": ["upbhokta", "consumer", "उपभोक्ता", "ग्राहक", "refund", "replacement", "defective", "खराब सामान", "वापसी", "bill", "बिल", "kharab saman", "customer care", "warranty", "गारंटी"],
+    "recipient": {
+      "hi": { "designation": "प्रबंधक महोदय", "office": "ग्राहक सेवा विभाग" },
+      "en": { "designation": "The Manager", "office": "Customer Service Department" }
+    },
+    "salutation": { "hi": "महोदय / महोदया,", "en": "Respected Sir/Madam," },
+    "subject": {
+      "hi": "खराब वस्तु या सेवा के संबंध में शिकायत तथा बदलने या धनवापसी का अनुरोध",
+      "en": "Complaint regarding defective product or service and request for replacement or refund"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ।\nआपके प्रतिष्ठान से {{purchase_date}} को {{product}} की खरीद की गई थी (बिल संख्या: {{bill_no}})। खरीद के बाद उक्त वस्तु या सेवा में दोष या कमी पाई गई है। {{problem_details}}\nइस संबंध में मैंने आपके कर्मचारियों से संपर्क भी किया, परंतु संतोषजनक समाधान नहीं मिला। इससे मुझे आर्थिक हानि और असुविधा हुई है।\nअतः आपसे अनुरोध है कि कृपया मेरी शिकायत पर विचार करते हुए उक्त वस्तु को बदलने अथवा भुगतान की गई पूरी राशि वापस करने की कृपा करें। ऐसा न होने की स्थिति में मुझे अन्य उचित माध्यमों से समाधान का प्रयास करना पड़ सकता है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I live at {{address}}.\nI purchased {{product}} from your establishment on {{purchase_date}} (bill number: {{bill_no}}). Since the purchase, a defect or deficiency has been found in the product or service. {{problem_details}}\nI contacted your staff in this regard as well, but I did not receive a satisfactory solution. This has caused me financial loss and inconvenience.\nI therefore request you to kindly consider my complaint and arrange either a replacement or a full refund of the amount paid. Failing this, I may have to seek redressal through other appropriate channels.\nThank you."
+    },
+    "closing": { "hi": "भवदीय,", "en": "Yours faithfully," },
+    "fields": [
+      {
+        "key": "product",
+        "labelHi": "वस्तु / सेवा का नाम",
+        "labelEn": "Product or service",
+        "hintHi": "जैसे: मिक्सर ग्राइंडर (मॉडल XYZ)",
+        "hintEn": "e.g. mixer grinder (model XYZ)",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "purchase_date",
+        "labelHi": "खरीद की तिथि",
+        "labelEn": "Date of purchase",
+        "hintHi": "जैसे: 12 सितंबर 2026",
+        "hintEn": "e.g. 12 September 2026",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "bill_no",
+        "labelHi": "बिल / इनवॉइस संख्या",
+        "labelEn": "Bill or invoice number",
+        "hintHi": "जैसे: INV/2026/0456",
+        "hintEn": "e.g. INV/2026/0456",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "problem_details",
+        "labelHi": "खराबी का विवरण",
+        "labelEn": "Details of the defect",
+        "hintHi": "जैसे: दो दिन बाद ही मोटर चलना बंद हो गई",
+        "hintEn": "e.g. the motor stopped working after two days",
+        "multiline": true,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "cmp_bank_service",
+    "category": "complaints",
+    "style": "application",
+    "titleHi": "बैंक सेवा शिकायत पत्र",
+    "titleEn": "Bank service complaint",
+    "descHi": "बैंक शाखा की सेवा या अनसुलझी समस्या की शिकायत",
+    "descEn": "Complaint about poor service at a bank branch",
+    "keywords": ["bank", "बैंक", "branch", "शाखा", "service", "bank complaint", "बैंक शिकायत", "branch manager", "शाखा प्रबंधक", "account", "खाता", "bank ka kaam nahi ho raha", "grievance", "customer service"],
+    "recipient": {
+      "hi": { "designation": "शाखा प्रबंधक महोदय", "office": "बैंक शाखा" },
+      "en": { "designation": "The Branch Manager", "office": "Bank Branch" }
+    },
+    "salutation": { "hi": "महोदय / महोदया,", "en": "Respected Sir/Madam," },
+    "subject": {
+      "hi": "बैंक शाखा की सेवा में असुविधा एवं अनसुलझी समस्या के संबंध में शिकायत",
+      "en": "Complaint regarding poor service and unresolved issue at the bank branch"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ। आपकी शाखा में मेरा खाता (खाता संख्या: {{account_no}}) है।\nविनम्र निवेदन है कि आपकी शाखा की सेवा के संबंध में मुझे असुविधा हो रही है। {{problem_details}} यह समस्या {{issue_since}} से बनी हुई है।\nइस संबंध में पहले भी शाखा में संपर्क किया गया था (पूर्व शिकायत संख्या: {{complaint_ref}}), परंतु मामले का समाधान नहीं हुआ है। इसके कारण बार-बार शाखा आना पड़ रहा है और अनावश्यक असुविधा हो रही है।\nअतः आपसे अनुरोध है कि कृपया मामले की जाँच कराकर शीघ्र समाधान कराने की कृपा करें तथा भविष्य में ऐसी असुविधा न हो, यह सुनिश्चित करें।\nधन्यवाद।",
+      "en": "My name is {{name}} and I live at {{address}}. I hold an account (account number: {{account_no}}) at your branch.\nI wish to bring to your kind notice that I am facing difficulty with the services of your branch. {{problem_details}} The problem has been continuing since {{issue_since}}.\nI had contacted the branch earlier in this regard (previous complaint number: {{complaint_ref}}), but the matter has not been resolved so far. I have had to visit the branch repeatedly, which has caused me avoidable inconvenience.\nI therefore request you to kindly look into the matter, resolve it at the earliest and ensure that such inconvenience does not occur in future.\nThank you."
+    },
+    "closing": { "hi": "भवदीय,", "en": "Yours faithfully," },
+    "fields": [
+      {
+        "key": "account_no",
+        "labelHi": "खाता संख्या",
+        "labelEn": "Account number",
+        "hintHi": "जैसे: XXXXXX1234 (केवल अंतिम 4 अंक लिखना पर्याप्त है)",
+        "hintEn": "e.g. XXXXXX1234 (the last 4 digits are enough)",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "problem_details",
+        "labelHi": "समस्या का विवरण",
+        "labelEn": "Problem details",
+        "hintHi": "जैसे: पासबुक एंट्री और खाते में सुधार के लिए कई बार जाने पर भी काम नहीं हुआ",
+        "hintEn": "e.g. passbook entry and account correction were not done despite several visits",
+        "multiline": true,
+        "required": false
+      },
+      {
+        "key": "issue_since",
+        "labelHi": "समस्या कब से है",
+        "labelEn": "Since when",
+        "hintHi": "जैसे: 3 अक्टूबर",
+        "hintEn": "e.g. 3 October",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "complaint_ref",
+        "labelHi": "पूर्व शिकायत संख्या",
+        "labelEn": "Previous complaint number",
+        "hintHi": "जैसे: BR/2026/789",
+        "hintEn": "e.g. BR/2026/789",
+        "multiline": false,
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "cmp_postal",
+    "category": "complaints",
+    "style": "application",
+    "titleHi": "डाक सेवा शिकायत पत्र",
+    "titleEn": "Postal service complaint",
+    "descHi": "डाक या पार्सल के खोने या देरी की शिकायत",
+    "descEn": "Complaint about lost or delayed post or parcel",
+    "keywords": ["dak", "डाक", "post office", "डाकघर", "speed post", "स्पीड पोस्ट", "parcel", "पार्सल", "postmaster", "पोस्टमास्टर", "tracking", "registered post", "dak nahi mili", "courier"],
+    "recipient": {
+      "hi": { "designation": "पोस्टमास्टर महोदय", "office": "डाकघर" },
+      "en": { "designation": "The Postmaster", "office": "Post Office" }
+    },
+    "salutation": { "hi": "महोदय / महोदया,", "en": "Respected Sir/Madam," },
+    "subject": {
+      "hi": "डाक वस्तु के खोने या देरी से वितरण के संबंध में शिकायत",
+      "en": "Complaint regarding lost or delayed postal article"
+    },
+    "body": {
+      "hi": "मेरा नाम {{name}} है और मैं {{address}} का निवासी हूँ।\nविनम्र निवेदन है कि मेरी शिकायत एक डाक वस्तु (रसीद या ट्रैकिंग संख्या: {{article_no}}) के संबंध में है। डाक वस्तु का विवरण इस प्रकार है: {{article_details}}\nयह डाक वस्तु अपेक्षित समय में वितरित नहीं हुई है और मुझे इसकी कोई स्पष्ट जानकारी भी नहीं मिल सकी है। {{problem_details}} इससे मेरा आवश्यक कार्य प्रभावित हो रहा है।\nअतः आपसे अनुरोध है कि कृपया डाक वस्तु का पता लगवाकर उसे शीघ्र संबंधित पते पर पहुँचवाने की कृपा करें। यदि डाक वस्तु खो गई हो, तो कृपया नियमानुसार आगे की कार्यवाही की जानकारी देने का कष्ट करें। आवश्यकता होने पर मुझसे मोबाइल नंबर {{mobile}} पर संपर्क किया जा सकता है।\nधन्यवाद।",
+      "en": "My name is {{name}} and I live at {{address}}.\nI wish to bring to your kind notice that my complaint relates to a postal article (receipt or tracking number: {{article_no}}). The details of the article are as follows: {{article_details}}\nThe article has not been delivered within the expected time, and I have not been able to get any clear information about it. {{problem_details}} Because of this, my important work is being affected.\nI therefore request you to kindly trace the article and ensure that it is delivered to the addressee at the earliest. If the article has been lost, please inform me of the further action to be taken as per the rules. I can be contacted on my mobile number {{mobile}} if required.\nThank you."
+    },
+    "closing": { "hi": "भवदीय,", "en": "Yours faithfully," },
+    "fields": [
+      {
+        "key": "article_no",
+        "labelHi": "रसीद / ट्रैकिंग संख्या",
+        "labelEn": "Receipt or tracking number",
+        "hintHi": "जैसे: EE123456789IN",
+        "hintEn": "e.g. EE123456789IN",
+        "multiline": false,
+        "required": false
+      },
+      {
+        "key": "article_details",
+        "labelHi": "डाक का विवरण",
+        "labelEn": "Details of the article",
+        "hintHi": "जैसे: स्पीड पोस्ट, 2 अक्टूबर को जयपुर डाकघर से लखनऊ के लिए बुक की गई",
+        "hintEn": "e.g. Speed Post booked on 2 October at Jaipur for delivery in Lucknow",
+        "multiline": true,
+        "required": false
+      },
+      {
+        "key": "problem_details",
+        "labelHi": "समस्या का विवरण",
+        "labelEn": "Problem details",
+        "hintHi": "जैसे: ट्रैकिंग में 10 दिन से कोई अपडेट नहीं दिख रहा",
+        "hintEn": "e.g. tracking has shown no update for 10 days",
+        "multiline": true,
+        "required": false
+      }
+    ]
+  }
+]
