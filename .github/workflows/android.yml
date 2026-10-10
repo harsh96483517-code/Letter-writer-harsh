@@ -43,6 +43,8 @@ jobs:
         run: |
           {
             grep -hE "^e: |error:|Unresolved|AAPT|Manifest merger|Could not (resolve|find|get)|Execution failed|FAILED" build.log test.log 2>/dev/null | sed -E 's#file:///home/runner/work/[^/]+/[^/]+/android/app/src/(main|test)/java/app/writer/##' | head -80
+            echo "----- failed tests"
+            grep -hA7 " FAILED$" test.log 2>/dev/null | head -80
             echo "-----"
             grep -hA10 "What went wrong" build.log test.log 2>/dev/null | head -40
           } > errors.txt || true

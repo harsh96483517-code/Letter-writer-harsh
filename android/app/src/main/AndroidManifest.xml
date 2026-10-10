@@ -5,6 +5,7 @@
          through the system file picker, and nothing needs network, contacts, SMS or location. -->
 
     <application
+        android:name=".WriterApplication"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
