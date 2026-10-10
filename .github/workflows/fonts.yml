@@ -1,0 +1,36 @@
+name: Fetch fonts
+
+# One-off helper: downloads the Noto fonts into android/app/src/main/res/font and commits them,
+# so the app builds offline afterwards. Run it from the Actions tab (Run workflow).
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fonts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download fonts
+        id: dl
+        run: |
+          set -o pipefail
+          bash tools/fetch_fonts.sh android/app/src/main/res/font 2>&1 | tee fonts.log || true
+          summary=$(tr '\n' ';' < fonts.log | cut -c1-1500)
+          echo "::notice title=Font download::${summary}"
+          ls -la android/app/src/main/res/font || true
+
+      - name: Commit fonts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add android/app/src/main/res/font android/app/src/main/assets/licenses
+          if git diff --cached --quiet; then
+            echo "::notice title=Fonts::nothing new to commit"
+          else
+            git commit -m "Add Noto fonts for A4 preview and PDF export (SIL OFL 1.1)"
+            git push
+          fi
