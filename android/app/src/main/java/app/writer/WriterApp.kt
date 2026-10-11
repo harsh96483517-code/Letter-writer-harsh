@@ -9,6 +9,7 @@ import androidx.compose.animation.slideOutVertically
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.navigationBarsPadding
+import androidx.compose.foundation.layout.imePadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Description
@@ -29,6 +30,7 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
@@ -60,6 +62,7 @@ import app.writer.features.common.appViewModel
 import app.writer.features.common.rememberDocDialogs
 import app.writer.features.create.CreateOption
 import app.writer.features.create.CreateSheet
+import app.writer.features.editor.EditorScreen
 import app.writer.features.export.DocActionsHost
 import app.writer.features.export.rememberDocActions
 import app.writer.features.files.FilesScreen
@@ -67,12 +70,12 @@ import app.writer.features.home.HomeActions
 import app.writer.features.home.HomeScreen
 import app.writer.features.launch.LaunchScreen
 import app.writer.features.launch.OnboardingScreen
+import app.writer.features.preview.PreviewScreen
 import app.writer.features.profile.AboutScreen
 import app.writer.features.profile.HelpScreen
 import app.writer.features.profile.PrivacyScreen
 import app.writer.features.profile.ProfileScreen
 import app.writer.features.profile.SettingsScreen
-import app.writer.features.shell.ComingSoonScreen
 import app.writer.features.templates.TemplateDetailScreen
 import app.writer.features.templates.TemplatesScreen
 import app.writer.model.AppLanguage
@@ -243,14 +246,28 @@ private fun MainShell(
             composable(
                 route = Routes.EDITOR,
                 arguments = listOf(navArgument(Routes.ARG_ID) { type = NavType.StringType }),
-            ) {
-                ComingSoonScreen(title = tr("एडिटर", "Editor"), onBack = back)
+            ) { entry ->
+                EditorScreen(
+                    docId = entry.arguments?.getString(Routes.ARG_ID).orEmpty(),
+                    toast = toast,
+                    onBack = back,
+                    onPreview = openPreview,
+                )
             }
             composable(
                 route = Routes.PREVIEW,
                 arguments = listOf(navArgument(Routes.ARG_ID) { type = NavType.StringType }),
-            ) {
-                ComingSoonScreen(title = tr("प्रीव्यू", "Preview"), onBack = back)
+            ) { entry ->
+                PreviewScreen(
+                    docId = entry.arguments?.getString(Routes.ARG_ID).orEmpty(),
+                    docActions = docActions,
+                    toast = toast,
+                    onBack = back,
+                    // Coming from the editor, Back to it keeps what is on screen; from My Files, open it fresh.
+                    onEdit = { target ->
+                        if (!nav.popBackStack(Routes.EDITOR, inclusive = false)) nav.navigate(Routes.editor(target))
+                    },
+                )
             }
         }
 
@@ -274,7 +291,15 @@ private fun MainShell(
             modifier = Modifier
                 .align(Alignment.BottomCenter)
                 .navigationBarsPadding()
-                .padding(bottom = if (showBottomBar) BottomBarHeight + Spacing.x2 else Spacing.x2),
+                .imePadding()
+                .padding(
+                    bottom = when {
+                        showBottomBar -> BottomBarHeight + Spacing.x2
+                        // Keep messages above the editor toolbar and the preview action bar.
+                        route == Routes.EDITOR || route == Routes.PREVIEW -> 88.dp
+                        else -> Spacing.x2
+                    },
+                ),
         )
     }
 

@@ -10,6 +10,10 @@ on:
       - "android/**"
   workflow_dispatch:
 
+# Publishing the APK to a release needs write access to the repository contents.
+permissions:
+  contents: write
+
 jobs:
   debug-apk:
     runs-on: ubuntu-latest
@@ -60,3 +64,30 @@ jobs:
           name: writer-debug-apk
           path: android/app/build/outputs/apk/debug/*.apk
           if-no-files-found: error
+
+      # A release is the easiest way to get the APK onto a phone: open the Releases page on the
+      # phone, tap the file, install. It is replaced by every successful build on main.
+      - name: Publish APK to the "latest-debug" release
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        working-directory: .
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -e
+          APK=$(ls android/app/build/outputs/apk/debug/*.apk | head -n 1)
+          cp "$APK" Writer-debug.apk
+          SHORT=$(git rev-parse --short HEAD)
+          cat > notes.md <<EOF
+          Debug build of Writer from commit \`$SHORT\`. Built and unit-tested by GitHub Actions.
+
+          Install: open this page on your Android phone, download **Writer-debug.apk**, tap it and allow installing from this source when asked.
+          Builds are signed with the same debug key, so a newer build installs over an older one and keeps your documents.
+
+          This is a debug build for testing, not a Play Store release. The app asks for no permissions and works offline.
+          EOF
+          gh release delete latest-debug --cleanup-tag --yes || true
+          gh release create latest-debug Writer-debug.apk \
+            --title "Writer debug APK ($SHORT)" \
+            --notes-file notes.md \
+            --prerelease \
+            --target "$GITHUB_SHA"

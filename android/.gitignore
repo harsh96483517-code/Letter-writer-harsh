@@ -8,3 +8,6 @@ captures/
 .cxx/
 *.keystore
 *.jks
+# The one exception: a fixed, public DEBUG key (password 'android') so each CI build installs over the last.
+# It is not a secret and must never sign a release. Release keys stay out of the repo.
+!app/debug.keystore
