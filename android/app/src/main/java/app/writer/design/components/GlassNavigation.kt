@@ -9,6 +9,11 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.lazy.LazyRow
+import androidx.compose.foundation.lazy.itemsIndexed
+import androidx.compose.foundation.lazy.rememberLazyListState
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
@@ -184,7 +189,7 @@ private fun RowScope.NavCell(
     }
 }
 
-/** 9. GlassTabBar — scrollable filter pills (All / Drafts / PDFs …). */
+/** 9. GlassTabBar — scrollable filter pills (All / Drafts / PDFs …). The selected pill is kept in view. */
 @Composable
 fun GlassTabBar(
     tabs: List<String>,
@@ -194,14 +199,17 @@ fun GlassTabBar(
 ) {
     val c = Glass.colors
     val reduced = rememberReducedMotion()
-    Row(
-        modifier = modifier
-            .fillMaxWidth()
-            .horizontalScroll(rememberScrollState())
-            .padding(horizontal = Spacing.screen),
+    val listState = rememberLazyListState()
+    LaunchedEffect(selectedIndex, tabs.size) {
+        if (selectedIndex in tabs.indices) listState.animateScrollToItem((selectedIndex - 1).coerceAtLeast(0))
+    }
+    LazyRow(
+        state = listState,
+        modifier = modifier.fillMaxWidth(),
+        contentPadding = PaddingValues(horizontal = Spacing.screen),
         horizontalArrangement = Arrangement.spacedBy(Spacing.x1),
     ) {
-        tabs.forEachIndexed { index, label ->
+        itemsIndexed(tabs, key = { index, label -> "$index-$label" }) { index, label ->
             val selected = index == selectedIndex
             val textColor by animateColorAsState(
                 targetValue = if (selected) c.onAccent else c.textSecondary,
