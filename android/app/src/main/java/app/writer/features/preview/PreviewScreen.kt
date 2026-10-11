@@ -159,16 +159,7 @@ fun PreviewScreen(
                 )
 
                 is PreviewState.Ready -> {
-                    val reduced = rememberReducedMotion()
-                    val visible = remember { MutableTransitionState(false).apply { targetState = true } }
-                    AnimatedVisibility(
-                        visibleState = visible,
-                        enter = fadeIn(tween(motionMs(reduced, 300))) +
-                            scaleIn(initialScale = 0.96f, animationSpec = tween(motionMs(reduced, 300))),
-                        exit = fadeOut(tween(motionMs(reduced, 150))),
-                    ) {
-                        PagesView(laid = s.laidOut, showControls = true)
-                    }
+                    PagesWithEntrance(laid = s.laidOut)
                     if (focusMode) {
                         GlassIconButton(
                             icon = Icons.Rounded.FullscreenExit,
@@ -196,6 +187,21 @@ fun PreviewScreen(
     }
 }
 
+/** The pages fade and scale in once when the preview opens (instantly if reduced motion is on). */
+@Composable
+private fun PagesWithEntrance(laid: LaidOutDocument) {
+    val reduced = rememberReducedMotion()
+    val visible = remember { MutableTransitionState(false).apply { targetState = true } }
+    AnimatedVisibility(
+        visibleState = visible,
+        enter = fadeIn(tween(motionMs(reduced, 300))) +
+            scaleIn(initialScale = 0.96f, animationSpec = tween(motionMs(reduced, 300))),
+        exit = fadeOut(tween(motionMs(reduced, 150))),
+    ) {
+        PagesView(laid = laid, showControls = true)
+    }
+}
+
 @Composable
 private fun PagesView(laid: LaidOutDocument, showControls: Boolean) {
     val c = Glass.colors
@@ -209,16 +215,19 @@ private fun PagesView(laid: LaidOutDocument, showControls: Boolean) {
     val ratio = laid.heightPt / laid.widthPt
 
     BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
-        val fitWidth = max(maxWidth - gutter * 2, 120.dp)
+        // Read the size here: nested boxes cannot reach this scope's maxWidth.
+        val viewportWidth = maxWidth
+        val viewportHeight = maxHeight
+        val fitWidth = max(viewportWidth - gutter * 2, 120.dp)
         val pageWidth = fitWidth * zoom
         val pageHeight = pageWidth * ratio
         // Zoom at which one whole page is visible at once.
-        val fitPageZoom = ((maxHeight - gutter * 2) / (fitWidth * ratio)).coerceIn(0.3f, 1f)
+        val fitPageZoom = ((viewportHeight - gutter * 2) / (fitWidth * ratio)).coerceIn(0.3f, 1f)
 
         Box(modifier = Modifier.fillMaxSize().horizontalScroll(horizontal)) {
             LazyColumn(
                 state = listState,
-                modifier = Modifier.width(max(maxWidth, pageWidth + gutter * 2)).fillMaxHeight(),
+                modifier = Modifier.width(max(viewportWidth, pageWidth + gutter * 2)).fillMaxHeight(),
                 contentPadding = PaddingValues(top = gutter, bottom = if (showControls) 96.dp else gutter),
                 verticalArrangement = Arrangement.spacedBy(gutter),
                 horizontalAlignment = Alignment.CenterHorizontally,
